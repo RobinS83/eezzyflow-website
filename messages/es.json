@@ -250,6 +250,25 @@
       "title": "Esta página no existe",
       "body": "Puede que el enlace esté desactualizado. En la página de inicio lo encontrarás todo.",
       "back": "Ir a la página de inicio"
+    },
+    "week": {
+      "eyebrow": "El régimen de custodia",
+      "title": "Dos casas. Un calendario que cuadra.",
+      "body": "Registras el acuerdo una sola vez y eezzyflow rellena el calendario automáticamente. Todos ven con quién están los niños y cuándo es el próximo cambio.",
+      "withYou": "Contigo",
+      "withOther": "Con Iris",
+      "handover": "Cambio",
+      "label": "Ejemplo: dos semanas en el calendario, con quién están los niños y los cambios"
+    },
+    "statement": {
+      "eyebrow": "Por qué eezzyflow",
+      "title": "Dos casas. Un solo lugar para todo lo de tu hijo.",
+      "body": "Calendario de custodia, gastos, mensajes y documentos: tranquilo, seguro y alojado en Europa."
+    },
+    "more": {
+      "eyebrow": "Y más",
+      "title": "También las pequeñas cosas, en el mismo sitio.",
+      "note": "Algunas funciones forman parte de Plus o Familia."
     }
   }
 }

@@ -18,7 +18,7 @@ export function ButtonLink({
 
 export function Section({ id, children, className = "" }: { id?: string; children: ReactNode; className?: string }) {
   return (
-    <section id={id} className={`px-[18px] py-16 sm:py-24 ${className}`}>
+    <section id={id} className={`px-[18px] py-20 sm:py-28 ${className}`}>
       <div className="mx-auto max-w-6xl">{children}</div>
     </section>
   );
@@ -26,9 +26,9 @@ export function Section({ id, children, className = "" }: { id?: string; childre
 
 export function SectionHeading({ eyebrow, title, id }: { eyebrow: string; title: string; id?: string }) {
   return (
-    <div className="mb-10 max-w-2xl">
+    <div className="reveal mb-12 max-w-3xl">
       <p className="mb-3 text-xs font-bold tracking-[0.08em] text-landing-accent uppercase">{eyebrow}</p>
-      <h2 id={id} className="text-[clamp(24px,3vw,32px)] leading-[1.2] font-bold tracking-[-0.02em] text-balance">
+      <h2 id={id} className="text-[clamp(30px,4.2vw,48px)] leading-[1.05] font-extrabold tracking-[-0.035em] text-balance">
         {title}
       </h2>
     </div>

@@ -250,6 +250,25 @@
       "title": "Deze pagina bestaat niet",
       "body": "Misschien is de link verouderd. Op de startpagina vind je alles terug.",
       "back": "Naar de startpagina"
+    },
+    "week": {
+      "eyebrow": "De verblijfsregeling",
+      "title": "Twee huizen. Eén kalender die klopt.",
+      "body": "Je legt de regeling één keer vast en eezzyflow vult de kalender automatisch in. Iedereen ziet bij wie de kinderen zijn en wanneer de volgende wissel is.",
+      "withYou": "Bij jou",
+      "withOther": "Bij Iris",
+      "handover": "Wissel",
+      "label": "Voorbeeld: twee weken in de kalender, met wie de kinderen heeft en de wissels"
+    },
+    "statement": {
+      "eyebrow": "Waarom eezzyflow",
+      "title": "Twee huizen. Eén plek voor alles rond je kind.",
+      "body": "Verblijfskalender, kosten, berichten en documenten: rustig, veilig en in Europa gehost."
+    },
+    "more": {
+      "eyebrow": "En verder",
+      "title": "Ook de kleine dingen, op dezelfde plek.",
+      "note": "Sommige functies horen bij Plus of Gezin."
     }
   }
 }

@@ -30,3 +30,6 @@ npm run dev
 Na een wijziging in `docs/bron-teksten/` of `scripts/site-texts.json`:
 `npm run sync-texts`. Voor je pusht:
 `npm run typecheck && npm run lint && npm run build`.
+
+De build is een statische export in `out/` (Netlify, zie `netlify.toml`).
+Bekijk ze lokaal met `npx serve out`.

@@ -250,6 +250,25 @@
       "title": "Diese Seite gibt es nicht",
       "body": "Vielleicht ist der Link veraltet. Auf der Startseite findest du alles wieder.",
       "back": "Zur Startseite"
+    },
+    "week": {
+      "eyebrow": "Die Betreuungsregelung",
+      "title": "Zwei Zuhause. Ein Kalender, der stimmt.",
+      "body": "Du legst die Regelung einmal fest und eezzyflow füllt den Kalender automatisch aus. Alle sehen, bei wem die Kinder sind und wann der nächste Wechsel ist.",
+      "withYou": "Bei dir",
+      "withOther": "Bei Iris",
+      "handover": "Wechsel",
+      "label": "Beispiel: zwei Wochen im Kalender, mit wem die Kinder sind und den Wechseln"
+    },
+    "statement": {
+      "eyebrow": "Warum eezzyflow",
+      "title": "Zwei Zuhause. Ein Ort für alles rund um dein Kind.",
+      "body": "Betreuungskalender, Kosten, Nachrichten und Dokumente: ruhig, sicher und in Europa gehostet."
+    },
+    "more": {
+      "eyebrow": "Und mehr",
+      "title": "Auch die kleinen Dinge, am selben Ort.",
+      "note": "Manche Funktionen gehören zu Plus oder Familie."
     }
   }
 }

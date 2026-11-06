@@ -35,6 +35,25 @@
       "title": "Deze pagina bestaat niet",
       "body": "Misschien is de link verouderd. Op de startpagina vind je alles terug.",
       "back": "Naar de startpagina"
+    },
+    "week": {
+      "eyebrow": "De verblijfsregeling",
+      "title": "Twee huizen. Eén kalender die klopt.",
+      "body": "Je legt de regeling één keer vast en eezzyflow vult de kalender automatisch in. Iedereen ziet bij wie de kinderen zijn en wanneer de volgende wissel is.",
+      "withYou": "Bij jou",
+      "withOther": "Bij Iris",
+      "handover": "Wissel",
+      "label": "Voorbeeld: twee weken in de kalender, met wie de kinderen heeft en de wissels"
+    },
+    "statement": {
+      "eyebrow": "Waarom eezzyflow",
+      "title": "Twee huizen. Eén plek voor alles rond je kind.",
+      "body": "Verblijfskalender, kosten, berichten en documenten: rustig, veilig en in Europa gehost."
+    },
+    "more": {
+      "eyebrow": "En verder",
+      "title": "Ook de kleine dingen, op dezelfde plek.",
+      "note": "Sommige functies horen bij Plus of Gezin."
     }
   },
   "fr": {
@@ -73,6 +92,25 @@
       "title": "Cette page n’existe pas",
       "body": "Le lien est peut-être ancien. Vous retrouverez tout sur la page d’accueil.",
       "back": "Vers la page d’accueil"
+    },
+    "week": {
+      "eyebrow": "Le calendrier de garde",
+      "title": "Deux maisons. Un calendrier qui tombe juste.",
+      "body": "Vous saisissez l’arrangement une seule fois et eezzyflow remplit le calendrier automatiquement. Chacun voit chez qui sont les enfants et quand a lieu le prochain échange.",
+      "withYou": "Chez vous",
+      "withOther": "Chez Iris",
+      "handover": "Échange",
+      "label": "Exemple : deux semaines dans le calendrier, avec qui a les enfants et les échanges"
+    },
+    "statement": {
+      "eyebrow": "Pourquoi eezzyflow",
+      "title": "Deux maisons. Un seul endroit pour tout ce qui concerne votre enfant.",
+      "body": "Calendrier de garde, frais, messages et documents : calme, sûr et hébergé en Europe."
+    },
+    "more": {
+      "eyebrow": "Et aussi",
+      "title": "Les petites choses aussi, au même endroit.",
+      "note": "Certaines fonctions font partie de Plus ou Famille."
     }
   },
   "en": {
@@ -111,6 +149,25 @@
       "title": "This page doesn’t exist",
       "body": "The link may be out of date. You’ll find everything on the home page.",
       "back": "Go to the home page"
+    },
+    "week": {
+      "eyebrow": "The custody schedule",
+      "title": "Two homes. One calendar that adds up.",
+      "body": "You set up the arrangement once and eezzyflow fills in the calendar automatically. Everyone sees where the children are and when the next handover is.",
+      "withYou": "With you",
+      "withOther": "With Iris",
+      "handover": "Handover",
+      "label": "Example: two weeks in the calendar, showing who has the children and the handovers"
+    },
+    "statement": {
+      "eyebrow": "Why eezzyflow",
+      "title": "Two homes. One place for everything about your child.",
+      "body": "Custody calendar, costs, messages and documents: calm, secure and hosted in Europe."
+    },
+    "more": {
+      "eyebrow": "And more",
+      "title": "The little things too, in the same place.",
+      "note": "Some features are part of Plus or Family."
     }
   },
   "de": {
@@ -149,6 +206,25 @@
       "title": "Diese Seite gibt es nicht",
       "body": "Vielleicht ist der Link veraltet. Auf der Startseite findest du alles wieder.",
       "back": "Zur Startseite"
+    },
+    "week": {
+      "eyebrow": "Die Betreuungsregelung",
+      "title": "Zwei Zuhause. Ein Kalender, der stimmt.",
+      "body": "Du legst die Regelung einmal fest und eezzyflow füllt den Kalender automatisch aus. Alle sehen, bei wem die Kinder sind und wann der nächste Wechsel ist.",
+      "withYou": "Bei dir",
+      "withOther": "Bei Iris",
+      "handover": "Wechsel",
+      "label": "Beispiel: zwei Wochen im Kalender, mit wem die Kinder sind und den Wechseln"
+    },
+    "statement": {
+      "eyebrow": "Warum eezzyflow",
+      "title": "Zwei Zuhause. Ein Ort für alles rund um dein Kind.",
+      "body": "Betreuungskalender, Kosten, Nachrichten und Dokumente: ruhig, sicher und in Europa gehostet."
+    },
+    "more": {
+      "eyebrow": "Und mehr",
+      "title": "Auch die kleinen Dinge, am selben Ort.",
+      "note": "Manche Funktionen gehören zu Plus oder Familie."
     }
   },
   "es": {
@@ -187,6 +263,25 @@
       "title": "Esta página no existe",
       "body": "Puede que el enlace esté desactualizado. En la página de inicio lo encontrarás todo.",
       "back": "Ir a la página de inicio"
+    },
+    "week": {
+      "eyebrow": "El régimen de custodia",
+      "title": "Dos casas. Un calendario que cuadra.",
+      "body": "Registras el acuerdo una sola vez y eezzyflow rellena el calendario automáticamente. Todos ven con quién están los niños y cuándo es el próximo cambio.",
+      "withYou": "Contigo",
+      "withOther": "Con Iris",
+      "handover": "Cambio",
+      "label": "Ejemplo: dos semanas en el calendario, con quién están los niños y los cambios"
+    },
+    "statement": {
+      "eyebrow": "Por qué eezzyflow",
+      "title": "Dos casas. Un solo lugar para todo lo de tu hijo.",
+      "body": "Calendario de custodia, gastos, mensajes y documentos: tranquilo, seguro y alojado en Europa."
+    },
+    "more": {
+      "eyebrow": "Y más",
+      "title": "También las pequeñas cosas, en el mismo sitio.",
+      "note": "Algunas funciones forman parte de Plus o Familia."
     }
   },
   "it": {
@@ -225,6 +320,25 @@
       "title": "Questa pagina non esiste",
       "body": "Forse il link non è più valido. Nella pagina iniziale trovi tutto.",
       "back": "Vai alla pagina iniziale"
+    },
+    "week": {
+      "eyebrow": "Il calendario di affidamento",
+      "title": "Due case. Un calendario che torna.",
+      "body": "Inserisci l’accordo una volta sola ed eezzyflow compila il calendario in automatico. Tutti vedono con chi sono i bambini e quando è il prossimo passaggio.",
+      "withYou": "Con te",
+      "withOther": "Con Iris",
+      "handover": "Passaggio",
+      "label": "Esempio: due settimane nel calendario, con chi sono i bambini e i passaggi"
+    },
+    "statement": {
+      "eyebrow": "Perché eezzyflow",
+      "title": "Due case. Un unico posto per tutto ciò che riguarda tuo figlio.",
+      "body": "Calendario di affidamento, spese, messaggi e documenti: tranquillo, sicuro e ospitato in Europa."
+    },
+    "more": {
+      "eyebrow": "E inoltre",
+      "title": "Anche le piccole cose, nello stesso posto.",
+      "note": "Alcune funzioni fanno parte di Plus o Famiglia."
     }
   }
 }

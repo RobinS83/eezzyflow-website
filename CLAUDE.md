@@ -25,8 +25,8 @@ hardgecodeerde teksten: alles via `messages/*.json` (next-intl).
 
 ## Stack
 
-Next.js (App Router) + Tailwind 4 + next-intl, zoals de app. Statisch waar
-het kan. Geen database, geen login, geen API-sleutels op de site.
+Next.js (App Router) + Tailwind 4 + next-intl, zoals de app. Volledig
+statisch. Geen database, geen login, geen API-sleutels op de site.
 
 ## Wat je nooit doet
 
@@ -68,5 +68,13 @@ elke wijziging zelf.
 
 ## Hosting
 
-Vercel, EU-regio (`fra1`), een eigen project naast dat van de app. Robin
-koppelt `eezzyflow.com` zelf wanneer de site klaar is.
+Netlify, net als de site van surocad3d (de app blijft op Vercel). De site is
+volledig statisch (`output: "export"`): `npm run build` schrijft gewone
+HTML naar `out/`, er draait geen server. Instellingen en headers staan in
+`netlify.toml`. Robin koppelt `eezzyflow.com` zelf wanneer de site klaar is.
+
+## De app-repo
+
+`robins83/eezzyflow` mag je **lezen** (om teksten, functies of stijl na te
+kijken), maar **nooit** iets in schrijven of pushen. Kopieer wat je nodig
+hebt; website en app delen geen code.

@@ -1,5 +1,6 @@
-import { getTranslations } from "next-intl/server";
-import { Link } from "@/i18n/navigation";
+import { getLocale, getTranslations } from "next-intl/server";
+import { localePath } from "@/i18n/routing";
+import { LanguageMenu } from "./language-menu";
 import { links } from "@/lib/links";
 import { ButtonLink } from "./ui";
 import { Wordmark } from "./wordmark";
@@ -8,6 +9,8 @@ import { MobileMenu } from "./mobile-menu";
 export async function SiteHeader() {
   const t = await getTranslations("landing.nav");
   const s = await getTranslations("site.nav");
+  const f = await getTranslations("site.footer");
+  const locale = await getLocale();
 
   const items = [
     { href: "#features", label: t("features") },
@@ -19,11 +22,11 @@ export async function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-paper/90 backdrop-blur supports-[backdrop-filter]:bg-paper/75">
       <div className="mx-auto flex h-[68px] max-w-6xl items-center justify-between gap-4 px-[18px]">
-        <Link href="/" aria-label={s("home")} className="rounded-[8px]">
+        <a href={localePath(locale)} aria-label={s("home")} className="rounded-[8px]">
           <Wordmark />
-        </Link>
+        </a>
 
-        <nav aria-label={s("main")} className="hidden md:block">
+        <nav aria-label={s("main")} className="hidden lg:block">
           <ul className="flex items-center gap-1">
             {items.map((item) => (
               <li key={item.href}>
@@ -38,14 +41,16 @@ export async function SiteHeader() {
           </ul>
         </nav>
 
-        <div className="hidden items-center gap-2 md:flex">
+        <div className="flex items-center gap-1 lg:gap-2">
+          <LanguageMenu locale={locale} label={f("language")} />
+          <div className="hidden items-center gap-2 lg:flex">
           <ButtonLink href={links.login} variant="secondary" className="px-4">
             {t("login")}
           </ButtonLink>
           <ButtonLink href={links.register} className="px-4">
             {t("start")}
           </ButtonLink>
-        </div>
+          </div>
 
         <MobileMenu
           items={items}
@@ -53,6 +58,7 @@ export async function SiteHeader() {
           loginHref={links.login}
           startHref={links.register}
         />
+        </div>
       </div>
     </header>
   );

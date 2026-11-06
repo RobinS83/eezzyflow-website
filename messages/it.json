@@ -250,6 +250,25 @@
       "title": "Questa pagina non esiste",
       "body": "Forse il link non è più valido. Nella pagina iniziale trovi tutto.",
       "back": "Vai alla pagina iniziale"
+    },
+    "week": {
+      "eyebrow": "Il calendario di affidamento",
+      "title": "Due case. Un calendario che torna.",
+      "body": "Inserisci l’accordo una volta sola ed eezzyflow compila il calendario in automatico. Tutti vedono con chi sono i bambini e quando è il prossimo passaggio.",
+      "withYou": "Con te",
+      "withOther": "Con Iris",
+      "handover": "Passaggio",
+      "label": "Esempio: due settimane nel calendario, con chi sono i bambini e i passaggi"
+    },
+    "statement": {
+      "eyebrow": "Perché eezzyflow",
+      "title": "Due case. Un unico posto per tutto ciò che riguarda tuo figlio.",
+      "body": "Calendario di affidamento, spese, messaggi e documenti: tranquillo, sicuro e ospitato in Europa."
+    },
+    "more": {
+      "eyebrow": "E inoltre",
+      "title": "Anche le piccole cose, nello stesso posto.",
+      "note": "Alcune funzioni fanno parte di Plus o Famiglia."
     }
   }
 }

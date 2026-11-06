@@ -250,6 +250,25 @@
       "title": "This page doesn’t exist",
       "body": "The link may be out of date. You’ll find everything on the home page.",
       "back": "Go to the home page"
+    },
+    "week": {
+      "eyebrow": "The custody schedule",
+      "title": "Two homes. One calendar that adds up.",
+      "body": "You set up the arrangement once and eezzyflow fills in the calendar automatically. Everyone sees where the children are and when the next handover is.",
+      "withYou": "With you",
+      "withOther": "With Iris",
+      "handover": "Handover",
+      "label": "Example: two weeks in the calendar, showing who has the children and the handovers"
+    },
+    "statement": {
+      "eyebrow": "Why eezzyflow",
+      "title": "Two homes. One place for everything about your child.",
+      "body": "Custody calendar, costs, messages and documents: calm, secure and hosted in Europe."
+    },
+    "more": {
+      "eyebrow": "And more",
+      "title": "The little things too, in the same place.",
+      "note": "Some features are part of Plus or Family."
     }
   }
 }

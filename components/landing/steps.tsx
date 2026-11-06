@@ -5,19 +5,22 @@ export async function Steps() {
   const t = await getTranslations("landing.steps");
 
   return (
-    <Section id="how" className="bg-surface/40">
+    <Section id="how">
       <SectionHeading eyebrow={t("eyebrow")} title={t("title")} />
-      <ol className="grid gap-4 md:grid-cols-3">
+      <ol className="relative grid gap-10 md:grid-cols-3 md:gap-8">
+        {/* The flow line connecting the steps. */}
+        <span
+          aria-hidden
+          className="absolute top-7 right-[16%] left-[16%] hidden h-0.5 rounded-full bg-(image:--brand-champagne) md:block"
+        />
         {[1, 2, 3].map((n) => (
-          <li key={n} className="tile rounded-[18px] p-6">
-            <p className="mb-4 inline-flex items-center gap-2 text-[13px] font-bold text-landing-accent">
-              <span className="inline-flex size-8 items-center justify-center rounded-full bg-highlight-soft text-[15px] text-highlight-chip-text">
-                {n}
-              </span>
-              {t("step", { n })}
-            </p>
-            <h3 className="mb-2 text-xl leading-[1.2] font-bold tracking-[-0.02em]">{t(`s${n}Title`)}</h3>
-            <p className="text-[15px] leading-relaxed text-sub">{t(`s${n}Body`)}</p>
+          <li key={n} className="reveal relative md:text-center">
+            <span className="relative mb-6 inline-flex size-14 items-center justify-center rounded-full bg-(image:--brand-spotlight) text-[22px] font-extrabold text-spotlight-ink shadow-(--shadow-tile-lift) ring-4 ring-paper">
+              <span className="sr-only">{t("step", { n })}: </span>
+              {n}
+            </span>
+            <h3 className="mb-2 text-[22px] leading-[1.2] font-bold tracking-[-0.02em]">{t(`s${n}Title`)}</h3>
+            <p className="mx-auto max-w-xs text-[15.5px] leading-relaxed text-sub md:max-w-[30ch]">{t(`s${n}Body`)}</p>
           </li>
         ))}
       </ol>

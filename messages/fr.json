@@ -250,6 +250,25 @@
       "title": "Cette page n’existe pas",
       "body": "Le lien est peut-être ancien. Vous retrouverez tout sur la page d’accueil.",
       "back": "Vers la page d’accueil"
+    },
+    "week": {
+      "eyebrow": "Le calendrier de garde",
+      "title": "Deux maisons. Un calendrier qui tombe juste.",
+      "body": "Vous saisissez l’arrangement une seule fois et eezzyflow remplit le calendrier automatiquement. Chacun voit chez qui sont les enfants et quand a lieu le prochain échange.",
+      "withYou": "Chez vous",
+      "withOther": "Chez Iris",
+      "handover": "Échange",
+      "label": "Exemple : deux semaines dans le calendrier, avec qui a les enfants et les échanges"
+    },
+    "statement": {
+      "eyebrow": "Pourquoi eezzyflow",
+      "title": "Deux maisons. Un seul endroit pour tout ce qui concerne votre enfant.",
+      "body": "Calendrier de garde, frais, messages et documents : calme, sûr et hébergé en Europe."
+    },
+    "more": {
+      "eyebrow": "Et aussi",
+      "title": "Les petites choses aussi, au même endroit.",
+      "note": "Certaines fonctions font partie de Plus ou Famille."
     }
   }
 }

@@ -14,11 +14,11 @@ export async function Costs() {
   }));
 
   return (
-    <Section id="costs">
-      <div className="grid items-center gap-12 lg:grid-cols-2">
+    <Section id="costs" className="bg-surface/50">
+      <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 [&>*]:min-w-0">
         <div>
           <p className="mb-3 text-xs font-bold tracking-[0.08em] text-landing-accent uppercase">{t("eyebrow")}</p>
-          <h2 className="mb-4 text-[clamp(24px,3vw,32px)] leading-[1.2] font-bold tracking-[-0.02em] text-balance">
+          <h2 className="mb-5 text-[clamp(30px,4.2vw,48px)] leading-[1.05] font-extrabold tracking-[-0.035em] text-balance">
             {t("title")}
           </h2>
           <p className="mb-6 text-[15px] leading-relaxed text-sub">{t("body")}</p>
@@ -35,7 +35,7 @@ export async function Costs() {
         </div>
 
         {/* Illustration of the costs screen; the text beside it says the same. */}
-        <div aria-hidden className="tile tile-lift rounded-[18px] p-5 sm:p-6">
+        <div aria-hidden className="reveal tile tile-lift rounded-[18px] p-5 sm:p-6">
           <div className="rounded-[14px] bg-primary-soft p-5">
             <p className="text-[12px] font-bold tracking-[0.06em] text-sub uppercase">{t("openBalance")}</p>
             <p className="mt-1 text-[32px] leading-none font-extrabold tracking-[-0.02em] tabular-nums">{t("amount")}</p>

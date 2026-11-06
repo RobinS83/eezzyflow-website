@@ -9,7 +9,7 @@ export async function Pricing() {
   const s = await getTranslations("site.pricing");
 
   return (
-    <Section id="pricing" className="bg-surface/40">
+    <Section id="pricing" className="bg-surface/50">
       <SectionHeading eyebrow={s("eyebrow")} title={s("title")} />
       <p className="-mt-4 mb-8 max-w-2xl text-[15px] leading-relaxed text-sub">{t("subtitle")}</p>
 
@@ -22,7 +22,10 @@ export async function Pricing() {
 
       <ul className="grid gap-4 lg:grid-cols-3">
         {plans.map((plan) => (
-          <li key={plan.id} className="tile flex flex-col rounded-[18px] p-6">
+          <li
+            key={plan.id}
+            className={`reveal tile flex flex-col rounded-[24px] p-7`}
+          >
             <h3 className="text-xl leading-[1.2] font-bold tracking-[-0.02em]">{t(`plans.${plan.id}.name`)}</h3>
             <p className="mt-1.5 min-h-[3em] text-[14.5px] leading-snug text-sub">{t(`plans.${plan.id}.tagline`)}</p>
             <p className="mt-4 text-[17px] font-bold">

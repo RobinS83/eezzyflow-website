@@ -1,6 +1,5 @@
 import { getLocale, getTranslations } from "next-intl/server";
-import { Link } from "@/i18n/navigation";
-import { routing } from "@/i18n/routing";
+import { localePath, routing } from "@/i18n/routing";
 import { links } from "@/lib/links";
 import { localeNames } from "@/lib/locales";
 import { Wordmark } from "./wordmark";
@@ -39,16 +38,15 @@ export async function SiteFooter() {
               const current = l === locale;
               return (
                 <li key={l}>
-                  <Link
-                    href="/"
-                    locale={l}
+                  <a
+                    href={localePath(l)}
                     hrefLang={l}
                     lang={l}
                     aria-current={current ? "page" : undefined}
                     className={`${linkClass} ${current ? "font-bold text-ink underline underline-offset-4" : ""}`}
                   >
                     {localeNames[l]}
-                  </Link>
+                  </a>
                 </li>
               );
             })}

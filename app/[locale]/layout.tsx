@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { routing } from "@/i18n/routing";
+import { localePath, routing } from "@/i18n/routing";
 import { SITE_URL } from "@/lib/links";
 import { brand } from "@/lib/brand";
 import { SiteHeader } from "@/components/site-header";
@@ -16,7 +16,7 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-const pathFor = (locale: string) => (locale === routing.defaultLocale ? "/" : `/${locale}`);
+const pathFor = localePath;
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -44,8 +44,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       description,
       locale,
       url: pathFor(locale),
+      images: [{ url: "/opengraph-image.png", width: 1200, height: 630, alt: "eezzyflow" }],
     },
-    twitter: { card: "summary_large_image", title, description },
+    twitter: { card: "summary_large_image", title, description, images: ["/opengraph-image.png"] },
   };
 }
 
