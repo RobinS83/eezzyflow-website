@@ -1,0 +1,217 @@
+{
+  "landing": {
+    "metaTitle": "S’organiser ensemble, un seul flow",
+    "nav": {
+      "features": "Fonctions",
+      "how": "Comment ça marche",
+      "faq": "Questions",
+      "login": "Se connecter",
+      "start": "Commencer gratuitement",
+      "menu": "Menu"
+    },
+    "hero": {
+      "pill": "Pour chaque famille, quelle que soit son organisation",
+      "title": "S’organiser ensemble. Un seul flow.",
+      "lead": "Calendrier, frais, messages et tout ce qui concerne tes enfants au même endroit. Pour que toi et l’autre parent sachiez ce qui se passe, et que personne n’ait plus à redemander quoi que ce soit.",
+      "start": "Commencer gratuitement",
+      "how": "Découvre comment ça marche",
+      "note": "Gratuit · sur ton GSM et ton ordinateur"
+    },
+    "phone": {
+      "date": "Mercredi 30 juillet",
+      "title": "Finn & Lotte : 2 rendez-vous aujourd’hui",
+      "pill": "Vendredi à 15:30 chez Iris",
+      "today": "Aujourd’hui",
+      "item1Time": "16:30",
+      "item1Title": "Natation Finn",
+      "item1Sub": "salle de sport",
+      "item2Time": "18:00",
+      "item2Title": "Gym Lotte",
+      "item2Sub": "1 h",
+      "balance": "Solde",
+      "balanceValue": "+ € 42,50",
+      "unread": "Non lus",
+      "unreadValue": "2",
+      "unreadSub": "messages"
+    },
+    "audience": {
+      "eyebrow": "Pour qui",
+      "title": "Chaque famille tourne à sa façon. eezzyflow suit le mouvement.",
+      "busyTitle": "Familles bien occupées",
+      "busyBody": "Deux agendas, l’école, les loisirs et le travail. Voir ensemble ce qui est prévu, sans messages interminables dans tous les sens.",
+      "apartTitle": "Familles sur deux adresses",
+      "apartBody": "Coparents qui vivent séparément : une vue claire sur qui a les enfants, ce qui reste à faire et ce qui a été payé.",
+      "newTitle": "Tout juste séparés",
+      "newBody": "Fixe une fois pour toutes le régime, les frais et ce dont ton enfant a besoin, sans devoir en reparler à chaque fois.",
+      "soloTitle": "Parents solos",
+      "soloBody": "eezzyflow fonctionne aussi en solo. Rendez-vous, dépenses et tout ce qui concerne tes enfants, réunis au même endroit."
+    },
+    "features": {
+      "eyebrow": "Fonctions",
+      "title": "Tout ce que tu chercherais sinon dans cinq apps et trois conversations de groupe.",
+      "calendarTitle": "Calendrier partagé",
+      "calendarBody": "Qui a les enfants, les passages et les dates importantes en un seul aperçu. Tu peux y relier ton propre agenda.",
+      "calendarChip1": "Régime d’hébergement",
+      "calendarChip2": "Relier ton agenda",
+      "costsTitle": "Frais & règlements",
+      "costsBody": "Noter les dépenses et choisir comment vous les répartissez. Le solde se calcule tout seul, le règlement se fait en une touche.",
+      "costsChip1": "Répartition",
+      "costsChip2": "Solde",
+      "messagesTitle": "Messages",
+      "messagesBody": "Un espace calme pour ce qui concerne les enfants, à part de tes conversations habituelles. Tout est conservé, tu le retrouves.",
+      "messagesChip1": "Conservés",
+      "messagesChip2": "Notifications",
+      "childTitle": "Dossier de l’enfant",
+      "childBody": "École, médecin traitant, allergies, taille de vêtements et documents comme la Kids-ID. Toujours sous la main pour vous deux.",
+      "childChip1": "Documents",
+      "childChip2": "Santé"
+    },
+    "costs": {
+      "eyebrow": "Frais",
+      "title": "Partagés équitablement, sans calculs ni discussions.",
+      "body": "Note une dépense, choisis comment vous la répartissez et eezzyflow suit le solde. Le règlement se fait en une touche.",
+      "check1": "Répartition propre à chaque dépense",
+      "check2": "Ajouter un ticket ou une photo",
+      "check3": "Relevé en pdf",
+      "openBalance": "Solde en attente",
+      "amount": "€ 42,50",
+      "owes": "Iris te paie",
+      "settle": "Régler maintenant",
+      "pdf": "Relevé en pdf",
+      "row1Title": "Natation trimestre",
+      "row1Sub": "28 juil. · tu as payé · 50/50",
+      "row1Amount": "€ 65,00",
+      "row1Status": "en attente",
+      "row2Title": "Nouvelles chaussures Lotte",
+      "row2Sub": "18 juil. · Iris a payé · 50/50",
+      "row2Amount": "€ 54,90",
+      "row2Status": "réglé",
+      "you": "T",
+      "other": "I"
+    },
+    "steps": {
+      "eyebrow": "Comment ça marche",
+      "title": "En trois étapes, sur la même longueur d’onde.",
+      "step": "Étape {n}",
+      "s1Title": "Crée ta famille",
+      "s1Body": "Ajoute tes enfants et inscris une fois le régime d’hébergement dans le calendrier.",
+      "s2Title": "Invite l’autre parent",
+      "s2Body": "Un lien suffit. Ou commence d’abord seul et invite plus tard.",
+      "s3Title": "Tout roule tout seul",
+      "s3Body": "Une notification la veille d’un passage, et pour les nouveaux frais et messages."
+    },
+    "trust": {
+      "privateTitle": "Tes données restent à toi",
+      "privateBody": "Conservées dans l’Union européenne. L’autre parent ne voit que ce que vous partagez.",
+      "fairTitle": "Personne ne peut exclure l’autre",
+      "fairBody": "La version de base est gratuite et le reste, pour vous deux.",
+      "calmTitle": "Un design apaisé",
+      "calmBody": "Clair ou sombre, chaud ou frais. Une app qui apporte du calme, pas du stress en plus."
+    },
+    "faq": {
+      "eyebrow": "Questions",
+      "title": "Bon à savoir",
+      "q1": "L’autre parent doit-il aussi utiliser eezzyflow ?",
+      "a1": "Non. Tu peux très bien commencer seul. Invite l’autre parent quand cela vous convient.",
+      "q2": "Combien coûte eezzyflow ?",
+      "a2": "La version de base est gratuite : calendrier, messages et les frais qui te concernent. Qui veut plus prend plus tard Plus ou Famille. Tant que l’app est en phase de test, tout est accessible.",
+      "q3": "Que voit l’autre parent ?",
+      "a3": "Seulement ce qui concerne vos enfants communs : le calendrier, vos messages et les frais que vous partagez. Il ne voit pas l’agenda personnel que tu relies.",
+      "q4": "Est-ce que ça marche aussi si nous vivons séparément ?",
+      "a4": "Oui, c’est fait pour ça. Tu fixes une fois le régime d’hébergement et eezzyflow remplit le calendrier automatiquement.",
+      "pricing": "Voir les abonnements"
+    },
+    "cta": {
+      "title": "Moins d’organisation. Plus de famille.",
+      "body": "Commence gratuitement et invite l’autre parent quand tu es prêt.",
+      "start": "Commencer gratuitement",
+      "features": "Découvrir les fonctions",
+      "note": "Fonctionne dans ton navigateur, sur GSM et ordinateur"
+    },
+    "footer": {
+      "tagline": "L’organisation familiale pour le Benelux",
+      "privacy": "Confidentialité",
+      "terms": "Conditions",
+      "pricing": "Abonnements",
+      "contact": "Contact"
+    }
+  },
+  "pricing": {
+    "title": "Abonnements",
+    "subtitle": "L’app est gratuite. Pour tout utiliser, choisis un abonnement adapté à votre façon de vivre.",
+    "startFree": "Commencer gratuitement",
+    "period": {
+      "month": "mois",
+      "year": "an"
+    },
+    "plans": {
+      "free": {
+        "name": "Gratuit",
+        "tagline": "L’essentiel, pour tout le monde"
+      },
+      "plus": {
+        "name": "Plus",
+        "tagline": "Tout, pour un parent."
+      },
+      "family": {
+        "name": "Famille",
+        "tagline": "Tout, pour les deux parents. Ensemble ou séparés, avec un seul abonnement."
+      }
+    },
+    "features": {
+      "calendar": "Calendrier partagé avec les passages",
+      "oneChild": "Un enfant",
+      "unlimitedChildren": "Autant d’enfants que tu veux",
+      "basicCosts": "Noter les frais",
+      "fullCosts": "Répartir les frais, avec solde et règlement",
+      "messages": "Messages entre parents",
+      "documents": "Conserver des documents : bulletins, attestations, assurances",
+      "calendarSync": "Passages et rendez-vous dans l’agenda de ton téléphone",
+      "photoImport": "Reprendre le calendrier scolaire en photo : l’app y lit les congés et les sorties, tu les vérifies",
+      "multiplePartners": "Famille recomposée : voir quels enfants sont à la maison",
+      "childAccounts": "Comptes personnels pour les enfants",
+      "prioritySupport": "Priorité pour tes questions",
+      "everythingFree": "Tout ce qu’offre Gratuit",
+      "plusForBoth": "Tout ce qu’offre Plus, pour vous deux",
+      "reminders": "Rappels la veille au soir d’un passage ou d’un rendez-vous",
+      "aiRewrite": "Faire reformuler un message plus calmement avant de l’envoyer",
+      "judgmentImport": "Importer un jugement ou un accord : le régime et la répartition des frais sont remplis",
+      "reportPdf": "Chaque dépense sous forme de justificatif soigné, et un relevé en pdf pour ton avocat, ton médiateur ou le juge",
+      "yearOverview": "Bilan annuel des frais par enfant",
+      "receipts": "Photographier le ticket : l’app remplit la dépense et conserve le ticket avec",
+      "ownChildPhoto": "Ta propre photo de ton enfant, que toi seul vois",
+      "viewers": "Proches : beau-parent, mamie ou baby-sitter suivent aussi (1 € par personne)",
+      "lists": "Listes : courses, recettes et menu de la semaine, aussi pour les enfants"
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "q1": "Mon ex doit-il aussi payer ?",
+      "a1": "Non. Chacun choisit. Si tu paies Plus, l’autre parent garde simplement la version de base gratuite, et inversement.",
+      "q2": "Et si l’autre parent ne veut pas participer ?",
+      "a2": "Alors tu utilises l’app seul. Le calendrier et les frais fonctionnent pour toi, et tu pourras toujours l’inviter plus tard.",
+      "q3": "Pouvons-nous prendre un seul abonnement à deux ?",
+      "a3": "Oui, avec Famille. Que vous viviez ensemble ou non : un seul abonnement, et vous avez tout tous les deux. Qui le paie, c’est à vous de le convenir.",
+      "q4": "Comment résilier ?",
+      "a4": "Via Réglages → Compte. Tu gardes l’accès jusqu’à la fin de ta période de paiement.",
+      "q5": "L’autre parent peut-il profiter de mon Plus ?",
+      "a5": "Non. Ce que vous partagez, comme le calendrier, les enfants et les frais, vous le voyez tous les deux. Les fonctions supplémentaires ne fonctionnent que pour qui a lui-même Plus ou Famille."
+    },
+    "who": {
+      "apartTitle": "Vous vivez séparément ?",
+      "apartBody": "Alors chacun choisit : qui prend Plus ne paie que pour soi, et qui ne paie pas garde la version de base gratuite. Si vous voulez tout tous les deux, un abonnement Famille revient moins cher que deux fois Plus.",
+      "togetherTitle": "Vous vivez ensemble ?",
+      "togetherBody": "Alors un seul abonnement Famille suffit pour vous deux."
+    },
+    "perParent": "par parent",
+    "perFamily": "pour la famille",
+    "forYou": "Fait pour toi",
+    "soon": "bientôt",
+    "toApp": "Vers l’app",
+    "testPhaseTitle": "Le paiement n’est pas encore possible",
+    "testPhaseBody": "Tant que l’app est en phase de test, tout le monde peut tout utiliser. Quand les abonnements démarreront, nous te préviendrons bien à l’avance."
+  },
+  "meta": {
+    "appName": "eezzyflow",
+    "tagline": "eezzyflow · Ensemble, en toute fluidité."
+  }
+}

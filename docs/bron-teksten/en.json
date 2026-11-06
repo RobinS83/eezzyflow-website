@@ -1,0 +1,217 @@
+{
+  "landing": {
+    "metaTitle": "Sorted together, one flow",
+    "nav": {
+      "features": "Features",
+      "how": "How it works",
+      "faq": "Questions",
+      "login": "Sign in",
+      "start": "Start for free",
+      "menu": "Menu"
+    },
+    "hero": {
+      "pill": "For every family, however it's organised",
+      "title": "Sorted together. One flow.",
+      "lead": "Calendar, costs, messages and everything about your children in one place. So you and the other parent know what's happening, and no one has to ask around any more.",
+      "start": "Start for free",
+      "how": "See how it works",
+      "note": "Free to use · on your phone and your computer"
+    },
+    "phone": {
+      "date": "Wednesday 30 July",
+      "title": "Finn & Lotte: 2 appointments today",
+      "pill": "Friday at 15:30 to Iris",
+      "today": "Today",
+      "item1Time": "16:30",
+      "item1Title": "Finn's swimming lesson",
+      "item1Sub": "sports hall",
+      "item2Time": "18:00",
+      "item2Title": "Lotte's gymnastics",
+      "item2Sub": "1 hr",
+      "balance": "Balance",
+      "balanceValue": "+ €42.50",
+      "unread": "Unread",
+      "unreadValue": "2",
+      "unreadSub": "messages"
+    },
+    "audience": {
+      "eyebrow": "Who it's for",
+      "title": "Every family works differently. eezzyflow works with yours.",
+      "busyTitle": "Busy families",
+      "busyBody": "Two diaries, school, hobbies and work. See together what's coming up, without endless messages back and forth.",
+      "apartTitle": "Families across two homes",
+      "apartBody": "Co-parents who live apart: an overview of who the children are with, what still needs doing and what's been paid.",
+      "newTitle": "Just separated",
+      "newBody": "Set down the schedule, the costs and what your child needs once, without having to talk it through again every time.",
+      "soloTitle": "Single parents",
+      "soloBody": "eezzyflow works on your own too. Appointments, spending and everything about your children together, in one place."
+    },
+    "features": {
+      "eyebrow": "Features",
+      "title": "Everything you'd otherwise hunt for across five apps and three group chats.",
+      "calendarTitle": "Shared calendar",
+      "calendarBody": "Who the children are with, the handovers and important dates in one overview. Link your own calendar too.",
+      "calendarChip1": "Parenting schedule",
+      "calendarChip2": "Link your calendar",
+      "costsTitle": "Costs & settling up",
+      "costsBody": "Record spending and choose how you split it. The balance works itself out, and settling up takes one tap.",
+      "costsChip1": "Split",
+      "costsChip2": "Balance",
+      "messagesTitle": "Messages",
+      "messagesBody": "A calm place for anything about the children, separate from your usual chats. Everything is kept, so you can find it again.",
+      "messagesChip1": "Kept",
+      "messagesChip2": "Notifications",
+      "childTitle": "Child file",
+      "childBody": "School, GP, allergies, clothing size and documents such as the Kids-ID. Always to hand for both of you.",
+      "childChip1": "Documents",
+      "childChip2": "Health"
+    },
+    "costs": {
+      "eyebrow": "Costs",
+      "title": "Split fairly, without sums or arguments.",
+      "body": "Record an expense, choose how you split it and eezzyflow keeps track of the balance. Settling up takes one tap.",
+      "check1": "Your own split for each expense",
+      "check2": "Add a receipt or photo",
+      "check3": "Overview as pdf",
+      "openBalance": "Outstanding balance",
+      "amount": "€42.50",
+      "owes": "Iris pays you",
+      "settle": "Settle up now",
+      "pdf": "Overview as pdf",
+      "row1Title": "Swimming lessons, one term",
+      "row1Sub": "28 Jul · you paid · 50/50",
+      "row1Amount": "€65.00",
+      "row1Status": "open",
+      "row2Title": "New shoes for Lotte",
+      "row2Sub": "18 Jul · Iris paid · 50/50",
+      "row2Amount": "€54.90",
+      "row2Status": "settled",
+      "you": "Y",
+      "other": "I"
+    },
+    "steps": {
+      "eyebrow": "How it works",
+      "title": "On the same page in three steps.",
+      "step": "Step {n}",
+      "s1Title": "Set up your family",
+      "s1Body": "Add your children and put the parenting schedule in the calendar once.",
+      "s2Title": "Invite the other parent",
+      "s2Body": "One link is all it takes. Or start on your own and invite them later.",
+      "s3Title": "Everything runs by itself",
+      "s3Body": "A notification the day before a handover, and for new costs and messages."
+    },
+    "trust": {
+      "privateTitle": "Your data stays yours",
+      "privateBody": "Stored in the European Union. The other parent only sees what you share together.",
+      "fairTitle": "No one can shut the other out",
+      "fairBody": "The basics are free and stay free, for both of you.",
+      "calmTitle": "Calm design",
+      "calmBody": "Light or dark, warm or cool. An app that brings calm, not extra stress."
+    },
+    "faq": {
+      "eyebrow": "Questions",
+      "title": "Good to know",
+      "q1": "Does the other parent have to use eezzyflow too?",
+      "a1": "No. You can start perfectly well on your own. Invite the other parent when it suits you both.",
+      "q2": "What does eezzyflow cost?",
+      "a2": "The basics are free: calendar, messages and the costs that concern you. If you want more, you can take Plus or Family later. While the app is in its test phase, everything is open.",
+      "q3": "What does the other parent see?",
+      "a3": "Only what concerns your shared children: the calendar, your messages and the costs you share. They don't see your own calendar that you link.",
+      "q4": "Does it work if we live apart?",
+      "a4": "Yes, that's what it's made for. You set down the parenting schedule once and eezzyflow fills in the calendar automatically.",
+      "pricing": "See the plans"
+    },
+    "cta": {
+      "title": "Less organising. More family.",
+      "body": "Start for free and invite the other parent when you're ready.",
+      "start": "Start for free",
+      "features": "Discover the features",
+      "note": "Works in your browser, on phone and computer"
+    },
+    "footer": {
+      "tagline": "Family coordination for the Benelux",
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "pricing": "Plans",
+      "contact": "Contact"
+    }
+  },
+  "pricing": {
+    "title": "Plans",
+    "subtitle": "The app is free. If you want to use everything, choose a plan that suits how you live.",
+    "startFree": "Start for free",
+    "period": {
+      "month": "month",
+      "year": "year"
+    },
+    "plans": {
+      "free": {
+        "name": "Free",
+        "tagline": "The basics, for everyone"
+      },
+      "plus": {
+        "name": "Plus",
+        "tagline": "Everything, for one parent."
+      },
+      "family": {
+        "name": "Family",
+        "tagline": "Everything, for both parents. Together or apart, with one subscription."
+      }
+    },
+    "features": {
+      "calendar": "Shared calendar with handovers",
+      "oneChild": "One child",
+      "unlimitedChildren": "As many children as you like",
+      "basicCosts": "Note down costs",
+      "fullCosts": "Split costs, with balance and settling up",
+      "messages": "Messages between parents",
+      "documents": "Keep documents: school reports, certificates, insurance",
+      "calendarSync": "Handovers and appointments in your phone's calendar",
+      "photoImport": "Copy the school calendar with a photo: the app reads the days off and trips from it, you check them",
+      "multiplePartners": "Blended family: see which children are home",
+      "childAccounts": "Children's own accounts",
+      "prioritySupport": "Priority support",
+      "everythingFree": "Everything in Free",
+      "plusForBoth": "Everything in Plus, for both of you",
+      "reminders": "Reminders the evening before a handover or appointment",
+      "aiRewrite": "Have a message worded more calmly before you send it",
+      "judgmentImport": "Read in a court ruling or agreement: the schedule and the cost split are filled in",
+      "reportPdf": "Every expense as clean proof, and an overview as pdf for your solicitor, mediator or the judge",
+      "yearOverview": "Annual overview of costs per child",
+      "receipts": "Photograph a receipt: the app fills in the expense and keeps the receipt with it",
+      "ownChildPhoto": "Your own photo of your child, which only you see",
+      "viewers": "Viewers: a step-parent, gran or sitter can follow along (€1 per person)",
+      "lists": "Lists: shopping, recipes and a weekly menu, for the children too"
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "q1": "Does my ex have to pay too?",
+      "a1": "No. Each of you chooses. If you pay for Plus, the other parent simply has the free basics, and the other way round.",
+      "q2": "What if the other parent doesn't want to take part?",
+      "a2": "Then you use the app on your own. The calendar and costs work for you, and you can always invite them later.",
+      "q3": "Can we take out one subscription together?",
+      "a3": "Yes, with Family. That works whether you live together or not: one subscription, and you both have everything. You agree between you who pays for it.",
+      "q4": "How do I cancel?",
+      "a4": "Via Settings → Account. You keep access until the end of your billing period.",
+      "q5": "Can the other parent use my Plus too?",
+      "a5": "No. What you share, such as the calendar, the children and the costs, you both see. The extra features only work for whoever has Plus or Family themselves."
+    },
+    "who": {
+      "apartTitle": "Do you live apart?",
+      "apartBody": "Then each of you chooses: whoever takes Plus only pays for themselves, and whoever doesn't pay keeps the free basics. If you both want everything, one Family subscription costs less than Plus twice.",
+      "togetherTitle": "Do you live together?",
+      "togetherBody": "Then one Family subscription is enough for both of you."
+    },
+    "perParent": "per parent",
+    "perFamily": "for the family",
+    "forYou": "Right for you",
+    "soon": "coming soon",
+    "toApp": "Go to the app",
+    "testPhaseTitle": "Payments aren't possible yet",
+    "testPhaseBody": "While the app is in its test phase, everyone can use everything. When subscriptions start, we'll let you know well in advance."
+  },
+  "meta": {
+    "appName": "eezzyflow",
+    "tagline": "eezzyflow · Smooth, together."
+  }
+}

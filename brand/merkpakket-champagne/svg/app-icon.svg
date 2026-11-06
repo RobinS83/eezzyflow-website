@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <radialGradient id="spot" cx="30%" cy="25%" r="110%">
+      <stop offset="0" stop-color="#3E3E46"></stop><stop offset=".55" stop-color="#202025"></stop><stop offset="1" stop-color="#121214"></stop>
+    </radialGradient>
+    <linearGradient id="champ" x1="28%" y1="22%" x2="75%" y2="82%">
+      <stop offset="0" stop-color="#FBF3E6"></stop><stop offset=".55" stop-color="#F4D9AC"></stop><stop offset="1" stop-color="#E9A65C"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#spot)"></rect>
+  <text x="512" y="546" font-family="Inter, Arial, sans-serif" font-size="573" font-weight="800" fill="url(#champ)" text-anchor="middle" dominant-baseline="middle">e</text>
+</svg>

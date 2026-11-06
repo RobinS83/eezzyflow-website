@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1480" height="400" viewBox="0 0 1480 400">
+  <defs>
+    <radialGradient id="spot" cx="30%" cy="25%" r="110%">
+      <stop offset="0" stop-color="#3E3E46"></stop><stop offset=".55" stop-color="#202025"></stop><stop offset="1" stop-color="#121214"></stop>
+    </radialGradient>
+    <linearGradient id="champ" x1="28%" y1="22%" x2="75%" y2="82%">
+      <stop offset="0" stop-color="#FBF3E6"></stop><stop offset=".55" stop-color="#F4D9AC"></stop><stop offset="1" stop-color="#E9A65C"></stop>
+    </linearGradient>
+    <linearGradient id="flowD" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F4D9AC"></stop><stop offset="1" stop-color="#E9A65C"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="1480" height="400" fill="#121214"></rect>
+  <rect x="60" y="60" width="280" height="280" rx="64" fill="url(#spot)" stroke="#3E3E46" stroke-width="2"></rect>
+  <text x="200" y="212" font-family="Inter, Arial, sans-serif" font-size="157" font-weight="800" fill="url(#champ)" text-anchor="middle" dominant-baseline="middle">e</text>
+  <text x="410" y="212" font-family="Inter, Arial, sans-serif" font-size="220" font-weight="800" dominant-baseline="middle"><tspan fill="#F1F1F3">eezzy</tspan><tspan fill="url(#flowD)">flow</tspan></text>
+</svg>
