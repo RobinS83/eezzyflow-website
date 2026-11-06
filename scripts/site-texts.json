@@ -1,0 +1,230 @@
+{
+  "nl": {
+    "nav": {
+      "pricing": "Prijzen",
+      "skip": "Naar de inhoud",
+      "close": "Menu sluiten",
+      "home": "eezzyflow, naar het begin",
+      "main": "Hoofdmenu"
+    },
+    "meta": {
+      "description": "Twee huizen. Eén plek voor alles rond je kind. Verblijfskalender, kosten, berichten en documenten: rustig, veilig en in Europa gehost."
+    },
+    "phone": {
+      "label": "Voorbeeld van het startscherm in de app"
+    },
+    "trust": {
+      "eyebrow": "Veilig en privé",
+      "title": "Rust, ook achter de schermen."
+    },
+    "pricing": {
+      "eyebrow": "Prijzen",
+      "title": "Begin gratis. Kies later wat bij jullie past.",
+      "testPhase": "Nu gratis tijdens de testfase",
+      "freeForever": "Blijft gratis",
+      "included": "Wat erin zit"
+    },
+    "pricingFaq": {
+      "q1": "Moet de andere ouder ook betalen?"
+    },
+    "footer": {
+      "language": "Taal",
+      "rights": "© {year} eezzyflow"
+    },
+    "notFound": {
+      "title": "Deze pagina bestaat niet",
+      "body": "Misschien is de link verouderd. Op de startpagina vind je alles terug.",
+      "back": "Naar de startpagina"
+    }
+  },
+  "fr": {
+    "nav": {
+      "pricing": "Tarifs",
+      "skip": "Aller au contenu",
+      "close": "Fermer le menu",
+      "home": "eezzyflow, retour à l’accueil",
+      "main": "Menu principal"
+    },
+    "meta": {
+      "description": "Deux maisons. Un seul endroit pour tout ce qui concerne votre enfant. Calendrier de garde, frais, messages et documents : calme, sûr et hébergé en Europe."
+    },
+    "phone": {
+      "label": "Aperçu de l’écran d’accueil de l’app"
+    },
+    "trust": {
+      "eyebrow": "Sûr et privé",
+      "title": "Du calme, aussi en coulisses."
+    },
+    "pricing": {
+      "eyebrow": "Tarifs",
+      "title": "Commencez gratuitement. Choisissez plus tard ce qui vous convient.",
+      "testPhase": "Gratuit pendant la phase de test",
+      "freeForever": "Reste gratuit",
+      "included": "Ce qui est inclus"
+    },
+    "pricingFaq": {
+      "q1": "L’autre parent doit-il aussi payer ?"
+    },
+    "footer": {
+      "language": "Langue",
+      "rights": "© {year} eezzyflow"
+    },
+    "notFound": {
+      "title": "Cette page n’existe pas",
+      "body": "Le lien est peut-être ancien. Vous retrouverez tout sur la page d’accueil.",
+      "back": "Vers la page d’accueil"
+    }
+  },
+  "en": {
+    "nav": {
+      "pricing": "Pricing",
+      "skip": "Skip to content",
+      "close": "Close menu",
+      "home": "eezzyflow, back to the start",
+      "main": "Main menu"
+    },
+    "meta": {
+      "description": "Two homes. One place for everything about your child. Custody calendar, costs, messages and documents: calm, secure and hosted in Europe."
+    },
+    "phone": {
+      "label": "Preview of the home screen in the app"
+    },
+    "trust": {
+      "eyebrow": "Safe and private",
+      "title": "Calm, behind the scenes too."
+    },
+    "pricing": {
+      "eyebrow": "Pricing",
+      "title": "Start for free. Choose what suits you later.",
+      "testPhase": "Free during the test phase",
+      "freeForever": "Stays free",
+      "included": "What’s included"
+    },
+    "pricingFaq": {
+      "q1": "Does the other parent have to pay too?"
+    },
+    "footer": {
+      "language": "Language",
+      "rights": "© {year} eezzyflow"
+    },
+    "notFound": {
+      "title": "This page doesn’t exist",
+      "body": "The link may be out of date. You’ll find everything on the home page.",
+      "back": "Go to the home page"
+    }
+  },
+  "de": {
+    "nav": {
+      "pricing": "Preise",
+      "skip": "Zum Inhalt",
+      "close": "Menü schließen",
+      "home": "eezzyflow, zur Startseite",
+      "main": "Hauptmenü"
+    },
+    "meta": {
+      "description": "Zwei Zuhause. Ein Ort für alles rund um dein Kind. Betreuungskalender, Kosten, Nachrichten und Dokumente: ruhig, sicher und in Europa gehostet."
+    },
+    "phone": {
+      "label": "Vorschau des Startbildschirms der App"
+    },
+    "trust": {
+      "eyebrow": "Sicher und privat",
+      "title": "Ruhe, auch hinter den Kulissen."
+    },
+    "pricing": {
+      "eyebrow": "Preise",
+      "title": "Kostenlos starten. Später wählen, was zu euch passt.",
+      "testPhase": "Kostenlos während der Testphase",
+      "freeForever": "Bleibt kostenlos",
+      "included": "Was enthalten ist"
+    },
+    "pricingFaq": {
+      "q1": "Muss der andere Elternteil auch bezahlen?"
+    },
+    "footer": {
+      "language": "Sprache",
+      "rights": "© {year} eezzyflow"
+    },
+    "notFound": {
+      "title": "Diese Seite gibt es nicht",
+      "body": "Vielleicht ist der Link veraltet. Auf der Startseite findest du alles wieder.",
+      "back": "Zur Startseite"
+    }
+  },
+  "es": {
+    "nav": {
+      "pricing": "Precios",
+      "skip": "Ir al contenido",
+      "close": "Cerrar menú",
+      "home": "eezzyflow, volver al inicio",
+      "main": "Menú principal"
+    },
+    "meta": {
+      "description": "Dos casas. Un solo lugar para todo lo de tu hijo. Calendario de custodia, gastos, mensajes y documentos: tranquilo, seguro y alojado en Europa."
+    },
+    "phone": {
+      "label": "Vista previa de la pantalla de inicio de la app"
+    },
+    "trust": {
+      "eyebrow": "Seguro y privado",
+      "title": "Calma, también entre bastidores."
+    },
+    "pricing": {
+      "eyebrow": "Precios",
+      "title": "Empieza gratis. Elige más tarde lo que os encaje.",
+      "testPhase": "Gratis durante la fase de prueba",
+      "freeForever": "Sigue siendo gratis",
+      "included": "Qué incluye"
+    },
+    "pricingFaq": {
+      "q1": "¿El otro progenitor también tiene que pagar?"
+    },
+    "footer": {
+      "language": "Idioma",
+      "rights": "© {year} eezzyflow"
+    },
+    "notFound": {
+      "title": "Esta página no existe",
+      "body": "Puede que el enlace esté desactualizado. En la página de inicio lo encontrarás todo.",
+      "back": "Ir a la página de inicio"
+    }
+  },
+  "it": {
+    "nav": {
+      "pricing": "Prezzi",
+      "skip": "Vai al contenuto",
+      "close": "Chiudi menu",
+      "home": "eezzyflow, torna all’inizio",
+      "main": "Menu principale"
+    },
+    "meta": {
+      "description": "Due case. Un unico posto per tutto ciò che riguarda tuo figlio. Calendario di affidamento, spese, messaggi e documenti: tranquillo, sicuro e ospitato in Europa."
+    },
+    "phone": {
+      "label": "Anteprima della schermata iniziale dell’app"
+    },
+    "trust": {
+      "eyebrow": "Sicuro e privato",
+      "title": "Calma, anche dietro le quinte."
+    },
+    "pricing": {
+      "eyebrow": "Prezzi",
+      "title": "Inizia gratis. Scegli più tardi ciò che fa per voi.",
+      "testPhase": "Gratis durante la fase di test",
+      "freeForever": "Resta gratis",
+      "included": "Cosa include"
+    },
+    "pricingFaq": {
+      "q1": "Anche l’altro genitore deve pagare?"
+    },
+    "footer": {
+      "language": "Lingua",
+      "rights": "© {year} eezzyflow"
+    },
+    "notFound": {
+      "title": "Questa pagina non esiste",
+      "body": "Forse il link non è più valido. Nella pagina iniziale trovi tutto.",
+      "back": "Vai alla pagina iniziale"
+    }
+  }
+}

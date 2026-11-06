@@ -1,0 +1,255 @@
+{
+  "landing": {
+    "metaTitle": "Samen regelen, één flow",
+    "nav": {
+      "features": "Functies",
+      "how": "Hoe het werkt",
+      "faq": "Vragen",
+      "login": "Aanmelden",
+      "start": "Gratis beginnen",
+      "menu": "Menu"
+    },
+    "hero": {
+      "pill": "Voor elk gezin, hoe het ook georganiseerd is",
+      "title": "Samen regelen. Eén flow.",
+      "lead": "Kalender, kosten, berichten en alles over je kinderen op één plek. Zodat jij en de andere ouder weten wat er gebeurt, en niemand nog iets moet navragen.",
+      "start": "Gratis beginnen",
+      "how": "Bekijk hoe het werkt",
+      "note": "Gratis te gebruiken · op je gsm en je computer"
+    },
+    "phone": {
+      "date": "Woensdag 30 juli",
+      "title": "Finn & Lotte: vandaag 2 afspraken",
+      "pill": "Vrijdag om 15:30 naar Iris",
+      "today": "Vandaag",
+      "item1Time": "16:30",
+      "item1Title": "Zwemles Finn",
+      "item1Sub": "sporthal",
+      "item2Time": "18:00",
+      "item2Title": "Turnen Lotte",
+      "item2Sub": "1 u",
+      "balance": "Saldo",
+      "balanceValue": "+ € 42,50",
+      "unread": "Ongelezen",
+      "unreadValue": "2",
+      "unreadSub": "berichten"
+    },
+    "audience": {
+      "eyebrow": "Voor wie",
+      "title": "Elk gezin draait anders. eezzyflow draait mee.",
+      "busyTitle": "Drukke gezinnen",
+      "busyBody": "Twee agenda’s, school, hobby’s en werk. Samen zien wat er staat, zonder eindeloze berichtjes over en weer.",
+      "apartTitle": "Gezinnen over twee adressen",
+      "apartBody": "Co-ouders die apart wonen: overzicht over bij wie de kinderen zijn, wat er nog moet gebeuren en wat er betaald is.",
+      "newTitle": "Net uit elkaar",
+      "newBody": "Leg de regeling, de kosten en wat je kind nodig heeft één keer vast, zonder er telkens opnieuw over te moeten praten.",
+      "soloTitle": "Alleenstaande ouders",
+      "soloBody": "Ook alleen werkt eezzyflow. Afspraken, uitgaven en alles over je kinderen bij elkaar, op één plek."
+    },
+    "features": {
+      "eyebrow": "Functies",
+      "title": "Alles wat je anders in vijf apps en drie groepsgesprekken zoekt.",
+      "calendarTitle": "Gedeelde kalender",
+      "calendarBody": "Bij wie de kinderen zijn, de wissels en belangrijke datums in één overzicht. Je eigen agenda koppel je erbij.",
+      "calendarChip1": "Verblijfsregeling",
+      "calendarChip2": "Agenda koppelen",
+      "costsTitle": "Kosten & verrekenen",
+      "costsBody": "Uitgaven vastleggen en kiezen hoe jullie ze verdelen. Het saldo rekent zichzelf uit, verrekenen gaat met één tik.",
+      "costsChip1": "Verdeling",
+      "costsChip2": "Saldo",
+      "messagesTitle": "Berichten",
+      "messagesBody": "Een rustige plek voor wat over de kinderen gaat, los van je gewone chats. Alles blijft bewaard, je vindt het terug.",
+      "messagesChip1": "Bewaard",
+      "messagesChip2": "Meldingen",
+      "childTitle": "Kinddossier",
+      "childBody": "School, huisarts, allergieën, kledingmaat en documenten zoals de Kids-ID. Altijd bij de hand voor jullie allebei.",
+      "childChip1": "Documenten",
+      "childChip2": "Gezondheid"
+    },
+    "costs": {
+      "eyebrow": "Kosten",
+      "title": "Eerlijk verdeeld, zonder rekenwerk of discussie.",
+      "body": "Leg een uitgave vast, kies hoe jullie ze verdelen en eezzyflow houdt het saldo bij. Verrekenen doe je met één tik.",
+      "check1": "Eigen verdeling per uitgave",
+      "check2": "Bonnetje of foto toevoegen",
+      "check3": "Overzicht als pdf",
+      "openBalance": "Openstaand saldo",
+      "amount": "€ 42,50",
+      "owes": "Iris betaalt jou",
+      "settle": "Verreken nu",
+      "pdf": "Overzicht als pdf",
+      "row1Title": "Zwemles trimester",
+      "row1Sub": "28 jul · jij betaalde · 50/50",
+      "row1Amount": "€ 65,00",
+      "row1Status": "open",
+      "row2Title": "Nieuwe schoenen Lotte",
+      "row2Sub": "18 jul · Iris betaalde · 50/50",
+      "row2Amount": "€ 54,90",
+      "row2Status": "verrekend",
+      "you": "J",
+      "other": "I"
+    },
+    "steps": {
+      "eyebrow": "Hoe het werkt",
+      "title": "In drie stappen samen op dezelfde lijn.",
+      "step": "Stap {n}",
+      "s1Title": "Maak je gezin aan",
+      "s1Body": "Voeg je kinderen toe en zet de verblijfsregeling één keer in de kalender.",
+      "s2Title": "Nodig de andere ouder uit",
+      "s2Body": "Eén link volstaat. Of begin eerst alleen en nodig later uit.",
+      "s3Title": "Alles loopt vanzelf",
+      "s3Body": "Een melding de dag vóór een wissel, en bij nieuwe kosten en berichten."
+    },
+    "trust": {
+      "privateTitle": "Jouw gegevens blijven van jou",
+      "privateBody": "Bewaard in de Europese Unie. De andere ouder ziet alleen wat jullie samen delen.",
+      "fairTitle": "Niemand kan de ander uitsluiten",
+      "fairBody": "De basis is gratis en blijft gratis, voor jullie allebei.",
+      "calmTitle": "Rustig ontwerp",
+      "calmBody": "Licht of donker, warm of koel. Een app die kalmte brengt, geen extra stress."
+    },
+    "faq": {
+      "eyebrow": "Vragen",
+      "title": "Goed om te weten",
+      "q1": "Moet de andere ouder eezzyflow ook gebruiken?",
+      "a1": "Nee. Je kan perfect alleen starten. Nodig de andere ouder uit wanneer het voor jullie past.",
+      "q2": "Wat kost eezzyflow?",
+      "a2": "De basis is gratis: kalender, berichten en de kosten die jou aangaan. Wie meer wil, neemt later Plus of Gezin. Zolang de app in testfase is, staat alles open.",
+      "q3": "Wat ziet de andere ouder?",
+      "a3": "Alleen wat over jullie gedeelde kinderen gaat: de kalender, jullie berichten en de kosten die jullie samen delen. De eigen agenda die je koppelt, ziet hij niet.",
+      "q4": "Werkt het ook als we apart wonen?",
+      "a4": "Ja, daar is het voor gemaakt. Je legt de verblijfsregeling één keer vast en eezzyflow vult de kalender automatisch in.",
+      "pricing": "Bekijk de abonnementen"
+    },
+    "cta": {
+      "title": "Minder regelen. Meer gezin.",
+      "body": "Start gratis en nodig de andere ouder uit wanneer jij er klaar voor bent.",
+      "start": "Gratis beginnen",
+      "features": "Ontdek de functies",
+      "note": "Werkt in je browser, op gsm en computer"
+    },
+    "footer": {
+      "tagline": "Gezinscoördinatie voor de Benelux",
+      "privacy": "Privacy",
+      "terms": "Voorwaarden",
+      "pricing": "Abonnementen",
+      "contact": "Contact"
+    }
+  },
+  "pricing": {
+    "title": "Abonnementen",
+    "subtitle": "De app is gratis. Wil je alles gebruiken, dan kies je een abonnement dat past bij hoe jullie wonen.",
+    "startFree": "Gratis beginnen",
+    "period": {
+      "month": "maand",
+      "year": "jaar"
+    },
+    "plans": {
+      "free": {
+        "name": "Gratis",
+        "tagline": "De basis, voor iedereen"
+      },
+      "plus": {
+        "name": "Plus",
+        "tagline": "Alles, voor één ouder."
+      },
+      "family": {
+        "name": "Gezin",
+        "tagline": "Alles, voor beide ouders. Samen of apart, met één abonnement."
+      }
+    },
+    "features": {
+      "calendar": "Gedeelde kalender met wissels",
+      "oneChild": "Eén kind",
+      "unlimitedChildren": "Zoveel kinderen als je wilt",
+      "basicCosts": "Kosten noteren",
+      "fullCosts": "Kosten verdelen, met saldo en verrekenen",
+      "messages": "Berichten tussen ouders",
+      "documents": "Documenten bewaren: rapporten, attesten, verzekeringen",
+      "calendarSync": "Wissels en afspraken in de agenda van je telefoon",
+      "photoImport": "Schoolkalender overnemen met een foto: de app leest de vrije dagen en uitstappen eruit, jij kijkt ze na",
+      "multiplePartners": "Samengesteld gezin: zien welke kinderen er thuis zijn",
+      "childAccounts": "Eigen accounts voor kinderen",
+      "prioritySupport": "Voorrang bij vragen",
+      "everythingFree": "Alles uit Gratis",
+      "plusForBoth": "Alles uit Plus, voor jullie allebei",
+      "reminders": "Herinneringen de avond vóór een wissel of afspraak",
+      "aiRewrite": "Een bericht rustiger laten verwoorden voor je het verstuurt",
+      "judgmentImport": "Vonnis of akkoord inlezen: de regeling en de kostenverdeling worden ingevuld",
+      "reportPdf": "Elke kost als net bewijs, en een overzicht als pdf voor je advocaat, bemiddelaar of de rechter",
+      "yearOverview": "Jaaroverzicht van de kosten per kind",
+      "receipts": "Bonnetje fotograferen: de app vult de kost in en bewaart het bonnetje erbij",
+      "ownChildPhoto": "Je eigen foto van je kind, die alleen jij ziet",
+      "viewers": "Meekijkers: plusouder, oma of oppas kijkt mee (€1 per persoon)",
+      "lists": "Lijstjes: boodschappen, recepten en een weekmenu, ook voor de kinderen"
+    },
+    "faq": {
+      "title": "Veelgestelde vragen",
+      "q1": "Moet mijn ex ook betalen?",
+      "a1": "Nee. Ieder kiest zelf. Betaal jij voor Plus, dan heeft de andere ouder gewoon de gratis basis, en omgekeerd.",
+      "q2": "Wat als de andere ouder niet wil meedoen?",
+      "a2": "Dan gebruik je de app alleen. De kalender en kosten werken dan voor jou, en uitnodigen kan later altijd nog.",
+      "q3": "Kunnen we samen één abonnement nemen?",
+      "a3": "Ja, met Gezin. Dat kan of jullie nu samenwonen of niet: één abonnement, en jullie hebben allebei alles. Wie het betaalt, spreken jullie samen af.",
+      "q4": "Hoe zeg ik op?",
+      "a4": "Via Instellingen → Account. Je houdt toegang tot het einde van je betaalperiode.",
+      "q5": "Kan de andere ouder mijn Plus meegebruiken?",
+      "a5": "Nee. Wat jullie delen, zoals de kalender, de kinderen en de kosten, zien jullie allebei. De extra functies werken alleen voor wie zelf Plus of Gezin heeft."
+    },
+    "who": {
+      "apartTitle": "Wonen jullie apart?",
+      "apartBody": "Dan kiest ieder zelf: wie Plus neemt, betaalt alleen voor zichzelf, en wie niet betaalt houdt de gratis basis. Willen jullie allebei alles, dan is één Gezin-abonnement voordeliger dan twee keer Plus.",
+      "togetherTitle": "Wonen jullie samen?",
+      "togetherBody": "Dan is één Gezin-abonnement genoeg voor jullie allebei."
+    },
+    "perParent": "per ouder",
+    "perFamily": "voor het gezin",
+    "forYou": "Past bij jou",
+    "soon": "binnenkort",
+    "toApp": "Naar de app",
+    "testPhaseTitle": "Betalen kan nog niet",
+    "testPhaseBody": "Zolang de app in testfase is, kan iedereen alles gebruiken. Wanneer abonnementen starten, laten we het ruim op voorhand weten."
+  },
+  "meta": {
+    "appName": "eezzyflow",
+    "tagline": "eezzyflow · Samen vlot. Voor wat écht telt."
+  },
+  "site": {
+    "nav": {
+      "pricing": "Prijzen",
+      "skip": "Naar de inhoud",
+      "close": "Menu sluiten",
+      "home": "eezzyflow, naar het begin",
+      "main": "Hoofdmenu"
+    },
+    "meta": {
+      "description": "Twee huizen. Eén plek voor alles rond je kind. Verblijfskalender, kosten, berichten en documenten: rustig, veilig en in Europa gehost."
+    },
+    "phone": {
+      "label": "Voorbeeld van het startscherm in de app"
+    },
+    "trust": {
+      "eyebrow": "Veilig en privé",
+      "title": "Rust, ook achter de schermen."
+    },
+    "pricing": {
+      "eyebrow": "Prijzen",
+      "title": "Begin gratis. Kies later wat bij jullie past.",
+      "testPhase": "Nu gratis tijdens de testfase",
+      "freeForever": "Blijft gratis",
+      "included": "Wat erin zit"
+    },
+    "pricingFaq": {
+      "q1": "Moet de andere ouder ook betalen?"
+    },
+    "footer": {
+      "language": "Taal",
+      "rights": "© {year} eezzyflow"
+    },
+    "notFound": {
+      "title": "Deze pagina bestaat niet",
+      "body": "Misschien is de link verouderd. Op de startpagina vind je alles terug.",
+      "back": "Naar de startpagina"
+    }
+  }
+}

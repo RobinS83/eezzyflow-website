@@ -1,0 +1,255 @@
+{
+  "landing": {
+    "metaTitle": "Gemeinsam regeln, ein Flow",
+    "nav": {
+      "features": "Funktionen",
+      "how": "So funktioniert's",
+      "faq": "Fragen",
+      "login": "Anmelden",
+      "start": "Gratis starten",
+      "menu": "Menü"
+    },
+    "hero": {
+      "pill": "Für jede Familie, egal wie sie organisiert ist",
+      "title": "Gemeinsam regeln. Ein Flow.",
+      "lead": "Kalender, Kosten, Nachrichten und alles rund um deine Kinder an einem Ort. Damit du und der andere Elternteil wisst, was los ist, und niemand mehr nachfragen muss.",
+      "start": "Gratis starten",
+      "how": "Sieh dir an, wie es funktioniert",
+      "note": "Gratis nutzbar · auf dem Handy und am Computer"
+    },
+    "phone": {
+      "date": "Mittwoch, 30. Juli",
+      "title": "Finn & Lotte: heute 2 Termine",
+      "pill": "Freitag um 15:30 zu Iris",
+      "today": "Heute",
+      "item1Time": "16:30",
+      "item1Title": "Schwimmkurs Finn",
+      "item1Sub": "Sporthalle",
+      "item2Time": "18:00",
+      "item2Title": "Turnen Lotte",
+      "item2Sub": "1 Std.",
+      "balance": "Saldo",
+      "balanceValue": "+ 42,50 €",
+      "unread": "Ungelesen",
+      "unreadValue": "2",
+      "unreadSub": "Nachrichten"
+    },
+    "audience": {
+      "eyebrow": "Für wen",
+      "title": "Jede Familie tickt anders. eezzyflow tickt mit.",
+      "busyTitle": "Volle Familienkalender",
+      "busyBody": "Zwei Kalender, Schule, Hobbys und Arbeit. Gemeinsam sehen, was ansteht, ohne endloses Hin und Her an Nachrichten.",
+      "apartTitle": "Familien mit zwei Adressen",
+      "apartBody": "Getrennt lebende Eltern: Überblick, bei wem die Kinder sind, was noch zu tun ist und was bezahlt wurde.",
+      "newTitle": "Frisch getrennt",
+      "newBody": "Halte die Regelung, die Kosten und das, was dein Kind braucht, einmal fest, ohne jedes Mal neu darüber reden zu müssen.",
+      "soloTitle": "Alleinerziehende",
+      "soloBody": "eezzyflow funktioniert auch allein. Termine, Ausgaben und alles rund um deine Kinder beisammen, an einem Ort."
+    },
+    "features": {
+      "eyebrow": "Funktionen",
+      "title": "Alles, was du sonst in fünf Apps und drei Gruppenchats suchst.",
+      "calendarTitle": "Gemeinsamer Kalender",
+      "calendarBody": "Bei wem die Kinder sind, die Wechsel und wichtige Termine in einer Übersicht. Deinen eigenen Kalender verbindest du dazu.",
+      "calendarChip1": "Betreuungsregelung",
+      "calendarChip2": "Kalender verbinden",
+      "costsTitle": "Kosten & Ausgleich",
+      "costsBody": "Ausgaben festhalten und wählen, wie ihr sie aufteilt. Der Saldo rechnet sich selbst aus, ausgleichen geht mit einem Tipp.",
+      "costsChip1": "Aufteilung",
+      "costsChip2": "Saldo",
+      "messagesTitle": "Nachrichten",
+      "messagesBody": "Ein ruhiger Ort für alles, was die Kinder betrifft, getrennt von deinen üblichen Chats. Alles bleibt gespeichert, du findest es wieder.",
+      "messagesChip1": "Gespeichert",
+      "messagesChip2": "Benachrichtigungen",
+      "childTitle": "Kinderakte",
+      "childBody": "Schule, Hausarzt, Allergien, Kleidergröße und Dokumente wie die Kids-ID. Immer griffbereit für euch beide.",
+      "childChip1": "Dokumente",
+      "childChip2": "Gesundheit"
+    },
+    "costs": {
+      "eyebrow": "Kosten",
+      "title": "Fair aufgeteilt, ohne Rechnerei oder Diskussion.",
+      "body": "Halte eine Ausgabe fest, wähle, wie ihr sie aufteilt, und eezzyflow führt den Saldo. Ausgleichen machst du mit einem Tipp.",
+      "check1": "Eigene Aufteilung pro Ausgabe",
+      "check2": "Beleg oder Foto hinzufügen",
+      "check3": "Übersicht als PDF",
+      "openBalance": "Offener Saldo",
+      "amount": "42,50 €",
+      "owes": "Iris zahlt dir",
+      "settle": "Jetzt ausgleichen",
+      "pdf": "Übersicht als PDF",
+      "row1Title": "Schwimmkurs Trimester",
+      "row1Sub": "28. Juli · du hast bezahlt · 50/50",
+      "row1Amount": "65,00 €",
+      "row1Status": "offen",
+      "row2Title": "Neue Schuhe Lotte",
+      "row2Sub": "18. Juli · Iris hat bezahlt · 50/50",
+      "row2Amount": "54,90 €",
+      "row2Status": "ausgeglichen",
+      "you": "D",
+      "other": "I"
+    },
+    "steps": {
+      "eyebrow": "So funktioniert's",
+      "title": "In drei Schritten gemeinsam auf einer Linie.",
+      "step": "Schritt {n}",
+      "s1Title": "Leg deine Familie an",
+      "s1Body": "Füge deine Kinder hinzu und trag die Betreuungsregelung einmal in den Kalender ein.",
+      "s2Title": "Lade den anderen Elternteil ein",
+      "s2Body": "Ein Link genügt. Oder fang erst allein an und lade später ein.",
+      "s3Title": "Alles läuft von selbst",
+      "s3Body": "Eine Benachrichtigung am Tag vor einem Wechsel und bei neuen Kosten und Nachrichten."
+    },
+    "trust": {
+      "privateTitle": "Deine Daten bleiben deine",
+      "privateBody": "Gespeichert in der Europäischen Union. Der andere Elternteil sieht nur, was ihr gemeinsam teilt.",
+      "fairTitle": "Niemand kann den anderen ausschließen",
+      "fairBody": "Die Grundlagen sind gratis und bleiben gratis, für euch beide.",
+      "calmTitle": "Ruhiges Design",
+      "calmBody": "Hell oder dunkel, warm oder kühl. Eine App, die Ruhe bringt, keinen zusätzlichen Stress."
+    },
+    "faq": {
+      "eyebrow": "Fragen",
+      "title": "Gut zu wissen",
+      "q1": "Muss der andere Elternteil eezzyflow auch nutzen?",
+      "a1": "Nein. Du kannst problemlos allein anfangen. Lade den anderen Elternteil ein, wenn es für euch passt.",
+      "q2": "Was kostet eezzyflow?",
+      "a2": "Die Grundlagen sind gratis: Kalender, Nachrichten und die Kosten, die dich betreffen. Wer mehr möchte, nimmt später Plus oder Familie. Solange die App in der Testphase ist, steht alles offen.",
+      "q3": "Was sieht der andere Elternteil?",
+      "a3": "Nur, was eure gemeinsamen Kinder betrifft: den Kalender, eure Nachrichten und die Kosten, die ihr gemeinsam teilt. Den eigenen Kalender, den du verbindest, sieht er nicht.",
+      "q4": "Funktioniert es auch, wenn wir getrennt wohnen?",
+      "a4": "Ja, genau dafür ist es gemacht. Du hältst die Betreuungsregelung einmal fest, und eezzyflow füllt den Kalender automatisch aus.",
+      "pricing": "Sieh dir die Abos an"
+    },
+    "cta": {
+      "title": "Weniger regeln. Mehr Familie.",
+      "body": "Starte gratis und lade den anderen Elternteil ein, wenn du so weit bist.",
+      "start": "Gratis starten",
+      "features": "Entdecke die Funktionen",
+      "note": "Läuft im Browser, auf Handy und Computer"
+    },
+    "footer": {
+      "tagline": "Familienorganisation für die Benelux-Länder",
+      "privacy": "Datenschutz",
+      "terms": "Bedingungen",
+      "pricing": "Abos",
+      "contact": "Kontakt"
+    }
+  },
+  "pricing": {
+    "title": "Abos",
+    "subtitle": "Die App ist gratis. Möchtest du alles nutzen, wählst du ein Abo, das dazu passt, wie ihr wohnt.",
+    "startFree": "Gratis starten",
+    "period": {
+      "month": "Monat",
+      "year": "Jahr"
+    },
+    "plans": {
+      "free": {
+        "name": "Gratis",
+        "tagline": "Die Grundlagen, für alle"
+      },
+      "plus": {
+        "name": "Plus",
+        "tagline": "Alles, für einen Elternteil."
+      },
+      "family": {
+        "name": "Familie",
+        "tagline": "Alles, für beide Eltern. Zusammen oder getrennt, mit einem Abo."
+      }
+    },
+    "features": {
+      "calendar": "Gemeinsamer Kalender mit Wechseln",
+      "oneChild": "Ein Kind",
+      "unlimitedChildren": "So viele Kinder, wie du möchtest",
+      "basicCosts": "Kosten notieren",
+      "fullCosts": "Kosten aufteilen, mit Saldo und Ausgleich",
+      "messages": "Nachrichten zwischen Eltern",
+      "documents": "Dokumente aufbewahren: Zeugnisse, Bescheinigungen, Versicherungen",
+      "calendarSync": "Wechsel und Termine im Kalender deines Handys",
+      "photoImport": "Schulkalender per Foto übernehmen: Die App liest die freien Tage und Ausflüge heraus, du prüfst sie",
+      "multiplePartners": "Patchworkfamilie: sehen, welche Kinder zu Hause sind",
+      "childAccounts": "Eigene Konten für Kinder",
+      "prioritySupport": "Vorrang bei Fragen",
+      "everythingFree": "Alles aus Gratis",
+      "plusForBoth": "Alles aus Plus, für euch beide",
+      "reminders": "Erinnerungen am Abend vor einem Wechsel oder Termin",
+      "aiRewrite": "Eine Nachricht ruhiger formulieren lassen, bevor du sie sendest",
+      "judgmentImport": "Urteil oder Vereinbarung einlesen: Regelung und Kostenaufteilung werden ausgefüllt",
+      "reportPdf": "Jede Ausgabe als sauberer Nachweis und eine Übersicht als PDF für Anwalt, Mediation oder Gericht",
+      "yearOverview": "Jahresübersicht der Kosten pro Kind",
+      "receipts": "Beleg fotografieren: Die App füllt die Ausgabe aus und bewahrt den Beleg dazu auf",
+      "ownChildPhoto": "Dein eigenes Foto deines Kindes, das nur du siehst",
+      "viewers": "Mitlesende: Stiefelternteil, Oma oder Babysitter lesen mit (1 € pro Person)",
+      "lists": "Listen: Einkäufe, Rezepte und ein Wochenmenü, auch für die Kinder"
+    },
+    "faq": {
+      "title": "Häufige Fragen",
+      "q1": "Muss mein Ex auch bezahlen?",
+      "a1": "Nein. Jede Person entscheidet selbst. Zahlst du für Plus, hat der andere Elternteil einfach die kostenlosen Grundlagen, und umgekehrt.",
+      "q2": "Was, wenn der andere Elternteil nicht mitmachen will?",
+      "a2": "Dann nutzt du die App allein. Kalender und Kosten funktionieren dann für dich, und einladen kannst du später immer noch.",
+      "q3": "Können wir gemeinsam ein Abo nehmen?",
+      "a3": "Ja, mit Familie. Das geht, ob ihr zusammenwohnt oder nicht: ein Abo, und ihr habt beide alles. Wer es bezahlt, macht ihr unter euch aus.",
+      "q4": "Wie kündige ich?",
+      "a4": "Über Einstellungen → Konto. Du behältst den Zugang bis zum Ende deines Abrechnungszeitraums.",
+      "q5": "Kann der andere Elternteil mein Plus mitnutzen?",
+      "a5": "Nein. Was ihr teilt, wie den Kalender, die Kinder und die Kosten, seht ihr beide. Die zusätzlichen Funktionen gelten nur für die Person, die selbst Plus oder Familie hat."
+    },
+    "who": {
+      "apartTitle": "Wohnt ihr getrennt?",
+      "apartBody": "Dann entscheidet jede Person selbst: Wer Plus nimmt, zahlt nur für sich, und wer nicht zahlt, behält die kostenlosen Grundlagen. Wollt ihr beide alles, ist ein Familie-Abo günstiger als zweimal Plus.",
+      "togetherTitle": "Wohnt ihr zusammen?",
+      "togetherBody": "Dann reicht ein Familie-Abo für euch beide."
+    },
+    "perParent": "pro Elternteil",
+    "perFamily": "für die Familie",
+    "forYou": "Passt zu dir",
+    "soon": "bald",
+    "toApp": "Zur App",
+    "testPhaseTitle": "Bezahlen geht noch nicht",
+    "testPhaseBody": "Solange die App in der Testphase ist, können alle alles nutzen. Wenn die Abos starten, sagen wir rechtzeitig vorher Bescheid."
+  },
+  "meta": {
+    "appName": "eezzyflow",
+    "tagline": "eezzyflow · Gemeinsam, ganz entspannt."
+  },
+  "site": {
+    "nav": {
+      "pricing": "Preise",
+      "skip": "Zum Inhalt",
+      "close": "Menü schließen",
+      "home": "eezzyflow, zur Startseite",
+      "main": "Hauptmenü"
+    },
+    "meta": {
+      "description": "Zwei Zuhause. Ein Ort für alles rund um dein Kind. Betreuungskalender, Kosten, Nachrichten und Dokumente: ruhig, sicher und in Europa gehostet."
+    },
+    "phone": {
+      "label": "Vorschau des Startbildschirms der App"
+    },
+    "trust": {
+      "eyebrow": "Sicher und privat",
+      "title": "Ruhe, auch hinter den Kulissen."
+    },
+    "pricing": {
+      "eyebrow": "Preise",
+      "title": "Kostenlos starten. Später wählen, was zu euch passt.",
+      "testPhase": "Kostenlos während der Testphase",
+      "freeForever": "Bleibt kostenlos",
+      "included": "Was enthalten ist"
+    },
+    "pricingFaq": {
+      "q1": "Muss der andere Elternteil auch bezahlen?"
+    },
+    "footer": {
+      "language": "Sprache",
+      "rights": "© {year} eezzyflow"
+    },
+    "notFound": {
+      "title": "Diese Seite gibt es nicht",
+      "body": "Vielleicht ist der Link veraltet. Auf der Startseite findest du alles wieder.",
+      "back": "Zur Startseite"
+    }
+  }
+}

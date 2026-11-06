@@ -14,5 +14,19 @@ Komt op [eezzyflow.com](https://eezzyflow.com). De app zelf draait op
 | `docs/bron-teksten/` | Teksten van de landingspagina en de abonnementen, in zes talen |
 | `brand/merkpakket-champagne/` | Logo's, app-iconen en favicons |
 
-De website zelf is nog niet gebouwd. Start een sessie in deze repo en vraag:
-"Bouw de website volgens CLAUDE.md en de stijlgids."
+| `app/`, `components/`, `lib/`, `i18n/` | De site (Next.js App Router, Tailwind 4, next-intl) |
+| `messages/` | Teksten per taal, gemaakt door `npm run sync-texts` |
+| `scripts/site-texts.json` | Teksten die alleen op de site staan, in zes talen |
+| `lib/links.ts` | Alle links naar de app en (later) de stores |
+| `lib/plans.ts` | Welke functies bij Gratis, Plus en Gezin horen |
+
+## Werken
+
+```bash
+npm install
+npm run dev
+```
+
+Na een wijziging in `docs/bron-teksten/` of `scripts/site-texts.json`:
+`npm run sync-texts`. Voor je pusht:
+`npm run typecheck && npm run lint && npm run build`.
