@@ -6,9 +6,11 @@ export async function Faq() {
   const t = await getTranslations("landing.faq");
   const p = await getTranslations("pricing.faq");
   const s = await getTranslations("site.pricingFaq");
+  const join = await getTranslations("site.joinFaq");
 
   const items = [
     { q: t("q1"), a: t("a1") },
+    { q: join("q"), a: join("a") },
     { q: t("q3"), a: t("a3") },
     { q: t("q4"), a: t("a4") },
     { q: t("q2"), a: t("a2") },

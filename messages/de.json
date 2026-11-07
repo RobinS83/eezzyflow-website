@@ -321,6 +321,10 @@
       "legalBody": "Wie wir mit deinen Daten umgehen und was du von uns erwarten kannst. Deine Daten werden in der Europäischen Union gespeichert.",
       "privacy": "Datenschutzerklärung",
       "terms": "Nutzungsbedingungen"
+    },
+    "joinFaq": {
+      "q": "Wie kommt der andere Elternteil dazu?",
+      "a": "Ihr habt jeweils ein eigenes Konto, nie ein gemeinsames. Ein Elternteil erstellt ein Konto, fügt die Kinder hinzu und lädt den anderen Elternteil über Familie in der App ein. Der andere Elternteil erstellt ein Konto mit der E-Mail-Adresse, an die die Einladung ging, und nimmt sie an. Ab dann teilt ihr Kalender, Kosten, Nachrichten und Dokumente dieser Kinder. Was nur dir gehört, wie deine eigene Adresse, bleibt privat."
     }
   }
 }

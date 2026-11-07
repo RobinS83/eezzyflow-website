@@ -102,6 +102,10 @@
       "legalBody": "Hoe we met je gegevens omgaan en wat je van ons mag verwachten. Je gegevens worden bewaard in de Europese Unie.",
       "privacy": "Privacyverklaring",
       "terms": "Gebruiksvoorwaarden"
+    },
+    "joinFaq": {
+      "q": "Hoe komt de andere ouder erbij?",
+      "a": "Jullie hebben elk een eigen account, nooit één gedeeld. Eén ouder maakt een account, voegt de kinderen toe en nodigt de andere ouder uit via Gezin in de app. De andere ouder maakt een account met het e-mailadres waarop de uitnodiging binnenkwam en aanvaardt ze. Vanaf dan delen jullie de kalender, kosten, berichten en documenten van die kinderen. Wat van jou alleen is, zoals je eigen adres, blijft privé."
     }
   },
   "fr": {
@@ -207,6 +211,10 @@
       "legalBody": "Comment nous traitons vos données et ce que vous pouvez attendre de nous. Vos données sont conservées dans l’Union européenne.",
       "privacy": "Politique de confidentialité",
       "terms": "Conditions d’utilisation"
+    },
+    "joinFaq": {
+      "q": "Comment l’autre parent nous rejoint-il ?",
+      "a": "Vous avez chacun votre propre compte, jamais un compte partagé. Un parent crée un compte, ajoute les enfants et invite l’autre parent via Famille dans l’app. L’autre parent crée un compte avec l’adresse e-mail qui a reçu l’invitation et l’accepte. Dès lors, vous partagez le calendrier, les frais, les messages et les documents de ces enfants. Ce qui n’appartient qu’à vous, comme votre propre adresse, reste privé."
     }
   },
   "en": {
@@ -312,6 +320,10 @@
       "legalBody": "How we handle your data and what you can expect from us. Your data is stored in the European Union.",
       "privacy": "Privacy policy",
       "terms": "Terms of use"
+    },
+    "joinFaq": {
+      "q": "How does the other parent join?",
+      "a": "You each have your own account, never a shared one. One parent creates an account, adds the children and invites the other parent via Family in the app. The other parent creates an account with the email address the invitation was sent to and accepts it. From then on you share the calendar, costs, messages and documents of those children. What is yours alone, such as your own address, stays private."
     }
   },
   "de": {
@@ -417,6 +429,10 @@
       "legalBody": "Wie wir mit deinen Daten umgehen und was du von uns erwarten kannst. Deine Daten werden in der Europäischen Union gespeichert.",
       "privacy": "Datenschutzerklärung",
       "terms": "Nutzungsbedingungen"
+    },
+    "joinFaq": {
+      "q": "Wie kommt der andere Elternteil dazu?",
+      "a": "Ihr habt jeweils ein eigenes Konto, nie ein gemeinsames. Ein Elternteil erstellt ein Konto, fügt die Kinder hinzu und lädt den anderen Elternteil über Familie in der App ein. Der andere Elternteil erstellt ein Konto mit der E-Mail-Adresse, an die die Einladung ging, und nimmt sie an. Ab dann teilt ihr Kalender, Kosten, Nachrichten und Dokumente dieser Kinder. Was nur dir gehört, wie deine eigene Adresse, bleibt privat."
     }
   },
   "es": {
@@ -522,6 +538,10 @@
       "legalBody": "Cómo tratamos tus datos y qué puedes esperar de nosotros. Tus datos se guardan en la Unión Europea.",
       "privacy": "Política de privacidad",
       "terms": "Condiciones de uso"
+    },
+    "joinFaq": {
+      "q": "¿Cómo se une el otro progenitor?",
+      "a": "Cada uno tiene su propia cuenta, nunca una compartida. Un progenitor crea una cuenta, añade a los niños e invita al otro progenitor desde Familia en la app. El otro progenitor crea una cuenta con el correo al que llegó la invitación y la acepta. A partir de ahí compartís el calendario, los gastos, los mensajes y los documentos de esos niños. Lo que es solo tuyo, como tu propia dirección, sigue siendo privado."
     }
   },
   "it": {
@@ -627,6 +647,10 @@
       "legalBody": "Come trattiamo i tuoi dati e cosa puoi aspettarti da noi. I tuoi dati sono conservati nell’Unione europea.",
       "privacy": "Informativa sulla privacy",
       "terms": "Condizioni d’uso"
+    },
+    "joinFaq": {
+      "q": "Come si aggiunge l’altro genitore?",
+      "a": "Avete ciascuno il proprio account, mai uno condiviso. Un genitore crea un account, aggiunge i figli e invita l’altro genitore da Famiglia nell’app. L’altro genitore crea un account con l’indirizzo e-mail a cui è arrivato l’invito e lo accetta. Da quel momento condividete calendario, spese, messaggi e documenti di quei figli. Ciò che è solo tuo, come il tuo indirizzo, resta privato."
     }
   }
 }

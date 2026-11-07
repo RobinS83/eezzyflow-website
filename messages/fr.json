@@ -321,6 +321,10 @@
       "legalBody": "Comment nous traitons vos données et ce que vous pouvez attendre de nous. Vos données sont conservées dans l’Union européenne.",
       "privacy": "Politique de confidentialité",
       "terms": "Conditions d’utilisation"
+    },
+    "joinFaq": {
+      "q": "Comment l’autre parent nous rejoint-il ?",
+      "a": "Vous avez chacun votre propre compte, jamais un compte partagé. Un parent crée un compte, ajoute les enfants et invite l’autre parent via Famille dans l’app. L’autre parent crée un compte avec l’adresse e-mail qui a reçu l’invitation et l’accepte. Dès lors, vous partagez le calendrier, les frais, les messages et les documents de ces enfants. Ce qui n’appartient qu’à vous, comme votre propre adresse, reste privé."
     }
   }
 }
