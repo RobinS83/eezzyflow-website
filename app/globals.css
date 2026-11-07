@@ -215,9 +215,6 @@ summary::-webkit-details-marker { display: none; }
   @keyframes travel { from { offset-distance: 0%; } to { offset-distance: 100%; } }
   .travel { animation: travel 4.5s ease-in-out infinite alternate; }
 
-  @keyframes marquee { to { transform: translateX(-50%); } }
-  .marquee { animation: marquee 50s linear infinite; }
-  .marquee-wrap:hover .marquee, .marquee-wrap:focus-within .marquee { animation-play-state: paused; }
 
   @supports (animation-timeline: view()) {
     @keyframes reveal { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: none; } }
@@ -245,14 +242,6 @@ summary::-webkit-details-marker { display: none; }
 /* On the spotlight stage the accent word is always the light champagne. */
 .on-spotlight .text-champagne { background: linear-gradient(90deg, #f4d9ac 0%, #e9a65c 100%); -webkit-background-clip: text; background-clip: text; }
 
-@media (prefers-reduced-motion: no-preference) {
-  .marquee-reverse { animation: marquee 60s linear infinite reverse; }
-  .marquee-wrap:hover .marquee-reverse, .marquee-wrap:focus-within .marquee-reverse { animation-play-state: paused; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .marquee-track { flex-wrap: wrap; width: auto !important; justify-content: center; }
-  .marquee-copy { display: none; }
-}
 
 /* ---------- 3D phone ---------- */
 .tilt-stage { perspective: 1400px; }

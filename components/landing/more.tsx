@@ -1,28 +1,29 @@
 import { getTranslations } from "next-intl/server";
-import { Check } from "lucide-react";
+import {
+  BellRing, Camera, CalendarSync, Eye, FileText, FolderOpen, Gavel, History,
+  ListChecks, Receipt, Sparkles, UserRound, type LucideIcon,
+} from "lucide-react";
 
-const ROW_A = ["calendarSync", "photoImport", "receipts", "lists", "reportPdf", "documents"];
-const ROW_B = ["viewers", "reminders", "aiRewrite", "yearOverview", "judgmentImport", "childAccounts"];
+// Extra features (texts from the app: pricing.features). Most read
+// "Title: explanation"; we show the part before the colon as the title.
+const ITEMS: { key: string; icon: LucideIcon }[] = [
+  { key: "photoImport", icon: Camera },
+  { key: "receipts", icon: Receipt },
+  { key: "calendarSync", icon: CalendarSync },
+  { key: "reminders", icon: BellRing },
+  { key: "documents", icon: FolderOpen },
+  { key: "reportPdf", icon: FileText },
+  { key: "aiRewrite", icon: Sparkles },
+  { key: "judgmentImport", icon: Gavel },
+  { key: "lists", icon: ListChecks },
+  { key: "viewers", icon: Eye },
+  { key: "childAccounts", icon: UserRound },
+  { key: "history", icon: History },
+];
 
-function Row({ items, reverse }: { items: string[]; reverse?: boolean }) {
-  const pill = (text: string, key: string) => (
-    <li key={key} className="tile flex shrink-0 items-center gap-2.5 rounded-full py-2.5 pr-5 pl-3 text-[14.5px] font-medium">
-      <span className="inline-flex size-6 shrink-0 items-center justify-center rounded-full bg-success-soft text-success-text">
-        <Check aria-hidden size={13} strokeWidth={3} />
-      </span>
-      {text}
-    </li>
-  );
-  return (
-    <div className="marquee-wrap overflow-hidden py-2 [mask-image:linear-gradient(90deg,transparent,black_8%,black_92%,transparent)]">
-      <div className={`marquee-track flex w-max gap-3 ${reverse ? "marquee-reverse" : "marquee"}`}>
-        <ul className="flex gap-3">{items.map((t, i) => pill(t, `a${i}`))}</ul>
-        <ul aria-hidden className="marquee-copy flex gap-3">
-          {items.map((t, i) => pill(t, `b${i}`))}
-        </ul>
-      </div>
-    </div>
-  );
+function split(text: string) {
+  const m = text.match(/^(.+?)\s?:\s(.+)$/);
+  return m ? { title: m[1], body: m[2] } : { title: text, body: "" };
 }
 
 export async function More() {
@@ -31,23 +32,42 @@ export async function More() {
   const faq = await getTranslations("landing.faq");
 
   return (
-    <section aria-labelledby="more-title" className="py-16 sm:py-24">
-      <div className="mx-auto mb-10 max-w-6xl px-[18px]">
-        <p className="mb-3 text-xs font-bold tracking-[0.08em] text-landing-accent uppercase">{s("eyebrow")}</p>
-        <h2 id="more-title" className="max-w-3xl text-[clamp(30px,4.2vw,48px)] leading-[1.05] font-extrabold tracking-[-0.035em] text-balance">
-          {s("title")}
-        </h2>
+    <section aria-labelledby="more-title" className="px-[18px] py-20 sm:py-28">
+      <div className="mx-auto max-w-6xl">
+        <div className="reveal mb-12 max-w-3xl">
+          <p className="mb-3 text-xs font-bold tracking-[0.08em] text-landing-accent uppercase">{s("eyebrow")}</p>
+          <h2
+            id="more-title"
+            className="text-[clamp(30px,4.2vw,48px)] leading-[1.05] font-extrabold tracking-[-0.035em] text-balance"
+          >
+            {s("title")}
+          </h2>
+        </div>
+
+        <ul className="grid gap-x-8 gap-y-9 sm:grid-cols-2 lg:grid-cols-3">
+          {ITEMS.map(({ key, icon: Icon }) => {
+            const { title, body } = split(f(key));
+            return (
+              <li key={key} className="reveal flex gap-4">
+                <span className="inline-flex size-11 shrink-0 items-center justify-center rounded-[12px] bg-highlight-soft text-highlight-chip-text">
+                  <Icon aria-hidden size={21} />
+                </span>
+                <div className="pt-0.5">
+                  <h3 className="text-[16px] leading-snug font-bold first-letter:uppercase">{title}</h3>
+                  {body && <p className="mt-1 text-[14.5px] leading-relaxed text-sub first-letter:uppercase">{body}</p>}
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+
+        <p className="mt-12 text-[14.5px] text-sub">
+          {s("note")}{" "}
+          <a href="#pricing" className="font-semibold text-ink underline underline-offset-4">
+            {faq("pricing")}
+          </a>
+        </p>
       </div>
-      <div className="space-y-2">
-        <Row items={ROW_A.map((k) => f(k))} />
-        <Row items={ROW_B.map((k) => f(k))} reverse />
-      </div>
-      <p className="mx-auto mt-8 max-w-6xl px-[18px] text-[14px] text-sub">
-        {s("note")}{" "}
-        <a href="#pricing" className="font-semibold text-ink underline underline-offset-4">
-          {faq("pricing")}
-        </a>
-      </p>
     </section>
   );
 }
