@@ -81,7 +81,11 @@ elke wijziging zelf.
 Netlify, net als de site van surocad3d (de app blijft op Vercel). Project
 `eezzyflow` in het Netlify-account robin@surocad3d.com (team
 "robin-xrjpqgu's team"), gekoppeld aan deze repo: elke push naar `main`
-komt vanzelf online op https://eezzyflow.netlify.app. De site is
+komt vanzelf online op https://eezzyflow.netlify.app. De repo moet **openbaar**
+blijven: het gratis Netlify-abonnement bouwt een privé repo alleen voor
+herkende teamleden, en commits van Claude worden dan geblokkeerd
+("unrecognized Git contributor"). Zet dus nooit sleutels of wachtwoorden in
+deze repo. De site is
 volledig statisch (`output: "export"`): `npm run build` schrijft gewone
 HTML naar `out/`, er draait geen server. Instellingen en headers staan in
 `netlify.toml`. Robin koppelt `eezzyflow.com` en `eezzyflow.be` zelf wanneer
