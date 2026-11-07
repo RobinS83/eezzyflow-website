@@ -14,8 +14,8 @@ export async function Steps() {
           className="absolute top-7 right-[16%] left-[16%] hidden h-0.5 rounded-full bg-(image:--brand-champagne) md:block"
         />
         {[1, 2, 3].map((n) => (
-          <li key={n} className="reveal relative md:text-center">
-            <span className="relative mb-6 inline-flex size-14 items-center justify-center rounded-full bg-(image:--brand-spotlight) text-[22px] font-extrabold text-spotlight-ink shadow-(--shadow-tile-lift) ring-4 ring-paper">
+          <li key={n} className="reveal hover-rise relative md:text-center">
+            <span className="rise-icon relative mb-6 inline-flex size-14 items-center justify-center rounded-full bg-(image:--brand-spotlight) text-[22px] font-extrabold text-spotlight-ink shadow-(--shadow-tile-lift) ring-4 ring-paper">
               <span className="sr-only">{t("step", { n })}: </span>
               {n}
             </span>

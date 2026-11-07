@@ -48,8 +48,8 @@ export async function More() {
           {ITEMS.map(({ key, icon: Icon }) => {
             const { title, body } = split(f(key));
             return (
-              <li key={key} className="reveal flex gap-4">
-                <span className="inline-flex size-11 shrink-0 items-center justify-center rounded-[12px] bg-highlight-soft text-highlight-chip-text">
+              <li key={key} className="reveal hover-rise flex gap-4">
+                <span className="rise-icon inline-flex size-11 shrink-0 items-center justify-center rounded-[12px] bg-highlight-soft text-highlight-chip-text">
                   <Icon aria-hidden size={21} />
                 </span>
                 <div className="pt-0.5">

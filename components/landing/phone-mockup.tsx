@@ -29,8 +29,16 @@ export async function PhoneMockup() {
     <figure
       role="img"
       aria-label={s("label")}
-      className="relative aspect-[980/2000] w-[290px] shrink-0 drop-shadow-[0_40px_50px_rgb(23_23_28/0.35)] sm:w-[320px]"
+      className="relative aspect-[980/2000] w-[290px] shrink-0 [transform-style:preserve-3d] sm:w-[320px]"
     >
+      {/* Shadow on the "desk", and the phone's body: stacked layers behind
+          the frame give it real thickness when it turns. */}
+      <span aria-hidden className="phone-floor" style={{ transform: "translateZ(-40px)" }} />
+      <span aria-hidden className="phone-body">
+        {Array.from({ length: 14 }, (_, i) => (
+          <span key={i} style={{ transform: `translateZ(${-(i + 1)}px)` }} />
+        ))}
+      </span>
       <div
         aria-hidden
         className="absolute flex flex-col overflow-hidden rounded-[13%/6.4%] bg-paper"

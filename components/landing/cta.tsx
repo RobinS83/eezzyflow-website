@@ -11,7 +11,7 @@ export async function Cta() {
 
   return (
     <section className="px-[18px] pb-20 sm:pb-28" aria-labelledby="cta-title">
-      <div className="reveal relative mx-auto max-w-6xl overflow-hidden rounded-[36px] bg-(image:--hero-cost) px-6 py-16 text-center text-on-primary sm:px-12 sm:py-24 dark:text-ink">
+      <div className="reveal tilt-card relative mx-auto max-w-6xl overflow-hidden rounded-[36px] bg-(image:--hero-cost) px-6 py-16 text-center text-on-primary sm:px-12 sm:py-24 dark:text-ink">
         <div
           aria-hidden
           className="pointer-events-none absolute -bottom-60 left-1/2 size-[700px] -translate-x-1/2 rounded-full bg-(image:--brand-champagne) opacity-20 blur-3xl"

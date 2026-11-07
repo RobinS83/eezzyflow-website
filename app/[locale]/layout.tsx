@@ -8,6 +8,7 @@ import { SITE_URL } from "@/lib/links";
 import { brand } from "@/lib/brand";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { TiltCards } from "@/components/tilt-cards";
 import "../globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
@@ -82,6 +83,7 @@ export default async function LocaleLayout({
           <SiteHeader />
           <main id="main">{children}</main>
           <SiteFooter />
+          <TiltCards />
         </NextIntlClientProvider>
       </body>
     </html>

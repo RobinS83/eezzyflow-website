@@ -24,8 +24,8 @@ export async function Costs() {
           <p className="mb-6 text-[15px] leading-relaxed text-sub">{t("body")}</p>
           <ul className="space-y-3">
             {[1, 2, 3].map((n) => (
-              <li key={n} className="flex items-center gap-3 text-[15px]">
-                <span className="inline-flex size-6 items-center justify-center rounded-full bg-success-soft text-success-text">
+              <li key={n} className="hover-rise flex items-center gap-3 text-[15px]">
+                <span className="rise-icon inline-flex size-6 items-center justify-center rounded-full bg-success-soft text-success-text">
                   <Check aria-hidden size={14} strokeWidth={3} />
                 </span>
                 {t(`check${n}`)}
@@ -35,8 +35,8 @@ export async function Costs() {
         </div>
 
         {/* Illustration of the costs screen; the text beside it says the same. */}
-        <div aria-hidden className="reveal tile tile-lift rounded-[18px] p-5 sm:p-6">
-          <div className="rounded-[14px] bg-primary-soft p-5">
+        <div aria-hidden className="reveal tile tile-lift tilt-card rounded-[18px] p-5 sm:p-6">
+          <div className="pop-z rounded-[14px] bg-primary-soft p-5">
             <p className="text-[12px] font-bold tracking-[0.06em] text-sub uppercase">{t("openBalance")}</p>
             <p className="mt-1 text-[32px] leading-none font-extrabold tracking-[-0.02em] tabular-nums">{t("amount")}</p>
             <p className="mt-2 text-[14px] text-sub">{t("owes")}</p>

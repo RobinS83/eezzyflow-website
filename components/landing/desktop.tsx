@@ -30,7 +30,7 @@ export async function Desktop() {
 
         {/* A browser window with the app inside. */}
         <figure role="img" aria-label={t("label")} className="reveal">
-          <div aria-hidden className="tile tile-lift overflow-hidden rounded-[18px]">
+          <div aria-hidden className="tile tile-lift tilt-card overflow-hidden rounded-[18px]">
             <div className="flex items-center gap-3 border-b border-line bg-paper px-4 py-3">
               <span className="flex gap-1.5">
                 <span className="size-2.5 rounded-full bg-line" />

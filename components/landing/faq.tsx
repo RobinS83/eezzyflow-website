@@ -24,7 +24,7 @@ export async function Faq() {
       <SectionHeading eyebrow={t("eyebrow")} title={t("title")} />
       <div className="max-w-3xl divide-y divide-line border-y border-line">
         {items.map((item) => (
-          <details key={item.q} className="group">
+          <details key={item.q} className="group hover-rise">
             <summary className="flex min-h-14 cursor-pointer items-center justify-between gap-4 py-4 text-[16px] font-semibold">
               {item.q}
               <ChevronDown

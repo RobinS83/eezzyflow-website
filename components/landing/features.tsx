@@ -93,12 +93,12 @@ export async function Features() {
         {cards.map(({ key, icon: Icon, art, wide }) => (
           <li
             key={key}
-            className={`reveal tile tile-tap group grid gap-6 overflow-hidden rounded-[24px] p-6 sm:p-7 ${
+            className={`reveal tile tilt-card group grid gap-6 rounded-[24px] p-6 sm:p-7 ${
               wide ? "lg:col-span-2 lg:grid-cols-[1fr_1fr] lg:items-center" : ""
             }`}
           >
             <div>
-              <span className="mb-5 inline-flex size-11 items-center justify-center rounded-[12px] bg-highlight-soft text-highlight-chip-text">
+              <span className="pop-z mb-5 inline-flex size-11 items-center justify-center rounded-[12px] bg-highlight-soft text-highlight-chip-text">
                 <Icon aria-hidden size={22} />
               </span>
               <h3 className="mb-2 text-[22px] leading-[1.2] font-bold tracking-[-0.02em]">{t(`${key}Title`)}</h3>
@@ -113,7 +113,7 @@ export async function Features() {
             </div>
             <div
               aria-hidden
-              className="rounded-[18px] bg-paper p-5 transition-transform duration-300 ease-(--ease-natural) group-hover:scale-[1.02]"
+              className="pop-z rounded-[18px] bg-paper p-5"
             >
               {art}
             </div>

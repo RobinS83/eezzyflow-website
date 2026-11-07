@@ -28,7 +28,7 @@ export async function Pricing() {
           return (
             <li
               key={plan.id}
-              className={`reveal relative flex flex-col rounded-[28px] p-7 sm:p-8 ${
+              className={`reveal tilt-card relative flex flex-col rounded-[28px] p-7 sm:p-8 ${
                 featured
                   ? "on-spotlight order-first bg-(image:--brand-spotlight) text-spotlight-ink shadow-(--shadow-tile-lift) lg:order-none lg:-my-5 lg:py-12"
                   : "tile"
@@ -71,7 +71,7 @@ export async function Pricing() {
 
               <ul className="mt-7 space-y-3">
                 {plan.features.map((f) => (
-                  <li key={f} className="flex gap-2.5 text-[14.5px] leading-snug">
+                  <li key={f} className="hover-rise flex gap-2.5 text-[14.5px] leading-snug">
                     <Check
                       aria-hidden
                       size={17}
@@ -108,7 +108,7 @@ export async function Pricing() {
 
       <div className="mt-12 grid gap-4 md:grid-cols-2">
         {(["apart", "together"] as const).map((k) => (
-          <div key={k} className="rounded-[18px] border border-line p-5">
+          <div key={k} className="tilt-card rounded-[18px] border border-line bg-surface/40 p-5">
             <h3 className="mb-1.5 text-[15.5px] font-bold">{t(`who.${k}Title`)}</h3>
             <p className="text-[14.5px] leading-relaxed text-sub">{t(`who.${k}Body`)}</p>
           </div>

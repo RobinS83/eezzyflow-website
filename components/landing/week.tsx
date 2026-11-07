@@ -31,7 +31,7 @@ export async function Week() {
           <p className="max-w-lg text-[17px] leading-relaxed text-sub">{t("body")}</p>
         </div>
 
-        <figure role="img" aria-label={t("label")} className="reveal tile tile-lift rounded-[24px] p-5 sm:p-7">
+        <figure role="img" aria-label={t("label")} className="reveal tile tile-lift tilt-card rounded-[24px] p-5 sm:p-7">
           <div aria-hidden>
             {/* Two homes, one flow between them. */}
             <div className="relative mb-6 flex items-center justify-between">

@@ -60,8 +60,8 @@ export default async function HelpPage({ params }: { params: Promise<{ locale: s
       <section className="px-[18px] py-16 sm:py-20">
         <ul className="mx-auto grid max-w-6xl gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {actions.map(({ key, icon: Icon, href, button }) => (
-            <li key={key} className="tile flex flex-col rounded-[22px] p-6">
-              <span className="mb-5 inline-flex size-11 items-center justify-center rounded-[12px] bg-highlight-soft text-highlight-chip-text">
+            <li key={key} className="tile tilt-card flex flex-col rounded-[22px] p-6">
+              <span className="pop-z mb-5 inline-flex size-11 items-center justify-center rounded-[12px] bg-highlight-soft text-highlight-chip-text">
                 <Icon aria-hidden size={22} />
               </span>
               <h2 className="mb-2 text-[19px] leading-[1.2] font-bold tracking-[-0.02em]">{t(`${key}Title`)}</h2>

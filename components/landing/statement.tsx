@@ -37,8 +37,10 @@ export async function Statement() {
 
         <ul className="mt-16 grid gap-8 border-t border-spotlight-ink/15 pt-10 md:grid-cols-3">
           {items.map(({ key, icon: Icon }) => (
-            <li key={key} className="reveal">
-              <Icon aria-hidden size={24} className="mb-4 text-spotlight-ink" />
+            <li key={key} className="reveal hover-rise">
+              <span className="rise-icon mb-4 inline-flex size-11 items-center justify-center rounded-[12px] bg-spotlight-ink/10">
+                <Icon aria-hidden size={22} className="text-spotlight-ink" />
+              </span>
               <h3 className="mb-2 text-[17px] font-bold text-spotlight-ink">{t(`${key}Title`)}</h3>
               <p className="text-[15px] leading-relaxed text-spotlight-sub">{t(`${key}Body`)}</p>
             </li>
