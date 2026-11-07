@@ -7,6 +7,7 @@ export function Wordmark({ size = "md" }: { size?: "md" | "lg" }) {
     <span className="inline-flex items-center gap-2.5">
       <Image src={icon} alt="" width={iconSize} height={iconSize} className="rounded-[8px]" priority />
       <span
+        translate="no"
         className={`${size === "lg" ? "text-[26px]" : "text-[22px]"} leading-none font-extrabold tracking-[-0.03em]`}
       >
         <span className="text-brand-wordmark">eezzy</span>

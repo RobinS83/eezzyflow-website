@@ -44,7 +44,7 @@ export async function Desktop() {
             </div>
             <div className="grid grid-cols-[56px_1fr] sm:grid-cols-[180px_1fr]">
               <div className="space-y-1.5 border-r border-line bg-paper p-3">
-                <span className="mb-4 hidden px-2 text-[15px] font-extrabold tracking-[-0.03em] sm:block">
+                <span translate="no" className="mb-4 hidden px-2 text-[15px] font-extrabold tracking-[-0.03em] sm:block">
                   <span className="text-brand-wordmark">eezzy</span>
                   <span className="text-brand-wordmark-accent">flow</span>
                 </span>

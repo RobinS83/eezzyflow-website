@@ -38,7 +38,7 @@ export async function PhoneMockup() {
       >
         <div className="bg-(image:--hero) px-5 pt-[54px] pb-12 text-hero-ink">
           <div className="flex items-center justify-between">
-            <span className="text-[14px] leading-none font-extrabold tracking-[-0.03em]">
+            <span translate="no" className="text-[14px] leading-none font-extrabold tracking-[-0.03em]">
               <span className="text-brand-wordmark">eezzy</span>
               <span className="text-brand-wordmark-accent">flow</span>
             </span>
