@@ -253,3 +253,24 @@ summary::-webkit-details-marker { display: none; }
   .marquee-track { flex-wrap: wrap; width: auto !important; justify-content: center; }
   .marquee-copy { display: none; }
 }
+
+/* ---------- 3D phone ---------- */
+.tilt-stage { perspective: 1400px; }
+.tilt-body {
+  transform-style: preserve-3d;
+  transform: rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg));
+  transition: transform 0.7s var(--ease-natural);
+}
+/* At rest the phone stands a little turned, like on a desk. */
+.tilt-idle {
+  transform-style: preserve-3d;
+  transform: rotateY(-14deg) rotateX(5deg) rotateZ(-1deg);
+}
+.tilt-depth { transform: translateZ(80px); }
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes phone-sway {
+    0%, 100% { transform: rotateY(-18deg) rotateX(6deg) rotateZ(-1.5deg) translateY(0); }
+    50% { transform: rotateY(-4deg) rotateX(2deg) rotateZ(0deg) translateY(-12px); }
+  }
+  .tilt-idle { animation: phone-sway 9s ease-in-out infinite; }
+}

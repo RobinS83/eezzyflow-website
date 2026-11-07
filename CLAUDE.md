@@ -59,8 +59,10 @@ De pagina `/hulp` bundelt herstellen, contact, privacy en voorwaarden.
 De app zet de taal niet in de URL; ze volgt de browser en de keuze in de app.
 
 Store-links (App Store, Google Play) bestaan nog niet: de app staat nog niet
-in de stores. Zet ze in één bestand (`lib/links.ts`); tot ze er zijn, wijzen
-de knoppen naar `https://app.eezzyflow.com`.
+in de stores. Ze staan in één bestand (`lib/links.ts`); tot ze er zijn, wijzen
+de badges naar `https://app.eezzyflow.com`. De officiële badges staan in
+`assets/badges/` (Google per taal; Apple voorlopig de Engelse van
+developer.apple.com). Niet hertekenen of herkleuren.
 
 ## Verifiëren, niet aannemen
 

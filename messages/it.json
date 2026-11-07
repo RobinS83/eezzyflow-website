@@ -325,6 +325,10 @@
     "joinFaq": {
       "q": "Come si aggiunge l’altro genitore?",
       "a": "Avete ciascuno il proprio account, mai uno condiviso. Un genitore crea un account, aggiunge i figli e invita l’altro genitore da Famiglia nell’app. L’altro genitore crea un account con l’indirizzo e-mail a cui è arrivato l’invito e lo accetta. Da quel momento condividete calendario, spese, messaggi e documenti di quei figli. Ciò che è solo tuo, come il tuo indirizzo, resta privato."
+    },
+    "stores": {
+      "appStore": "Scarica su App Store",
+      "googlePlay": "Disponibile su Google Play"
     }
   }
 }

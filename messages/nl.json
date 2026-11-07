@@ -325,6 +325,10 @@
     "joinFaq": {
       "q": "Hoe komt de andere ouder erbij?",
       "a": "Jullie hebben elk een eigen account, nooit één gedeeld. Eén ouder maakt een account, voegt de kinderen toe en nodigt de andere ouder uit via Gezin in de app. De andere ouder maakt een account met het e-mailadres waarop de uitnodiging binnenkwam en aanvaardt ze. Vanaf dan delen jullie de kalender, kosten, berichten en documenten van die kinderen. Wat van jou alleen is, zoals je eigen adres, blijft privé."
+    },
+    "stores": {
+      "appStore": "Download in de App Store",
+      "googlePlay": "Ontdek het op Google Play"
     }
   }
 }

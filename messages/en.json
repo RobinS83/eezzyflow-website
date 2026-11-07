@@ -325,6 +325,10 @@
     "joinFaq": {
       "q": "How does the other parent join?",
       "a": "You each have your own account, never a shared one. One parent creates an account, adds the children and invites the other parent via Family in the app. The other parent creates an account with the email address the invitation was sent to and accepts it. From then on you share the calendar, costs, messages and documents of those children. What is yours alone, such as your own address, stays private."
+    },
+    "stores": {
+      "appStore": "Download on the App Store",
+      "googlePlay": "Get it on Google Play"
     }
   }
 }

@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { links } from "@/lib/links";
 import appIcon from "@/brand/merkpakket-champagne/ios/AppIcon-1024.png";
 import { buttonStyles } from "../ui";
+import { StoreBadges } from "../store-badges";
 
 export async function Cta() {
   const t = await getTranslations("landing.cta");
@@ -45,6 +46,7 @@ export async function Cta() {
               {t("features")}
             </a>
           </div>
+          <StoreBadges className="mt-8 justify-center" />
           <p className="mt-7 text-[13.5px] opacity-85">{t("note")}</p>
         </div>
       </div>

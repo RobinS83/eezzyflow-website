@@ -3,6 +3,8 @@ import { ArrowRight, MessagesSquare, Wallet } from "lucide-react";
 import { links } from "@/lib/links";
 import { ButtonLink, Dot } from "../ui";
 import { PhoneMockup } from "./phone-mockup";
+import { Tilt3D } from "../tilt-3d";
+import { StoreBadges } from "../store-badges";
 
 /** Splits "Samen regelen. Eén flow." so the last word can carry the brand accent. */
 function splitLastWord(text: string) {
@@ -63,28 +65,35 @@ export async function Hero() {
               {t("how")}
             </ButtonLink>
           </div>
-          <p className="mt-6 text-[14px] text-hero-sub">{t("note")}</p>
+          <StoreBadges className="mt-6" />
+          <p className="mt-5 text-[14px] text-hero-sub">{t("note")}</p>
         </div>
 
-        <div className="relative mx-auto w-full max-w-[460px] self-end">
-          <div className="relative flex justify-center">
-            <PhoneMockup />
-          </div>
-          {/* Floating tiles: decorative echoes of what the app shows. */}
-          <div aria-hidden className="float tile absolute top-[22%] hidden sm:block -left-1 rounded-[14px] px-4 py-3 sm:-left-6">
-            <p className="flex items-center gap-1.5 text-[11px] font-bold tracking-[0.06em] text-sub uppercase">
-              <Wallet size={13} /> {phone("balance")}
-            </p>
-            <p className="mt-0.5 text-[20px] font-extrabold text-success-text tabular-nums">{phone("balanceValue")}</p>
-          </div>
-          <div aria-hidden className="float-slow tile absolute top-[48%] hidden sm:block -right-1 rounded-[14px] px-4 py-3 sm:-right-4">
-            <p className="flex items-center gap-1.5 text-[11px] font-bold tracking-[0.06em] text-sub uppercase">
-              <MessagesSquare size={13} /> {phone("unread")}
-            </p>
-            <p className="mt-0.5 text-[20px] font-extrabold text-ink">
-              {phone("unreadValue")} <span className="text-[13px] font-medium text-sub">{phone("unreadSub")}</span>
-            </p>
-          </div>
+        <div className="tilt-stage relative mx-auto w-full max-w-[460px] pb-12 lg:pb-0">
+          <Tilt3D className="relative flex justify-center">
+            <div className="tilt-idle relative">
+              <PhoneMockup />
+              {/* Floating tiles stand in front of the phone, so they move with depth. */}
+              <div aria-hidden className="tilt-depth absolute top-[64%] -left-20 hidden sm:block lg:-left-28">
+                <div className="float tile rounded-[14px] px-4 py-3">
+                  <p className="flex items-center gap-1.5 text-[11px] font-bold tracking-[0.06em] text-sub uppercase">
+                    <Wallet size={13} /> {phone("balance")}
+                  </p>
+                  <p className="mt-0.5 text-[20px] font-extrabold text-success-text tabular-nums">{phone("balanceValue")}</p>
+                </div>
+              </div>
+              <div aria-hidden className="tilt-depth absolute top-[30%] -right-16 hidden sm:block lg:-right-24">
+                <div className="float-slow tile rounded-[14px] px-4 py-3">
+                  <p className="flex items-center gap-1.5 text-[11px] font-bold tracking-[0.06em] text-sub uppercase">
+                    <MessagesSquare size={13} /> {phone("unread")}
+                  </p>
+                  <p className="mt-0.5 text-[20px] font-extrabold text-ink">
+                    {phone("unreadValue")} <span className="text-[13px] font-medium text-sub">{phone("unreadSub")}</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </Tilt3D>
         </div>
       </div>
     </section>

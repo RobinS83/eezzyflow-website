@@ -11,7 +11,7 @@ export const links = {
   support: `${APP_URL}/support`,
   forgotPassword: `${APP_URL}/wachtwoord-vergeten`,
   // The app is not in the stores yet. Fill these in once it is; until then
-  // the store buttons stay hidden and the site points to the web app.
+  // the store badges point to the web app.
   appStore: null as string | null,
   googlePlay: null as string | null,
 } as const;
