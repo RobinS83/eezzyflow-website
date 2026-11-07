@@ -24,6 +24,8 @@ export async function Hero() {
         aria-hidden
         className="pointer-events-none absolute -right-40 -bottom-40 size-[720px] rounded-full bg-(image:--brand-champagne) opacity-60 blur-3xl dark:opacity-15"
       />
+      {/* Fade into the page colour, so the hero flows into the next section without an edge. */}
+      <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-48 bg-linear-to-b from-transparent to-paper" />
       <div className="relative mx-auto grid grid-cols-1 max-w-7xl items-center gap-10 pt-14 sm:pt-20 lg:min-h-[calc(100svh-68px)] lg:grid-cols-[1.3fr_1fr] lg:pt-0">
         <div className="lg:pb-10">
           <p className="mb-7 inline-flex items-center gap-2 rounded-full border border-line/60 bg-surface/70 px-3.5 py-1.5 text-[13px] font-semibold text-hero-ink backdrop-blur">
@@ -56,16 +58,19 @@ export async function Hero() {
             </span>
           </h1>
           <p className="mt-7 max-w-xl text-[clamp(17px,1.6vw,20px)] leading-relaxed text-hero-sub">{t("lead")}</p>
-          <div className="mt-9 flex flex-wrap gap-3">
-            <ButtonLink href={links.register} className="h-13 px-7 text-[16px] shadow-(--shadow-tile-lift)">
+          <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <ButtonLink href={links.register} className="h-14 w-full px-7 text-[16px] shadow-(--shadow-tile-lift) sm:h-13 sm:w-auto">
               {t("start")}
               <ArrowRight aria-hidden size={18} />
             </ButtonLink>
-            <ButtonLink href="#how" variant="secondary" className="h-13 px-7 text-[16px]">
+            <ButtonLink href="#how" variant="secondary" className="h-14 w-full px-7 text-[16px] sm:h-13 sm:w-auto">
               {t("how")}
             </ButtonLink>
           </div>
-          <StoreBadges className="mt-6" />
+          {/* On a phone the store badges sit in the closing block, not crammed under the buttons. */}
+          <div className="mt-6 hidden sm:block">
+            <StoreBadges />
+          </div>
           <p className="mt-5 text-[14px] text-hero-sub">{t("note")}</p>
         </div>
 

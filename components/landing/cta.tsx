@@ -31,22 +31,22 @@ export async function Cta() {
             {t("title")}
           </h2>
           <p className="mx-auto mb-10 max-w-xl text-[clamp(16px,1.5vw,19px)] leading-relaxed opacity-90">{t("body")}</p>
-          <div className="flex flex-wrap justify-center gap-3">
+          <div className="mx-auto flex max-w-sm flex-col gap-3 sm:max-w-none sm:flex-row sm:flex-wrap sm:justify-center">
             <a
               href={links.register}
-              className={`${buttonStyles.primary} h-13 px-7 text-[16px] bg-surface! text-ink! dark:bg-primary! dark:text-on-primary!`}
+              className={`${buttonStyles.primary} h-14 w-full px-7 text-[16px] bg-surface! text-ink! sm:h-13 sm:w-auto dark:bg-primary! dark:text-on-primary!`}
             >
               {t("start")}
               <ArrowRight aria-hidden size={18} />
             </a>
             <a
               href="#features"
-              className={`${buttonStyles.primary} h-13 border border-current px-7 text-[16px] bg-transparent! text-inherit! hover:brightness-100`}
+              className={`${buttonStyles.primary} h-14 w-full border border-current px-7 text-[16px] bg-transparent! text-inherit! hover:brightness-100 sm:h-13 sm:w-auto`}
             >
               {t("features")}
             </a>
           </div>
-          <StoreBadges className="mt-8 justify-center" />
+          <StoreBadges className="mt-10 justify-center" />
           <p className="mt-7 text-[13.5px] opacity-85">{t("note")}</p>
         </div>
       </div>
