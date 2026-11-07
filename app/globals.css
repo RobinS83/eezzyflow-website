@@ -13,6 +13,7 @@
   /* Accent word in big headings: deep amber on light (3:1+ on the hero). */
   --brand-flow: linear-gradient(90deg, #7c531c 0%, #a06a15 100%);
   --spotlight-ink: #fbf3e6;
+  --brand-graphite: #202025;
   --spotlight-sub: #c9c4bb;
 
   --desk: #ececea;
@@ -141,6 +142,7 @@
   --color-brand-wordmark-accent: var(--brand-wordmark-accent);
   --color-landing-accent: var(--landing-accent);
   --color-spotlight-ink: var(--spotlight-ink);
+  --color-brand-graphite: var(--brand-graphite);
   --color-spotlight-sub: var(--spotlight-sub);
   --radius-card: var(--radius-card);
   --radius-item: var(--radius-item);

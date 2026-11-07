@@ -1,62 +1,119 @@
-import { getTranslations } from "next-intl/server";
-import { Check, Info } from "lucide-react";
+import { getLocale, getTranslations } from "next-intl/server";
+import { Check, Info, Sparkles } from "lucide-react";
 import { links } from "@/lib/links";
-import { plans } from "@/lib/plans";
-import { ButtonLink, Section, SectionHeading } from "../ui";
+import { formatEuro, planById, plans } from "@/lib/plans";
+import { buttonStyles, Section, SectionHeading } from "../ui";
 
 export async function Pricing() {
   const t = await getTranslations("pricing");
   const s = await getTranslations("site.pricing");
+  const locale = await getLocale();
+  const euro = (cents: number) => formatEuro(cents, locale);
+
+  const plus = planById("plus").monthlyCents;
+  const family = planById("family").monthlyCents;
 
   return (
     <Section id="pricing" className="bg-surface/50">
       <SectionHeading eyebrow={s("eyebrow")} title={s("title")} />
-      <p className="-mt-4 mb-8 max-w-2xl text-[15px] leading-relaxed text-sub">{t("subtitle")}</p>
+      <p className="-mt-6 mb-10 max-w-2xl text-[16px] leading-relaxed text-sub">{t("subtitle")}</p>
 
-      <div className="mb-8 flex gap-3 rounded-[14px] border border-line bg-highlight-soft p-4 sm:items-center">
-        <Info aria-hidden size={20} className="mt-0.5 shrink-0 text-highlight-chip-text sm:mt-0" />
-        <p className="text-[14.5px] leading-relaxed text-ink">
-          <strong className="font-bold">{t("testPhaseTitle")}.</strong> {t("testPhaseBody")}
-        </p>
-      </div>
+      <ul className="grid items-stretch gap-5 lg:grid-cols-3">
+        {plans.map((plan) => {
+          const featured = plan.featured;
+          return (
+            <li
+              key={plan.id}
+              className={`reveal relative flex flex-col rounded-[28px] p-7 sm:p-8 ${
+                featured
+                  ? "on-spotlight order-first bg-(image:--brand-spotlight) text-spotlight-ink shadow-(--shadow-tile-lift) lg:order-none lg:-my-5 lg:py-12"
+                  : "tile"
+              }`}
+            >
+              {featured && (
+                <p className="mb-5 inline-flex w-fit items-center gap-1.5 rounded-full bg-(image:--brand-champagne) px-3 py-1 text-[12.5px] font-bold text-brand-graphite">
+                  <Sparkles aria-hidden size={14} />
+                  {s("recommended")}
+                </p>
+              )}
+              <h3 className={`text-[26px] leading-[1.1] font-extrabold tracking-[-0.03em] ${featured ? "text-champagne" : ""}`}>
+                {t(`plans.${plan.id}.name`)}
+              </h3>
+              <p className={`mt-2 min-h-[3em] text-[15px] leading-snug ${featured ? "text-spotlight-sub" : "text-sub"}`}>
+                {t(`plans.${plan.id}.tagline`)}
+              </p>
 
-      <ul className="grid gap-4 lg:grid-cols-3">
-        {plans.map((plan) => (
-          <li
-            key={plan.id}
-            className={`reveal tile flex flex-col rounded-[24px] p-7`}
-          >
-            <h3 className="text-xl leading-[1.2] font-bold tracking-[-0.02em]">{t(`plans.${plan.id}.name`)}</h3>
-            <p className="mt-1.5 min-h-[3em] text-[14.5px] leading-snug text-sub">{t(`plans.${plan.id}.tagline`)}</p>
-            <p className="mt-4 text-[17px] font-bold">
-              {plan.id === "free" ? s("freeForever") : s("testPhase")}
-            </p>
-            {plan.audience && <p className="text-[13px] text-sub">{t(plan.audience)}</p>}
+              <p className="mt-6 flex items-baseline gap-2">
+                <span className="text-[44px] leading-none font-extrabold tracking-[-0.04em] tabular-nums">
+                  {euro(plan.monthlyCents)}
+                </span>
+                <span className={`text-[14px] ${featured ? "text-spotlight-sub" : "text-sub"}`}>
+                  {s("perMonth")}
+                  {plan.audience && <span className="block">{t(plan.audience)}</span>}
+                </span>
+              </p>
 
-            <p className="mt-6 mb-3 text-[12px] font-bold tracking-[0.06em] text-sub uppercase">{s("included")}</p>
-            <ul className="mb-6 space-y-2.5">
-              {plan.features.map((f) => (
-                <li key={f} className="flex gap-2.5 text-[14.5px] leading-snug">
-                  <Check aria-hidden size={17} strokeWidth={2.5} className="mt-0.5 shrink-0 text-success-text" />
-                  {t(`features.${f}`)}
-                </li>
-              ))}
-            </ul>
-          </li>
-        ))}
+              <a
+                href={links.register}
+                className={`mt-7 ${buttonStyles.primary} w-full ${
+                  featured ? "bg-(image:--brand-champagne)! text-brand-graphite! hover:brightness-105" : ""
+                }`}
+              >
+                {t("startFree")}
+              </a>
+
+              <ul className="mt-7 space-y-3">
+                {plan.features.map((f) => (
+                  <li key={f} className="flex gap-2.5 text-[14.5px] leading-snug">
+                    <Check
+                      aria-hidden
+                      size={17}
+                      strokeWidth={2.5}
+                      className={`mt-0.5 shrink-0 ${featured ? "text-spotlight-ink" : "text-success-text"}`}
+                    />
+                    <span className={f === "everythingFree" || f === "plusForBoth" ? "font-bold" : ""}>
+                      {t(`features.${f}`)}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+
+              {featured && (
+                // Why Family: the sum, so nobody has to work it out.
+                <div className="mt-auto pt-8">
+                  <div className="rounded-[18px] border border-spotlight-ink/15 bg-spotlight-ink/5 p-5">
+                    <p className="mb-3 text-[15px] font-bold">{s("saveTitle")}</p>
+                    <dl aria-hidden className="grid grid-cols-[1fr_auto] gap-x-4 gap-y-1.5 text-[14.5px] tabular-nums">
+                      <dt className="text-spotlight-sub">2 × {t("plans.plus.name")}</dt>
+                      <dd className="text-right text-spotlight-sub line-through">{euro(plus * 2)}</dd>
+                      <dt className="font-bold">{t("plans.family.name")}</dt>
+                      <dd className="text-right font-extrabold">{euro(family)}</dd>
+                    </dl>
+                    <p className="mt-3 text-[13.5px] leading-relaxed text-spotlight-sub">
+                      {s("saveBody", { twice: euro(plus * 2), family: euro(family), saving: euro(plus * 2 - family) })}
+                    </p>
+                  </div>
+                </div>
+              )}
+            </li>
+          );
+        })}
       </ul>
 
-      <div className="mt-8 grid gap-4 md:grid-cols-2">
+      <div className="mt-12 grid gap-4 md:grid-cols-2">
         {(["apart", "together"] as const).map((k) => (
-          <div key={k} className="rounded-[14px] border border-line p-5">
+          <div key={k} className="rounded-[18px] border border-line p-5">
             <h3 className="mb-1.5 text-[15.5px] font-bold">{t(`who.${k}Title`)}</h3>
             <p className="text-[14.5px] leading-relaxed text-sub">{t(`who.${k}Body`)}</p>
           </div>
         ))}
       </div>
 
-      <div className="mt-8">
-        <ButtonLink href={links.register}>{t("startFree")}</ButtonLink>
+      <div className="mt-6 flex gap-3 rounded-[18px] bg-highlight-soft p-4 sm:items-center">
+        <Info aria-hidden size={20} className="mt-0.5 shrink-0 text-highlight-chip-text sm:mt-0" />
+        <p className="text-[14.5px] leading-relaxed text-ink">
+          <strong className="font-bold">{t("testPhaseTitle")}.</strong> {t("testPhaseBody")}
+        </p>
       </div>
     </Section>
   );

@@ -20,9 +20,11 @@
     "pricing": {
       "eyebrow": "Prijzen",
       "title": "Begin gratis. Kies later wat bij jullie past.",
-      "testPhase": "Nu gratis tijdens de testfase",
-      "freeForever": "Blijft gratis",
-      "included": "Wat erin zit"
+      "included": "Wat erin zit",
+      "recommended": "Beste keuze voor twee ouders",
+      "saveTitle": "Voordeliger dan twee keer Plus",
+      "saveBody": "Twee keer Plus kost {twice} per maand. Met Gezin hebben jullie allebei alles voor {family}: {saving} minder per maand, en maar één abonnement om te regelen.",
+      "perMonth": "per maand"
     },
     "pricingFaq": {
       "q1": "Moet de andere ouder ook betalen?"
@@ -77,9 +79,11 @@
     "pricing": {
       "eyebrow": "Tarifs",
       "title": "Commencez gratuitement. Choisissez plus tard ce qui vous convient.",
-      "testPhase": "Gratuit pendant la phase de test",
-      "freeForever": "Reste gratuit",
-      "included": "Ce qui est inclus"
+      "included": "Ce qui est inclus",
+      "recommended": "Le meilleur choix pour deux parents",
+      "saveTitle": "Plus avantageux que deux fois Plus",
+      "saveBody": "Deux fois Plus coûtent {twice} par mois. Avec Famille, vous avez tous les deux tout pour {family} : {saving} de moins par mois, et un seul abonnement à gérer.",
+      "perMonth": "par mois"
     },
     "pricingFaq": {
       "q1": "L’autre parent doit-il aussi payer ?"
@@ -134,9 +138,11 @@
     "pricing": {
       "eyebrow": "Pricing",
       "title": "Start for free. Choose what suits you later.",
-      "testPhase": "Free during the test phase",
-      "freeForever": "Stays free",
-      "included": "What’s included"
+      "included": "What’s included",
+      "recommended": "Best choice for two parents",
+      "saveTitle": "Better value than Plus twice",
+      "saveBody": "Plus twice costs {twice} a month. With Family you both get everything for {family}: {saving} less per month, and only one subscription to arrange.",
+      "perMonth": "per month"
     },
     "pricingFaq": {
       "q1": "Does the other parent have to pay too?"
@@ -191,9 +197,11 @@
     "pricing": {
       "eyebrow": "Preise",
       "title": "Kostenlos starten. Später wählen, was zu euch passt.",
-      "testPhase": "Kostenlos während der Testphase",
-      "freeForever": "Bleibt kostenlos",
-      "included": "Was enthalten ist"
+      "included": "Was enthalten ist",
+      "recommended": "Die beste Wahl für zwei Eltern",
+      "saveTitle": "Günstiger als zweimal Plus",
+      "saveBody": "Zweimal Plus kostet {twice} im Monat. Mit Familie habt ihr beide alles für {family}: {saving} weniger im Monat und nur ein Abo zu regeln.",
+      "perMonth": "pro Monat"
     },
     "pricingFaq": {
       "q1": "Muss der andere Elternteil auch bezahlen?"
@@ -248,9 +256,11 @@
     "pricing": {
       "eyebrow": "Precios",
       "title": "Empieza gratis. Elige más tarde lo que os encaje.",
-      "testPhase": "Gratis durante la fase de prueba",
-      "freeForever": "Sigue siendo gratis",
-      "included": "Qué incluye"
+      "included": "Qué incluye",
+      "recommended": "La mejor opción para dos progenitores",
+      "saveTitle": "Más ventajoso que dos veces Plus",
+      "saveBody": "Dos veces Plus cuestan {twice} al mes. Con Familia, los dos tenéis todo por {family}: {saving} menos al mes y una sola suscripción que gestionar.",
+      "perMonth": "al mes"
     },
     "pricingFaq": {
       "q1": "¿El otro progenitor también tiene que pagar?"
@@ -305,9 +315,11 @@
     "pricing": {
       "eyebrow": "Prezzi",
       "title": "Inizia gratis. Scegli più tardi ciò che fa per voi.",
-      "testPhase": "Gratis durante la fase di test",
-      "freeForever": "Resta gratis",
-      "included": "Cosa include"
+      "included": "Cosa include",
+      "recommended": "La scelta migliore per due genitori",
+      "saveTitle": "Più conveniente di due volte Plus",
+      "saveBody": "Due volte Plus costano {twice} al mese. Con Famiglia avete entrambi tutto per {family}: {saving} in meno al mese e un solo abbonamento da gestire.",
+      "perMonth": "al mese"
     },
     "pricingFaq": {
       "q1": "Anche l’altro genitore deve pagare?"

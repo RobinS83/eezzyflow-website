@@ -235,9 +235,11 @@
     "pricing": {
       "eyebrow": "Prezzi",
       "title": "Inizia gratis. Scegli più tardi ciò che fa per voi.",
-      "testPhase": "Gratis durante la fase di test",
-      "freeForever": "Resta gratis",
-      "included": "Cosa include"
+      "included": "Cosa include",
+      "recommended": "La scelta migliore per due genitori",
+      "saveTitle": "Più conveniente di due volte Plus",
+      "saveBody": "Due volte Plus costano {twice} al mese. Con Famiglia avete entrambi tutto per {family}: {saving} in meno al mese e un solo abbonamento da gestire.",
+      "perMonth": "al mese"
     },
     "pricingFaq": {
       "q1": "Anche l’altro genitore deve pagare?"

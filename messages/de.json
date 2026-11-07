@@ -235,9 +235,11 @@
     "pricing": {
       "eyebrow": "Preise",
       "title": "Kostenlos starten. Später wählen, was zu euch passt.",
-      "testPhase": "Kostenlos während der Testphase",
-      "freeForever": "Bleibt kostenlos",
-      "included": "Was enthalten ist"
+      "included": "Was enthalten ist",
+      "recommended": "Die beste Wahl für zwei Eltern",
+      "saveTitle": "Günstiger als zweimal Plus",
+      "saveBody": "Zweimal Plus kostet {twice} im Monat. Mit Familie habt ihr beide alles für {family}: {saving} weniger im Monat und nur ein Abo zu regeln.",
+      "perMonth": "pro Monat"
     },
     "pricingFaq": {
       "q1": "Muss der andere Elternteil auch bezahlen?"

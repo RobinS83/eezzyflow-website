@@ -325,7 +325,8 @@ body {
 6. **Veilig en privé:** gehost in Europa, geen reclame, geen verkoop van
    gegevens, twee-stapsverificatie, de andere ouder ziet nooit je eigen adres
    of saldo als je dat niet wilt.
-7. **Prijzen:** Gratis, Plus, Gezin. Namen en wat erin zit staan in de app
+7. **Prijzen:** Gratis, Plus, Gezin. (Bijgewerkt: de bedragen staan nu vast,
+   zie `CLAUDE.md` en `lib/plans.ts`.) Namen en wat erin zit staan in de app
    onder `messages/nl.json` → `pricing`. **Geen bedragen verzinnen**: Robin
    legt de prijzen vast. Zolang er geen prijs is: "Nu gratis tijdens de
    testfase".

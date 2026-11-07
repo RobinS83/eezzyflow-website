@@ -235,9 +235,11 @@
     "pricing": {
       "eyebrow": "Precios",
       "title": "Empieza gratis. Elige más tarde lo que os encaje.",
-      "testPhase": "Gratis durante la fase de prueba",
-      "freeForever": "Sigue siendo gratis",
-      "included": "Qué incluye"
+      "included": "Qué incluye",
+      "recommended": "La mejor opción para dos progenitores",
+      "saveTitle": "Más ventajoso que dos veces Plus",
+      "saveBody": "Dos veces Plus cuestan {twice} al mes. Con Familia, los dos tenéis todo por {family}: {saving} menos al mes y una sola suscripción que gestionar.",
+      "perMonth": "al mes"
     },
     "pricingFaq": {
       "q1": "¿El otro progenitor también tiene que pagar?"

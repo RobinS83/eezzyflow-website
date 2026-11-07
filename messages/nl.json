@@ -235,9 +235,11 @@
     "pricing": {
       "eyebrow": "Prijzen",
       "title": "Begin gratis. Kies later wat bij jullie past.",
-      "testPhase": "Nu gratis tijdens de testfase",
-      "freeForever": "Blijft gratis",
-      "included": "Wat erin zit"
+      "included": "Wat erin zit",
+      "recommended": "Beste keuze voor twee ouders",
+      "saveTitle": "Voordeliger dan twee keer Plus",
+      "saveBody": "Twee keer Plus kost {twice} per maand. Met Gezin hebben jullie allebei alles voor {family}: {saving} minder per maand, en maar één abonnement om te regelen.",
+      "perMonth": "per maand"
     },
     "pricingFaq": {
       "q1": "Moet de andere ouder ook betalen?"

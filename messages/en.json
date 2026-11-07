@@ -235,9 +235,11 @@
     "pricing": {
       "eyebrow": "Pricing",
       "title": "Start for free. Choose what suits you later.",
-      "testPhase": "Free during the test phase",
-      "freeForever": "Stays free",
-      "included": "What’s included"
+      "included": "What’s included",
+      "recommended": "Best choice for two parents",
+      "saveTitle": "Better value than Plus twice",
+      "saveBody": "Plus twice costs {twice} a month. With Family you both get everything for {family}: {saving} less per month, and only one subscription to arrange.",
+      "perMonth": "per month"
     },
     "pricingFaq": {
       "q1": "Does the other parent have to pay too?"

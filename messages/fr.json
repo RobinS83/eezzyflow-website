@@ -235,9 +235,11 @@
     "pricing": {
       "eyebrow": "Tarifs",
       "title": "Commencez gratuitement. Choisissez plus tard ce qui vous convient.",
-      "testPhase": "Gratuit pendant la phase de test",
-      "freeForever": "Reste gratuit",
-      "included": "Ce qui est inclus"
+      "included": "Ce qui est inclus",
+      "recommended": "Le meilleur choix pour deux parents",
+      "saveTitle": "Plus avantageux que deux fois Plus",
+      "saveBody": "Deux fois Plus coûtent {twice} par mois. Avec Famille, vous avez tous les deux tout pour {family} : {saving} de moins par mois, et un seul abonnement à gérer.",
+      "perMonth": "par mois"
     },
     "pricingFaq": {
       "q1": "L’autre parent doit-il aussi payer ?"

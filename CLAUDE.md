@@ -34,8 +34,10 @@ statisch. Geen database, geen login, geen API-sleutels op de site.
   ook geen cookiebanner. Fonts zelf hosten via `next/font`.
 - **Geen hexcodes in componenten.** Gebruik de tokens uit de stijlgids.
 - **Geen informatie die alleen met kleur wordt overgebracht.**
-- **Geen prijzen verzinnen.** Robin legt de bedragen vast. Tot dan: "Nu gratis
-  tijdens de testfase".
+- **Geen prijzen verzinnen.** Robin legde de bedragen vast, dezelfde als in de
+  app: Gratis € 0, Plus € 4,99 per maand per ouder, Gezin € 7,99 per maand
+  voor het gezin. Ze staan op één plek: `lib/plans.ts`. Gezin is de formule
+  die de site naar voren schuift.
 - **Geen beloftes die de app niet waarmaakt.** Wat de app kan, staat in
   `docs/bron-teksten/nl.json` → `pricing.features`.
 - **Niets aan de domeinen of DNS veranderen** zonder dat Robin erom vraagt.

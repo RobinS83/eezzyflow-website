@@ -1,13 +1,25 @@
-// Which features belong to which plan, in the order the app shows them
-// (app repo: app/[locale]/(public)/abonnement/page.tsx). Feature texts come from
-// messages → pricing.features. Amounts are not shown: Robin decides when.
+// The plans as Robin set them (same amounts as the app's pricing page:
+// app repo, app/[locale]/(public)/abonnement/page.tsx). Feature texts come
+// from messages → pricing.features. Each feature is listed once: a plan shows
+// only what it adds to the plan before it.
 
 export type PlanId = "free" | "plus" | "family";
 
-export const plans: { id: PlanId; audience: "perParent" | "perFamily" | null; features: string[] }[] = [
-  { id: "free", audience: null, features: ["calendar", "oneChild", "messages", "basicCosts"] },
+export type Plan = {
+  id: PlanId;
+  /** Monthly price in euro cents. */
+  monthlyCents: number;
+  audience: "perParent" | "perFamily" | null;
+  features: string[];
+  /** The plan we steer towards: best value for two parents. */
+  featured?: boolean;
+};
+
+export const plans: Plan[] = [
+  { id: "free", monthlyCents: 0, audience: null, features: ["calendar", "oneChild", "messages", "basicCosts"] },
   {
     id: "plus",
+    monthlyCents: 499,
     audience: "perParent",
     features: [
       "everythingFree", "unlimitedChildren", "fullCosts", "documents", "calendarSync",
@@ -17,7 +29,19 @@ export const plans: { id: PlanId; audience: "perParent" | "perFamily" | null; fe
   },
   {
     id: "family",
+    monthlyCents: 799,
     audience: "perFamily",
-    features: ["plusForBoth", "viewers", "multiplePartners", "childAccounts", "prioritySupport"],
+    features: ["plusForBoth", "childAccounts", "prioritySupport"],
+    featured: true,
   },
 ];
+
+export const planById = (id: PlanId) => plans.find((p) => p.id === id)!;
+
+export function formatEuro(cents: number, locale: string) {
+  return new Intl.NumberFormat(locale, {
+    style: "currency",
+    currency: "EUR",
+    minimumFractionDigits: cents % 100 === 0 ? 0 : 2,
+  }).format(cents / 100);
+}
