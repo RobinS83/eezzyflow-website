@@ -13,10 +13,10 @@ export async function SiteHeader() {
   const locale = await getLocale();
 
   const items = [
-    { href: "#features", label: t("features") },
-    { href: "#how", label: t("how") },
-    { href: "#pricing", label: s("pricing") },
-    { href: "#faq", label: t("faq") },
+    { href: localePath(locale, "#features"), label: t("features") },
+    { href: localePath(locale, "#how"), label: t("how") },
+    { href: localePath(locale, "#pricing"), label: s("pricing") },
+    { href: localePath(locale, "hulp"), label: s("help") },
   ];
 
   return (
@@ -45,7 +45,7 @@ export async function SiteHeader() {
           <LanguageMenu locale={locale} label={f("language")} />
           <div className="hidden items-center gap-2 lg:flex">
           <ButtonLink href={links.login} variant="secondary" className="px-4">
-            {t("login")}
+            {s("openApp")}
           </ButtonLink>
           <ButtonLink href={links.register} className="px-4">
             {t("start")}
@@ -54,7 +54,7 @@ export async function SiteHeader() {
 
         <MobileMenu
           items={items}
-          labels={{ menu: t("menu"), close: s("close"), main: s("main"), login: t("login"), start: t("start") }}
+          labels={{ menu: t("menu"), close: s("close"), main: s("main"), login: s("openApp"), start: t("start") }}
           loginHref={links.login}
           startHref={links.register}
         />

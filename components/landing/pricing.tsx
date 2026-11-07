@@ -52,6 +52,11 @@ export async function Pricing() {
                   {plan.audience && <span className="block">{t(plan.audience)}</span>}
                 </span>
               </p>
+              {plan.id !== "free" && (
+                <p className={`mt-4 text-[14px] leading-snug font-semibold ${featured ? "text-spotlight-ink" : "text-ink"}`}>
+                  {s(plan.id === "family" ? "familyHow" : "plusHow")}
+                </p>
+              )}
 
               <a
                 href={links.register}

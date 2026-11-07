@@ -6,6 +6,27 @@
   NODE_VERSION = "22"
   NEXT_TELEMETRY_DISABLED = "1"
 
+# One address for everyone: eezzyflow.be and the www variants all land on
+# https://eezzyflow.com, keeping the path. These rules only apply once the
+# domains are added to the Netlify site (see docs/domeinen.md).
+[[redirects]]
+  from = "https://eezzyflow.be/*"
+  to = "https://eezzyflow.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.eezzyflow.be/*"
+  to = "https://eezzyflow.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.eezzyflow.com/*"
+  to = "https://eezzyflow.com/:splat"
+  status = 301
+  force = true
+
 # Old or mistyped Dutch URLs with the default prefix go to the root.
 [[redirects]]
   from = "/nl"

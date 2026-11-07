@@ -7,6 +7,7 @@ import { More } from "@/components/landing/more";
 import { Costs } from "@/components/landing/costs";
 import { Statement } from "@/components/landing/statement";
 import { Steps } from "@/components/landing/steps";
+import { Desktop } from "@/components/landing/desktop";
 import { Pricing } from "@/components/landing/pricing";
 import { Faq } from "@/components/landing/faq";
 import { Cta } from "@/components/landing/cta";
@@ -25,6 +26,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <Costs />
       <Statement />
       <Steps />
+      <Desktop />
       <Pricing />
       <Faq />
       <Cta />

@@ -1,7 +1,8 @@
 // The plans as Robin set them (same amounts as the app's pricing page:
 // app repo, app/[locale]/(public)/abonnement/page.tsx). Feature texts come
 // from messages → pricing.features. Each feature is listed once: a plan shows
-// only what it adds to the plan before it.
+// only what it adds to the plan before it. What Plus unlocks follows the
+// app's upgrade gate (components/plan/upgrade.tsx: "Plus en Gezin").
 
 export type PlanId = "free" | "plus" | "family";
 
@@ -24,14 +25,14 @@ export const plans: Plan[] = [
     features: [
       "everythingFree", "unlimitedChildren", "fullCosts", "documents", "calendarSync",
       "photoImport", "receipts", "lists", "reportPdf", "ownChildPhoto", "viewers",
-      "reminders", "aiRewrite", "judgmentImport", "yearOverview",
+      "childAccounts", "reminders", "aiRewrite", "judgmentImport", "yearOverview",
     ],
   },
   {
     id: "family",
     monthlyCents: 799,
     audience: "perFamily",
-    features: ["plusForBoth", "childAccounts", "prioritySupport"],
+    features: ["plusForBoth", "prioritySupport"],
     featured: true,
   },
 ];

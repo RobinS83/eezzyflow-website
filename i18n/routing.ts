@@ -12,6 +12,9 @@ export const routing = defineRouting({
 });
 
 /** "/" for Dutch, "/fr" etc. for the others. scripts/postbuild.mjs moves nl to the root. */
-export function localePath(locale: string, hash = "") {
-  return (locale === defaultLocale ? "/" : `/${locale}`) + hash;
+export function localePath(locale: string, hashOrPage = "") {
+  const base = locale === defaultLocale ? "" : `/${locale}`;
+  if (!hashOrPage) return base || "/";
+  if (hashOrPage.startsWith("#")) return (base || "/") + hashOrPage;
+  return `${base}/${hashOrPage}`;
 }

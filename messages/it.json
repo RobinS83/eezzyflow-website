@@ -220,7 +220,9 @@
       "skip": "Vai al contenuto",
       "close": "Chiudi menu",
       "home": "eezzyflow, torna all’inizio",
-      "main": "Menu principale"
+      "main": "Menu principale",
+      "help": "Aiuto",
+      "openApp": "Apri l’app"
     },
     "meta": {
       "description": "Due case. Un unico posto per tutto ciò che riguarda tuo figlio. Calendario di affidamento, spese, messaggi e documenti: tranquillo, sicuro e ospitato in Europa."
@@ -239,14 +241,21 @@
       "recommended": "La scelta migliore per due genitori",
       "saveTitle": "Più conveniente di due volte Plus",
       "saveBody": "Due volte Plus costano {twice} al mese. Con Famiglia avete entrambi tutto per {family}: {saving} in meno al mese e un solo abbonamento da gestire.",
-      "perMonth": "al mese"
+      "perMonth": "al mese",
+      "familyHow": "Uno di voi paga, e avete entrambi tutto.",
+      "plusHow": "Preferite restare del tutto indipendenti? Allora ognuno prende il proprio Plus."
     },
     "pricingFaq": {
       "q1": "Anche l’altro genitore deve pagare?"
     },
     "footer": {
       "language": "Lingua",
-      "rights": "© {year} eezzyflow"
+      "rights": "© {year} eezzyflow",
+      "help": "Aiuto e contatti",
+      "contact": "Contatti",
+      "openApp": "Apri l’app",
+      "legal": "Note legali",
+      "product": "eezzyflow"
     },
     "notFound": {
       "title": "Questa pagina non esiste",
@@ -271,6 +280,46 @@
       "eyebrow": "E inoltre",
       "title": "Anche le piccole cose, nello stesso posto.",
       "note": "Alcune funzioni fanno parte di Plus o Famiglia."
+    },
+    "desktop": {
+      "eyebrow": "Sul computer",
+      "title": "Alla scrivania? Apri eezzyflow nel browser.",
+      "body": "Nessuna installazione. Accedi e ritrovi lo stesso calendario, le stesse spese e gli stessi messaggi del telefono. Tutto resta sincronizzato.",
+      "tip": "In Chrome o Edge puoi anche installare eezzyflow come app sul computer: apri l’app e scegli Installa nella barra degli indirizzi.",
+      "button": "Apri eezzyflow",
+      "label": "Esempio: eezzyflow in una finestra del browser sul computer"
+    },
+    "help": {
+      "metaTitle": "Aiuto e contatti",
+      "metaDescription": "Password dimenticata, non riesci ad accedere o hai una domanda su eezzyflow? Qui trovi subito la strada.",
+      "eyebrow": "Aiuto e contatti",
+      "title": "Come possiamo aiutarti?",
+      "intro": "Non riesci più a entrare nel tuo account, l’accesso non funziona o hai semplicemente una domanda? Qui trovi subito la strada.",
+      "resetTitle": "Password dimenticata",
+      "resetBody": "Richiedi un link di ripristino. Riceverai un’e-mail per impostare una nuova password.",
+      "resetButton": "Ripristina la password",
+      "loginTitle": "Accedi",
+      "loginBody": "Apri l’app e accedi con il tuo indirizzo e-mail e la password.",
+      "loginButton": "Vai all’accesso",
+      "formTitle": "Fai la tua domanda",
+      "formBody": "Usa il modulo nell’app. Non serve aver effettuato l’accesso.",
+      "formButton": "Vai al modulo",
+      "mailTitle": "Scrivici",
+      "mailBody": "Preferisci una normale e-mail? Scrivici, ti risponderemo il prima possibile.",
+      "problemsTitle": "Problemi frequenti",
+      "q1": "Non ricevo l’e-mail di ripristino",
+      "a1": "Controlla anche la cartella spam e verifica di usare l’indirizzo del tuo account. Se dopo un quarto d’ora non arriva nulla, scrivici.",
+      "q2": "Non riesco più a ottenere il codice della verifica in due passaggi",
+      "a2": "Per esempio perché hai un telefono nuovo. Scrivici dall’indirizzo e-mail del tuo account e ti aiuteremo.",
+      "q3": "Non ho più accesso alla casella e-mail del mio account",
+      "a3": "Scrivici con il tuo nome e il vecchio indirizzo e-mail. Vedremo insieme come verificare che l’account sia tuo.",
+      "q4": "Come elimino il mio account?",
+      "a4": "Nell’app, da Impostazioni → Account → Elimina account. I tuoi dati vengono cancellati.",
+      "q5": "Come disdico l’abbonamento?",
+      "legalTitle": "Privacy e condizioni",
+      "legalBody": "Come trattiamo i tuoi dati e cosa puoi aspettarti da noi. I tuoi dati sono conservati nell’Unione europea.",
+      "privacy": "Informativa sulla privacy",
+      "terms": "Condizioni d’uso"
     }
   }
 }

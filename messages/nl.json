@@ -220,7 +220,9 @@
       "skip": "Naar de inhoud",
       "close": "Menu sluiten",
       "home": "eezzyflow, naar het begin",
-      "main": "Hoofdmenu"
+      "main": "Hoofdmenu",
+      "help": "Hulp",
+      "openApp": "Open de app"
     },
     "meta": {
       "description": "Twee huizen. Eén plek voor alles rond je kind. Verblijfskalender, kosten, berichten en documenten: rustig, veilig en in Europa gehost."
@@ -239,14 +241,21 @@
       "recommended": "Beste keuze voor twee ouders",
       "saveTitle": "Voordeliger dan twee keer Plus",
       "saveBody": "Twee keer Plus kost {twice} per maand. Met Gezin hebben jullie allebei alles voor {family}: {saving} minder per maand, en maar één abonnement om te regelen.",
-      "perMonth": "per maand"
+      "perMonth": "per maand",
+      "familyHow": "Eén van jullie betaalt, jullie hebben allebei alles.",
+      "plusHow": "Liever volledig los van elkaar? Dan neemt ieder zijn eigen Plus."
     },
     "pricingFaq": {
       "q1": "Moet de andere ouder ook betalen?"
     },
     "footer": {
       "language": "Taal",
-      "rights": "© {year} eezzyflow"
+      "rights": "© {year} eezzyflow",
+      "help": "Hulp en contact",
+      "contact": "Contact",
+      "openApp": "Open de app",
+      "legal": "Juridisch",
+      "product": "eezzyflow"
     },
     "notFound": {
       "title": "Deze pagina bestaat niet",
@@ -271,6 +280,46 @@
       "eyebrow": "En verder",
       "title": "Ook de kleine dingen, op dezelfde plek.",
       "note": "Sommige functies horen bij Plus of Gezin."
+    },
+    "desktop": {
+      "eyebrow": "Op je computer",
+      "title": "Achter je bureau? Open eezzyflow in je browser.",
+      "body": "Geen installatie nodig. Meld je aan en je ziet dezelfde kalender, kosten en berichten als op je gsm. Alles blijft vanzelf gelijk.",
+      "tip": "In Chrome of Edge kun je eezzyflow ook als app op je computer zetten: open de app en kies Installeren in de adresbalk.",
+      "button": "Open eezzyflow",
+      "label": "Voorbeeld: eezzyflow in een browservenster op de computer"
+    },
+    "help": {
+      "metaTitle": "Hulp en contact",
+      "metaDescription": "Wachtwoord vergeten, aanmelden lukt niet of een vraag over eezzyflow? Hier vind je snel de weg.",
+      "eyebrow": "Hulp en contact",
+      "title": "Hoe kunnen we helpen?",
+      "intro": "Account kwijt, aanmelden lukt niet of gewoon een vraag? Hier vind je snel de weg.",
+      "resetTitle": "Wachtwoord vergeten",
+      "resetBody": "Vraag een herstellink aan. Je krijgt een e-mail om een nieuw wachtwoord in te stellen.",
+      "resetButton": "Wachtwoord herstellen",
+      "loginTitle": "Aanmelden",
+      "loginBody": "Open de app en meld je aan met je e-mailadres en wachtwoord.",
+      "loginButton": "Naar aanmelden",
+      "formTitle": "Stel je vraag",
+      "formBody": "Gebruik het formulier in de app. Je hoeft daarvoor niet aangemeld te zijn.",
+      "formButton": "Naar het formulier",
+      "mailTitle": "Mail ons",
+      "mailBody": "Liever een gewone e-mail? Schrijf ons, we antwoorden zo snel mogelijk.",
+      "problemsTitle": "Veelvoorkomende problemen",
+      "q1": "Ik krijg geen herstelmail",
+      "a1": "Kijk ook in je map met ongewenste e-mail en controleer of je het adres gebruikt waarmee je je account maakte. Komt er na een kwartier nog niets, mail ons dan.",
+      "q2": "Ik kan mijn code voor twee-stapsverificatie niet meer opvragen",
+      "a2": "Bijvoorbeeld omdat je een nieuwe gsm hebt. Mail ons vanaf het e-mailadres van je account, dan helpen we je verder.",
+      "q3": "Ik kan niet meer in de mailbox van mijn account",
+      "a3": "Mail ons met je naam en het oude e-mailadres. We bekijken samen hoe we kunnen nagaan dat het account van jou is.",
+      "q4": "Hoe verwijder ik mijn account?",
+      "a4": "In de app, via Instellingen → Account → Account verwijderen. Je gegevens worden dan gewist.",
+      "q5": "Hoe zeg ik mijn abonnement op?",
+      "legalTitle": "Privacy en voorwaarden",
+      "legalBody": "Hoe we met je gegevens omgaan en wat je van ons mag verwachten. Je gegevens worden bewaard in de Europese Unie.",
+      "privacy": "Privacyverklaring",
+      "terms": "Gebruiksvoorwaarden"
     }
   }
 }

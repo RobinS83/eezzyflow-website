@@ -220,7 +220,9 @@
       "skip": "Zum Inhalt",
       "close": "Menü schließen",
       "home": "eezzyflow, zur Startseite",
-      "main": "Hauptmenü"
+      "main": "Hauptmenü",
+      "help": "Hilfe",
+      "openApp": "App öffnen"
     },
     "meta": {
       "description": "Zwei Zuhause. Ein Ort für alles rund um dein Kind. Betreuungskalender, Kosten, Nachrichten und Dokumente: ruhig, sicher und in Europa gehostet."
@@ -239,14 +241,21 @@
       "recommended": "Die beste Wahl für zwei Eltern",
       "saveTitle": "Günstiger als zweimal Plus",
       "saveBody": "Zweimal Plus kostet {twice} im Monat. Mit Familie habt ihr beide alles für {family}: {saving} weniger im Monat und nur ein Abo zu regeln.",
-      "perMonth": "pro Monat"
+      "perMonth": "pro Monat",
+      "familyHow": "Einer von euch zahlt, ihr habt beide alles.",
+      "plusHow": "Lieber ganz getrennt? Dann nimmt jeder ein eigenes Plus."
     },
     "pricingFaq": {
       "q1": "Muss der andere Elternteil auch bezahlen?"
     },
     "footer": {
       "language": "Sprache",
-      "rights": "© {year} eezzyflow"
+      "rights": "© {year} eezzyflow",
+      "help": "Hilfe und Kontakt",
+      "contact": "Kontakt",
+      "openApp": "App öffnen",
+      "legal": "Rechtliches",
+      "product": "eezzyflow"
     },
     "notFound": {
       "title": "Diese Seite gibt es nicht",
@@ -271,6 +280,46 @@
       "eyebrow": "Und mehr",
       "title": "Auch die kleinen Dinge, am selben Ort.",
       "note": "Manche Funktionen gehören zu Plus oder Familie."
+    },
+    "desktop": {
+      "eyebrow": "Am Computer",
+      "title": "Am Schreibtisch? Öffne eezzyflow im Browser.",
+      "body": "Keine Installation nötig. Melde dich an und du siehst denselben Kalender, dieselben Kosten und Nachrichten wie auf dem Handy. Alles bleibt automatisch gleich.",
+      "tip": "In Chrome oder Edge kannst du eezzyflow auch als App auf deinem Computer installieren: Öffne die App und wähle Installieren in der Adressleiste.",
+      "button": "eezzyflow öffnen",
+      "label": "Beispiel: eezzyflow in einem Browserfenster am Computer"
+    },
+    "help": {
+      "metaTitle": "Hilfe und Kontakt",
+      "metaDescription": "Passwort vergessen, Anmeldung klappt nicht oder eine Frage zu eezzyflow? Hier findest du schnell weiter.",
+      "eyebrow": "Hilfe und Kontakt",
+      "title": "Wie können wir helfen?",
+      "intro": "Kein Zugang mehr zum Konto, Anmeldung klappt nicht oder einfach eine Frage? Hier findest du schnell weiter.",
+      "resetTitle": "Passwort vergessen",
+      "resetBody": "Fordere einen Link an. Du bekommst eine E-Mail, um ein neues Passwort festzulegen.",
+      "resetButton": "Passwort zurücksetzen",
+      "loginTitle": "Anmelden",
+      "loginBody": "Öffne die App und melde dich mit deiner E-Mail-Adresse und deinem Passwort an.",
+      "loginButton": "Zur Anmeldung",
+      "formTitle": "Stell deine Frage",
+      "formBody": "Nutze das Formular in der App. Du musst dafür nicht angemeldet sein.",
+      "formButton": "Zum Formular",
+      "mailTitle": "Schreib uns",
+      "mailBody": "Lieber eine normale E-Mail? Schreib uns, wir antworten so schnell wie möglich.",
+      "problemsTitle": "Häufige Probleme",
+      "q1": "Ich bekomme keine E-Mail zum Zurücksetzen",
+      "a1": "Schau auch im Spam-Ordner nach und prüfe, ob du die Adresse deines Kontos verwendest. Kommt nach einer Viertelstunde nichts, schreib uns.",
+      "q2": "Ich komme nicht mehr an meinen Code für die Zwei-Schritt-Verifizierung",
+      "a2": "Zum Beispiel, weil du ein neues Handy hast. Schreib uns von der E-Mail-Adresse deines Kontos, dann helfen wir dir weiter.",
+      "q3": "Ich habe keinen Zugang mehr zum Postfach meines Kontos",
+      "a3": "Schreib uns mit deinem Namen und der alten E-Mail-Adresse. Wir klären gemeinsam, wie wir prüfen, dass das Konto dir gehört.",
+      "q4": "Wie lösche ich mein Konto?",
+      "a4": "In der App unter Einstellungen → Konto → Konto löschen. Deine Daten werden dann gelöscht.",
+      "q5": "Wie kündige ich mein Abo?",
+      "legalTitle": "Datenschutz und Bedingungen",
+      "legalBody": "Wie wir mit deinen Daten umgehen und was du von uns erwarten kannst. Deine Daten werden in der Europäischen Union gespeichert.",
+      "privacy": "Datenschutzerklärung",
+      "terms": "Nutzungsbedingungen"
     }
   }
 }

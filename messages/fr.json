@@ -220,7 +220,9 @@
       "skip": "Aller au contenu",
       "close": "Fermer le menu",
       "home": "eezzyflow, retour à l’accueil",
-      "main": "Menu principal"
+      "main": "Menu principal",
+      "help": "Aide",
+      "openApp": "Ouvrir l’app"
     },
     "meta": {
       "description": "Deux maisons. Un seul endroit pour tout ce qui concerne votre enfant. Calendrier de garde, frais, messages et documents : calme, sûr et hébergé en Europe."
@@ -239,14 +241,21 @@
       "recommended": "Le meilleur choix pour deux parents",
       "saveTitle": "Plus avantageux que deux fois Plus",
       "saveBody": "Deux fois Plus coûtent {twice} par mois. Avec Famille, vous avez tous les deux tout pour {family} : {saving} de moins par mois, et un seul abonnement à gérer.",
-      "perMonth": "par mois"
+      "perMonth": "par mois",
+      "familyHow": "L’un de vous paie, vous avez tous les deux tout.",
+      "plusHow": "Vous préférez rester totalement indépendants ? Chacun prend alors son propre Plus."
     },
     "pricingFaq": {
       "q1": "L’autre parent doit-il aussi payer ?"
     },
     "footer": {
       "language": "Langue",
-      "rights": "© {year} eezzyflow"
+      "rights": "© {year} eezzyflow",
+      "help": "Aide et contact",
+      "contact": "Contact",
+      "openApp": "Ouvrir l’app",
+      "legal": "Mentions légales",
+      "product": "eezzyflow"
     },
     "notFound": {
       "title": "Cette page n’existe pas",
@@ -271,6 +280,46 @@
       "eyebrow": "Et aussi",
       "title": "Les petites choses aussi, au même endroit.",
       "note": "Certaines fonctions font partie de Plus ou Famille."
+    },
+    "desktop": {
+      "eyebrow": "Sur votre ordinateur",
+      "title": "À votre bureau ? Ouvrez eezzyflow dans votre navigateur.",
+      "body": "Aucune installation nécessaire. Connectez-vous et vous retrouvez le même calendrier, les mêmes frais et les mêmes messages que sur votre téléphone. Tout reste synchronisé.",
+      "tip": "Dans Chrome ou Edge, vous pouvez aussi installer eezzyflow comme une app sur votre ordinateur : ouvrez l’app et choisissez Installer dans la barre d’adresse.",
+      "button": "Ouvrir eezzyflow",
+      "label": "Exemple : eezzyflow dans une fenêtre de navigateur sur ordinateur"
+    },
+    "help": {
+      "metaTitle": "Aide et contact",
+      "metaDescription": "Mot de passe oublié, impossible de vous connecter ou une question sur eezzyflow ? Trouvez rapidement votre chemin.",
+      "eyebrow": "Aide et contact",
+      "title": "Comment pouvons-nous vous aider ?",
+      "intro": "Compte perdu, connexion impossible ou simplement une question ? Trouvez rapidement votre chemin.",
+      "resetTitle": "Mot de passe oublié",
+      "resetBody": "Demandez un lien de réinitialisation. Vous recevrez un e-mail pour choisir un nouveau mot de passe.",
+      "resetButton": "Réinitialiser le mot de passe",
+      "loginTitle": "Se connecter",
+      "loginBody": "Ouvrez l’app et connectez-vous avec votre adresse e-mail et votre mot de passe.",
+      "loginButton": "Vers la connexion",
+      "formTitle": "Posez votre question",
+      "formBody": "Utilisez le formulaire dans l’app. Pas besoin d’être connecté.",
+      "formButton": "Vers le formulaire",
+      "mailTitle": "Écrivez-nous",
+      "mailBody": "Vous préférez un e-mail ? Écrivez-nous, nous répondons dès que possible.",
+      "problemsTitle": "Problèmes fréquents",
+      "q1": "Je ne reçois pas l’e-mail de réinitialisation",
+      "a1": "Regardez aussi dans vos courriers indésirables et vérifiez que vous utilisez l’adresse de votre compte. Si rien n’arrive après un quart d’heure, écrivez-nous.",
+      "q2": "Je ne peux plus obtenir mon code de vérification en deux étapes",
+      "a2": "Par exemple parce que vous avez un nouveau téléphone. Écrivez-nous depuis l’adresse e-mail de votre compte, nous vous aiderons.",
+      "q3": "Je n’ai plus accès à la boîte mail de mon compte",
+      "a3": "Écrivez-nous avec votre nom et l’ancienne adresse e-mail. Nous verrons ensemble comment vérifier que le compte est bien le vôtre.",
+      "q4": "Comment supprimer mon compte ?",
+      "a4": "Dans l’app, via Paramètres → Compte → Supprimer le compte. Vos données sont alors effacées.",
+      "q5": "Comment résilier mon abonnement ?",
+      "legalTitle": "Confidentialité et conditions",
+      "legalBody": "Comment nous traitons vos données et ce que vous pouvez attendre de nous. Vos données sont conservées dans l’Union européenne.",
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions d’utilisation"
     }
   }
 }

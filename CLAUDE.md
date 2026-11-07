@@ -49,6 +49,12 @@ statisch. Geen database, geen login, geen API-sleutels op de site.
 - Registreren: `https://app.eezzyflow.com/registreren`
 - Privacy: `https://app.eezzyflow.com/privacy`
 - Voorwaarden: `https://app.eezzyflow.com/voorwaarden`
+- Wachtwoord vergeten: `https://app.eezzyflow.com/wachtwoord-vergeten`
+- Supportformulier (zonder aanmelden): `https://app.eezzyflow.com/support`
+
+"Open de app" wijst naar `/aanmelden`: wie al aangemeld is, komt zo meteen op
+Home terecht. Contact voorlopig: `robin@surocad3d.com` (in `lib/links.ts`).
+De pagina `/hulp` bundelt herstellen, contact, privacy en voorwaarden.
 
 De app zet de taal niet in de URL; ze volgt de browser en de keuze in de app.
 
@@ -73,7 +79,9 @@ elke wijziging zelf.
 Netlify, net als de site van surocad3d (de app blijft op Vercel). De site is
 volledig statisch (`output: "export"`): `npm run build` schrijft gewone
 HTML naar `out/`, er draait geen server. Instellingen en headers staan in
-`netlify.toml`. Robin koppelt `eezzyflow.com` zelf wanneer de site klaar is.
+`netlify.toml`. Robin koppelt `eezzyflow.com` en `eezzyflow.be` zelf wanneer
+de site live mag (bij de start van de reclame); de stappen staan in
+`docs/domeinen.md`. `.be` en `www` sturen door naar `https://eezzyflow.com`.
 
 ## De app-repo
 

@@ -220,7 +220,9 @@
       "skip": "Skip to content",
       "close": "Close menu",
       "home": "eezzyflow, back to the start",
-      "main": "Main menu"
+      "main": "Main menu",
+      "help": "Help",
+      "openApp": "Open the app"
     },
     "meta": {
       "description": "Two homes. One place for everything about your child. Custody calendar, costs, messages and documents: calm, secure and hosted in Europe."
@@ -239,14 +241,21 @@
       "recommended": "Best choice for two parents",
       "saveTitle": "Better value than Plus twice",
       "saveBody": "Plus twice costs {twice} a month. With Family you both get everything for {family}: {saving} less per month, and only one subscription to arrange.",
-      "perMonth": "per month"
+      "perMonth": "per month",
+      "familyHow": "One of you pays, and you both get everything.",
+      "plusHow": "Prefer to keep things completely separate? Then each of you takes your own Plus."
     },
     "pricingFaq": {
       "q1": "Does the other parent have to pay too?"
     },
     "footer": {
       "language": "Language",
-      "rights": "© {year} eezzyflow"
+      "rights": "© {year} eezzyflow",
+      "help": "Help and contact",
+      "contact": "Contact",
+      "openApp": "Open the app",
+      "legal": "Legal",
+      "product": "eezzyflow"
     },
     "notFound": {
       "title": "This page doesn’t exist",
@@ -271,6 +280,46 @@
       "eyebrow": "And more",
       "title": "The little things too, in the same place.",
       "note": "Some features are part of Plus or Family."
+    },
+    "desktop": {
+      "eyebrow": "On your computer",
+      "title": "At your desk? Open eezzyflow in your browser.",
+      "body": "Nothing to install. Sign in and you’ll see the same calendar, costs and messages as on your phone. Everything stays in sync.",
+      "tip": "In Chrome or Edge you can also install eezzyflow as an app on your computer: open the app and choose Install in the address bar.",
+      "button": "Open eezzyflow",
+      "label": "Example: eezzyflow in a browser window on a computer"
+    },
+    "help": {
+      "metaTitle": "Help and contact",
+      "metaDescription": "Forgot your password, can’t sign in or have a question about eezzyflow? Find your way here.",
+      "eyebrow": "Help and contact",
+      "title": "How can we help?",
+      "intro": "Lost access to your account, can’t sign in or just have a question? Find your way here.",
+      "resetTitle": "Forgot your password",
+      "resetBody": "Request a reset link. You’ll get an email to set a new password.",
+      "resetButton": "Reset password",
+      "loginTitle": "Sign in",
+      "loginBody": "Open the app and sign in with your email address and password.",
+      "loginButton": "Go to sign in",
+      "formTitle": "Ask your question",
+      "formBody": "Use the form in the app. You don’t need to be signed in.",
+      "formButton": "Go to the form",
+      "mailTitle": "Email us",
+      "mailBody": "Prefer a regular email? Write to us and we’ll reply as soon as we can.",
+      "problemsTitle": "Common problems",
+      "q1": "I don’t receive the reset email",
+      "a1": "Check your spam folder too, and make sure you use the address you signed up with. If nothing arrives after fifteen minutes, email us.",
+      "q2": "I can’t get my two-step verification code anymore",
+      "a2": "For example because you have a new phone. Email us from your account’s email address and we’ll help you.",
+      "q3": "I can’t access my account’s mailbox anymore",
+      "a3": "Email us with your name and the old email address. We’ll work out together how to confirm the account is yours.",
+      "q4": "How do I delete my account?",
+      "a4": "In the app, via Settings → Account → Delete account. Your data is then erased.",
+      "q5": "How do I cancel my subscription?",
+      "legalTitle": "Privacy and terms",
+      "legalBody": "How we handle your data and what you can expect from us. Your data is stored in the European Union.",
+      "privacy": "Privacy policy",
+      "terms": "Terms of use"
     }
   }
 }

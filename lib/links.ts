@@ -8,6 +8,8 @@ export const links = {
   register: `${APP_URL}/registreren`,
   privacy: `${APP_URL}/privacy`,
   terms: `${APP_URL}/voorwaarden`,
+  support: `${APP_URL}/support`,
+  forgotPassword: `${APP_URL}/wachtwoord-vergeten`,
   // The app is not in the stores yet. Fill these in once it is; until then
   // the store buttons stay hidden and the site points to the web app.
   appStore: null as string | null,
@@ -15,3 +17,6 @@ export const links = {
 } as const;
 
 export const SITE_URL = "https://eezzyflow.com";
+
+// Contact address until eezzyflow has its own mailbox.
+export const CONTACT_EMAIL = "robin@surocad3d.com";
