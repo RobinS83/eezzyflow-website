@@ -168,9 +168,8 @@
       "documents": "Dokumente aufbewahren: Zeugnisse, Bescheinigungen, Versicherungen",
       "calendarSync": "Wechsel und Termine im Kalender deines Handys",
       "photoImport": "Schulkalender per Foto übernehmen: Die App liest die freien Tage und Ausflüge heraus, du prüfst sie",
-      "multiplePartners": "Patchworkfamilie: sehen, welche Kinder zu Hause sind",
+      "multiplePartners": "Unser Zuhause: wer bei dir wohnt und wer was sieht (auch für eine Patchworkfamilie)",
       "childAccounts": "Eigene Konten für Kinder",
-      "prioritySupport": "Vorrang bei Fragen",
       "everythingFree": "Alles aus Gratis",
       "plusForBoth": "Alles aus Plus, für euch beide",
       "reminders": "Erinnerungen am Abend vor einem Wechsel oder Termin",
@@ -181,7 +180,11 @@
       "receipts": "Beleg fotografieren: Die App füllt die Ausgabe aus und bewahrt den Beleg dazu auf",
       "ownChildPhoto": "Dein eigenes Foto deines Kindes, das nur du siehst",
       "viewers": "Mitlesende: Stiefelternteil, Oma oder Babysitter lesen mit (1 € pro Person)",
-      "lists": "Listen: Einkäufe, Rezepte und ein Wochenmenü, auch für die Kinder"
+      "lists": "Listen: Einkäufe, Rezepte und ein Wochenmenü, auch für die Kinder",
+      "history": "Verlauf: alles, was passiert ist, in einer Liste, auch als PDF",
+      "onePays": "Einer von euch zahlt, ihr habt beide alles",
+      "cheaperThanTwice": "Günstiger als zweimal Plus",
+      "splitCost": "Gemeinsam bezahlen? Trag das Abo als Kosten in der App ein und teil es wie eure anderen Kosten"
     },
     "faq": {
       "title": "Häufige Fragen",
@@ -190,7 +193,7 @@
       "q2": "Was, wenn der andere Elternteil nicht mitmachen will?",
       "a2": "Dann nutzt du die App allein. Kalender und Kosten funktionieren dann für dich, und einladen kannst du später immer noch.",
       "q3": "Können wir gemeinsam ein Abo nehmen?",
-      "a3": "Ja, mit Familie. Das geht, ob ihr zusammenwohnt oder nicht: ein Abo, und ihr habt beide alles. Wer es bezahlt, macht ihr unter euch aus.",
+      "a3": "Ja, mit Familie. Ob ihr zusammenwohnt oder nicht: ein Abo, und ihr habt beide alles. Einer von euch zahlt; tragt das Abo als Kosten in der App ein, dann landet es in eurem Saldo, wie eure anderen Kosten.",
       "q4": "Wie kündige ich?",
       "a4": "Über Einstellungen → Konto. Du behältst den Zugang bis zum Ende deines Abrechnungszeitraums.",
       "q5": "Kann der andere Elternteil mein Plus mitnutzen?",
@@ -204,11 +207,12 @@
     },
     "perParent": "pro Elternteil",
     "perFamily": "für die Familie",
-    "forYou": "Passt zu dir",
     "soon": "bald",
     "toApp": "Zur App",
     "testPhaseTitle": "Bezahlen geht noch nicht",
-    "testPhaseBody": "Solange die App in der Testphase ist, können alle alles nutzen. Wenn die Abos starten, sagen wir rechtzeitig vorher Bescheid."
+    "testPhaseBody": "Solange die App in der Testphase ist, können alle alles nutzen. Wenn die Abos starten, sagen wir rechtzeitig vorher Bescheid.",
+    "sameFeatures": "Plus und Familie bieten genau dasselbe. Der einzige Unterschied ist, wer bezahlt.",
+    "recommended": "Empfohlen"
   },
   "meta": {
     "appName": "eezzyflow",
@@ -238,11 +242,8 @@
       "eyebrow": "Preise",
       "title": "Kostenlos starten. Später wählen, was zu euch passt.",
       "included": "Was enthalten ist",
-      "recommended": "Die beste Wahl für zwei Eltern",
-      "saveTitle": "Günstiger als zweimal Plus",
       "saveBody": "Zweimal Plus kostet {twice} im Monat. Mit Familie habt ihr beide alles für {family}: {saving} weniger im Monat und nur ein Abo zu regeln.",
       "perMonth": "pro Monat",
-      "familyHow": "Einer von euch zahlt, ihr habt beide alles.",
       "plusHow": "Lieber ganz getrennt? Dann nimmt jeder ein eigenes Plus."
     },
     "pricingFaq": {

@@ -23,11 +23,8 @@
       "eyebrow": "Prijzen",
       "title": "Begin gratis. Kies later wat bij jullie past.",
       "included": "Wat erin zit",
-      "recommended": "Beste keuze voor twee ouders",
-      "saveTitle": "Voordeliger dan twee keer Plus",
       "saveBody": "Twee keer Plus kost {twice} per maand. Met Gezin hebben jullie allebei alles voor {family}: {saving} minder per maand, en maar één abonnement om te regelen.",
       "perMonth": "per maand",
-      "familyHow": "Eén van jullie betaalt, jullie hebben allebei alles.",
       "plusHow": "Liever volledig los van elkaar? Dan neemt ieder zijn eigen Plus."
     },
     "pricingFaq": {
@@ -131,11 +128,8 @@
       "eyebrow": "Tarifs",
       "title": "Commencez gratuitement. Choisissez plus tard ce qui vous convient.",
       "included": "Ce qui est inclus",
-      "recommended": "Le meilleur choix pour deux parents",
-      "saveTitle": "Plus avantageux que deux fois Plus",
       "saveBody": "Deux fois Plus coûtent {twice} par mois. Avec Famille, vous avez tous les deux tout pour {family} : {saving} de moins par mois, et un seul abonnement à gérer.",
       "perMonth": "par mois",
-      "familyHow": "L’un de vous paie, vous avez tous les deux tout.",
       "plusHow": "Vous préférez rester totalement indépendants ? Chacun prend alors son propre Plus."
     },
     "pricingFaq": {
@@ -239,11 +233,8 @@
       "eyebrow": "Pricing",
       "title": "Start for free. Choose what suits you later.",
       "included": "What’s included",
-      "recommended": "Best choice for two parents",
-      "saveTitle": "Better value than Plus twice",
       "saveBody": "Plus twice costs {twice} a month. With Family you both get everything for {family}: {saving} less per month, and only one subscription to arrange.",
       "perMonth": "per month",
-      "familyHow": "One of you pays, and you both get everything.",
       "plusHow": "Prefer to keep things completely separate? Then each of you takes your own Plus."
     },
     "pricingFaq": {
@@ -347,11 +338,8 @@
       "eyebrow": "Preise",
       "title": "Kostenlos starten. Später wählen, was zu euch passt.",
       "included": "Was enthalten ist",
-      "recommended": "Die beste Wahl für zwei Eltern",
-      "saveTitle": "Günstiger als zweimal Plus",
       "saveBody": "Zweimal Plus kostet {twice} im Monat. Mit Familie habt ihr beide alles für {family}: {saving} weniger im Monat und nur ein Abo zu regeln.",
       "perMonth": "pro Monat",
-      "familyHow": "Einer von euch zahlt, ihr habt beide alles.",
       "plusHow": "Lieber ganz getrennt? Dann nimmt jeder ein eigenes Plus."
     },
     "pricingFaq": {
@@ -455,11 +443,8 @@
       "eyebrow": "Precios",
       "title": "Empieza gratis. Elige más tarde lo que os encaje.",
       "included": "Qué incluye",
-      "recommended": "La mejor opción para dos progenitores",
-      "saveTitle": "Más ventajoso que dos veces Plus",
       "saveBody": "Dos veces Plus cuestan {twice} al mes. Con Familia, los dos tenéis todo por {family}: {saving} menos al mes y una sola suscripción que gestionar.",
       "perMonth": "al mes",
-      "familyHow": "Uno de los dos paga y ambos tenéis todo.",
       "plusHow": "¿Preferís ir totalmente por separado? Entonces cada uno contrata su propio Plus."
     },
     "pricingFaq": {
@@ -563,11 +548,8 @@
       "eyebrow": "Prezzi",
       "title": "Inizia gratis. Scegli più tardi ciò che fa per voi.",
       "included": "Cosa include",
-      "recommended": "La scelta migliore per due genitori",
-      "saveTitle": "Più conveniente di due volte Plus",
       "saveBody": "Due volte Plus costano {twice} al mese. Con Famiglia avete entrambi tutto per {family}: {saving} in meno al mese e un solo abbonamento da gestire.",
       "perMonth": "al mese",
-      "familyHow": "Uno di voi paga, e avete entrambi tutto.",
       "plusHow": "Preferite restare del tutto indipendenti? Allora ognuno prende il proprio Plus."
     },
     "pricingFaq": {

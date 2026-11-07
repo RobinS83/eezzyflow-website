@@ -168,9 +168,8 @@
       "documents": "Guardar documentos: boletines de notas, certificados, seguros",
       "calendarSync": "Cambios y citas en el calendario de tu móvil",
       "photoImport": "Pasar el calendario escolar con una foto: la app lee los días sin cole y las excursiones, tú los revisas",
-      "multiplePartners": "Familia reconstituida: ver qué niños están en casa",
+      "multiplePartners": "Nuestra casa: quién vive contigo y quién ve qué (también para una familia reconstituida)",
       "childAccounts": "Cuentas propias para los niños",
-      "prioritySupport": "Prioridad en la atención",
       "everythingFree": "Todo lo de Gratis",
       "plusForBoth": "Todo lo de Plus, para los dos",
       "reminders": "Recordatorios la noche antes de un cambio o una cita",
@@ -181,7 +180,11 @@
       "receipts": "Fotografiar el recibo: la app rellena el gasto y guarda el recibo con él",
       "ownChildPhoto": "Tu propia foto de tu hijo, que solo ves tú",
       "viewers": "Observadores: la nueva pareja, la abuela o la canguro pueden ver lo esencial (1 € por persona)",
-      "lists": "Listas: la compra, recetas y un menú semanal, también para los niños"
+      "lists": "Listas: la compra, recetas y un menú semanal, también para los niños",
+      "history": "Historial: todo lo que pasó en una lista, también en PDF",
+      "onePays": "Uno de vosotros paga y los dos tenéis todo",
+      "cheaperThanTwice": "Más barato que dos veces Plus",
+      "splitCost": "¿Pagar juntos? Añade la suscripción como gasto en la app y repártela como los demás gastos"
     },
     "faq": {
       "title": "Preguntas frecuentes",
@@ -190,7 +193,7 @@
       "q2": "¿Y si el otro progenitor no quiere participar?",
       "a2": "Entonces usas la app tú solo. El calendario y los gastos funcionan para ti, y siempre puedes invitarle más adelante.",
       "q3": "¿Podemos tener una sola suscripción entre los dos?",
-      "a3": "Sí, con Familia. Da igual si vivís juntos o no: una suscripción y los dos lo tenéis todo. Quién la paga lo decidís entre vosotros.",
+      "a3": "Sí, con Familia. Viváis juntos o no: una suscripción y los dos tenéis todo. Uno de vosotros paga; añade la suscripción como gasto en la app y entra en vuestro saldo, como los demás gastos.",
       "q4": "¿Cómo me doy de baja?",
       "a4": "En Ajustes → Cuenta. Mantienes el acceso hasta el final del periodo que has pagado.",
       "q5": "¿Puede el otro progenitor usar mi Plus?",
@@ -204,11 +207,12 @@
     },
     "perParent": "por progenitor",
     "perFamily": "para la familia",
-    "forYou": "Lo tuyo",
     "soon": "muy pronto",
     "toApp": "Ir a la app",
     "testPhaseTitle": "Todavía no se puede pagar",
-    "testPhaseBody": "Mientras la app esté en fase de pruebas, todo el mundo puede usarlo todo. Cuando empiecen las suscripciones, avisaremos con tiempo."
+    "testPhaseBody": "Mientras la app esté en fase de pruebas, todo el mundo puede usarlo todo. Cuando empiecen las suscripciones, avisaremos con tiempo.",
+    "sameFeatures": "Plus y Familia ofrecen exactamente lo mismo. La única diferencia es quién paga.",
+    "recommended": "Recomendado"
   },
   "meta": {
     "appName": "eezzyflow",

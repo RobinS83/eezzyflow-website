@@ -168,9 +168,8 @@
       "documents": "Documenten bewaren: rapporten, attesten, verzekeringen",
       "calendarSync": "Wissels en afspraken in de agenda van je telefoon",
       "photoImport": "Schoolkalender overnemen met een foto: de app leest de vrije dagen en uitstappen eruit, jij kijkt ze na",
-      "multiplePartners": "Samengesteld gezin: zien welke kinderen er thuis zijn",
+      "multiplePartners": "Ons huis: wie bij je woont, met wie wat ziet (ook voor een samengesteld gezin)",
       "childAccounts": "Eigen accounts voor kinderen",
-      "prioritySupport": "Voorrang bij vragen",
       "everythingFree": "Alles uit Gratis",
       "plusForBoth": "Alles uit Plus, voor jullie allebei",
       "reminders": "Herinneringen de avond vóór een wissel of afspraak",
@@ -181,7 +180,11 @@
       "receipts": "Bonnetje fotograferen: de app vult de kost in en bewaart het bonnetje erbij",
       "ownChildPhoto": "Je eigen foto van je kind, die alleen jij ziet",
       "viewers": "Meekijkers: plusouder, oma of oppas kijkt mee (€1 per persoon)",
-      "lists": "Lijstjes: boodschappen, recepten en een weekmenu, ook voor de kinderen"
+      "lists": "Lijstjes: boodschappen, recepten en een weekmenu, ook voor de kinderen",
+      "history": "Historiek: alles wat er gebeurde op een rij, ook als pdf",
+      "onePays": "Eén van jullie betaalt, jullie hebben allebei alles",
+      "cheaperThanTwice": "Goedkoper dan twee keer Plus",
+      "splitCost": "Samen betalen? Zet het abonnement als kost in de app en verdeel het zoals jullie andere kosten"
     },
     "faq": {
       "title": "Veelgestelde vragen",
@@ -190,7 +193,7 @@
       "q2": "Wat als de andere ouder niet wil meedoen?",
       "a2": "Dan gebruik je de app alleen. De kalender en kosten werken dan voor jou, en uitnodigen kan later altijd nog.",
       "q3": "Kunnen we samen één abonnement nemen?",
-      "a3": "Ja, met Gezin. Dat kan of jullie nu samenwonen of niet: één abonnement, en jullie hebben allebei alles. Wie het betaalt, spreken jullie samen af.",
+      "a3": "Ja, met Gezin. Dat kan of jullie nu samenwonen of niet: één abonnement, en jullie hebben allebei alles. Eén van jullie betaalt; zet het abonnement als kost in de app, dan komt het vanzelf in jullie saldo, net als de andere kosten.",
       "q4": "Hoe zeg ik op?",
       "a4": "Via Instellingen → Account. Je houdt toegang tot het einde van je betaalperiode.",
       "q5": "Kan de andere ouder mijn Plus meegebruiken?",
@@ -204,11 +207,12 @@
     },
     "perParent": "per ouder",
     "perFamily": "voor het gezin",
-    "forYou": "Past bij jou",
     "soon": "binnenkort",
     "toApp": "Naar de app",
     "testPhaseTitle": "Betalen kan nog niet",
-    "testPhaseBody": "Zolang de app in testfase is, kan iedereen alles gebruiken. Wanneer abonnementen starten, laten we het ruim op voorhand weten."
+    "testPhaseBody": "Zolang de app in testfase is, kan iedereen alles gebruiken. Wanneer abonnementen starten, laten we het ruim op voorhand weten.",
+    "sameFeatures": "Plus en Gezin geven precies hetzelfde. Het enige verschil is wie betaalt.",
+    "recommended": "Aanbevolen"
   },
   "meta": {
     "appName": "eezzyflow",

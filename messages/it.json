@@ -168,9 +168,8 @@
       "documents": "Conservare documenti: pagelle, certificati, assicurazioni",
       "calendarSync": "Cambi e impegni nel calendario del tuo telefono",
       "photoImport": "Importare il calendario scolastico con una foto: l'app legge i giorni liberi e le gite, tu li controlli",
-      "multiplePartners": "Famiglia allargata: vedere quali figli sono a casa",
+      "multiplePartners": "La nostra casa: chi vive con te e chi vede cosa (anche per una famiglia allargata)",
       "childAccounts": "Account personali per i figli",
-      "prioritySupport": "Priorità nelle risposte",
       "everythingFree": "Tutto di Gratis",
       "plusForBoth": "Tutto di Plus, per entrambi",
       "reminders": "Promemoria la sera prima di un cambio o di un impegno",
@@ -181,7 +180,11 @@
       "receipts": "Fotografare lo scontrino: l'app compila la spesa e conserva lo scontrino",
       "ownChildPhoto": "La tua foto di tuo figlio, che vedi solo tu",
       "viewers": "Osservatori: nuovo partner, nonna o babysitter possono seguire (€1 a persona)",
-      "lists": "Liste: spesa, ricette e un menù settimanale, anche per i bambini"
+      "lists": "Liste: spesa, ricette e un menù settimanale, anche per i bambini",
+      "history": "Cronologia: tutto ciò che è successo in un elenco, anche in PDF",
+      "onePays": "Uno di voi paga, avete tutto entrambi",
+      "cheaperThanTwice": "Più conveniente di due volte Plus",
+      "splitCost": "Pagare insieme? Aggiungi l’abbonamento come spesa nell’app e dividilo come le altre spese"
     },
     "faq": {
       "title": "Domande frequenti",
@@ -190,7 +193,7 @@
       "q2": "E se l'altro genitore non vuole partecipare?",
       "a2": "Allora usi l'app da solo. Calendario e spese funzionano per te, e puoi sempre invitarlo più tardi.",
       "q3": "Possiamo prendere un solo abbonamento insieme?",
-      "a3": "Sì, con Famiglia. Vale che viviate insieme o no: un solo abbonamento, e avete entrambi tutto. Chi lo paga, lo decidete voi.",
+      "a3": "Sì, con Famiglia. Che viviate insieme o no: un solo abbonamento e avete tutto entrambi. Uno di voi paga; aggiungi l’abbonamento come spesa nell’app e finisce nel vostro saldo, come le altre spese.",
       "q4": "Come disdico?",
       "a4": "Da Impostazioni → Account. Mantieni l'accesso fino alla fine del periodo già pagato.",
       "q5": "L'altro genitore può usare il mio Plus?",
@@ -204,11 +207,12 @@
     },
     "perParent": "per genitore",
     "perFamily": "per la famiglia",
-    "forYou": "Fa per te",
     "soon": "a breve",
     "toApp": "Vai all'app",
     "testPhaseTitle": "Non si può ancora pagare",
-    "testPhaseBody": "Finché l'app è in fase di test, tutti possono usare tutto. Quando partiranno gli abbonamenti, lo faremo sapere con largo anticipo."
+    "testPhaseBody": "Finché l'app è in fase di test, tutti possono usare tutto. Quando partiranno gli abbonamenti, lo faremo sapere con largo anticipo.",
+    "sameFeatures": "Plus e Famiglia offrono esattamente lo stesso. L’unica differenza è chi paga.",
+    "recommended": "Consigliato"
   },
   "meta": {
     "appName": "eezzyflow",
@@ -238,11 +242,8 @@
       "eyebrow": "Prezzi",
       "title": "Inizia gratis. Scegli più tardi ciò che fa per voi.",
       "included": "Cosa include",
-      "recommended": "La scelta migliore per due genitori",
-      "saveTitle": "Più conveniente di due volte Plus",
       "saveBody": "Due volte Plus costano {twice} al mese. Con Famiglia avete entrambi tutto per {family}: {saving} in meno al mese e un solo abbonamento da gestire.",
       "perMonth": "al mese",
-      "familyHow": "Uno di voi paga, e avete entrambi tutto.",
       "plusHow": "Preferite restare del tutto indipendenti? Allora ognuno prende il proprio Plus."
     },
     "pricingFaq": {

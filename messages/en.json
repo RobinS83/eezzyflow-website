@@ -168,9 +168,8 @@
       "documents": "Keep documents: school reports, certificates, insurance",
       "calendarSync": "Handovers and appointments in your phone's calendar",
       "photoImport": "Copy the school calendar with a photo: the app reads the days off and trips from it, you check them",
-      "multiplePartners": "Blended family: see which children are home",
+      "multiplePartners": "Our home: who lives with you, and who sees what (also for a blended family)",
       "childAccounts": "Children's own accounts",
-      "prioritySupport": "Priority support",
       "everythingFree": "Everything in Free",
       "plusForBoth": "Everything in Plus, for both of you",
       "reminders": "Reminders the evening before a handover or appointment",
@@ -181,7 +180,11 @@
       "receipts": "Photograph a receipt: the app fills in the expense and keeps the receipt with it",
       "ownChildPhoto": "Your own photo of your child, which only you see",
       "viewers": "Viewers: a step-parent, gran or sitter can follow along (€1 per person)",
-      "lists": "Lists: shopping, recipes and a weekly menu, for the children too"
+      "lists": "Lists: shopping, recipes and a weekly menu, for the children too",
+      "history": "History: everything that happened in one list, also as a PDF",
+      "onePays": "One of you pays, you both get everything",
+      "cheaperThanTwice": "Cheaper than Plus twice",
+      "splitCost": "Paying together? Add the subscription as a cost in the app and split it like your other costs"
     },
     "faq": {
       "title": "Frequently asked questions",
@@ -190,7 +193,7 @@
       "q2": "What if the other parent doesn't want to take part?",
       "a2": "Then you use the app on your own. The calendar and costs work for you, and you can always invite them later.",
       "q3": "Can we take out one subscription together?",
-      "a3": "Yes, with Family. That works whether you live together or not: one subscription, and you both have everything. You agree between you who pays for it.",
+      "a3": "Yes, with Family. Whether you live together or not: one subscription, and you both get everything. One of you pays; add the subscription as a cost in the app and it ends up in your balance, just like your other costs.",
       "q4": "How do I cancel?",
       "a4": "Via Settings → Account. You keep access until the end of your billing period.",
       "q5": "Can the other parent use my Plus too?",
@@ -204,11 +207,12 @@
     },
     "perParent": "per parent",
     "perFamily": "for the family",
-    "forYou": "Right for you",
     "soon": "coming soon",
     "toApp": "Go to the app",
     "testPhaseTitle": "Payments aren't possible yet",
-    "testPhaseBody": "While the app is in its test phase, everyone can use everything. When subscriptions start, we'll let you know well in advance."
+    "testPhaseBody": "While the app is in its test phase, everyone can use everything. When subscriptions start, we'll let you know well in advance.",
+    "sameFeatures": "Plus and Family give exactly the same. The only difference is who pays.",
+    "recommended": "Recommended"
   },
   "meta": {
     "appName": "eezzyflow",
@@ -238,11 +242,8 @@
       "eyebrow": "Pricing",
       "title": "Start for free. Choose what suits you later.",
       "included": "What’s included",
-      "recommended": "Best choice for two parents",
-      "saveTitle": "Better value than Plus twice",
       "saveBody": "Plus twice costs {twice} a month. With Family you both get everything for {family}: {saving} less per month, and only one subscription to arrange.",
       "perMonth": "per month",
-      "familyHow": "One of you pays, and you both get everything.",
       "plusHow": "Prefer to keep things completely separate? Then each of you takes your own Plus."
     },
     "pricingFaq": {

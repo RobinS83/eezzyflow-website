@@ -1,5 +1,5 @@
 import { getLocale, getTranslations } from "next-intl/server";
-import { Check, Info, Sparkles } from "lucide-react";
+import { Check, Equal, Info, Sparkles } from "lucide-react";
 import { links } from "@/lib/links";
 import { formatEuro, planById, plans } from "@/lib/plans";
 import { buttonStyles, Section, SectionHeading } from "../ui";
@@ -16,7 +16,11 @@ export async function Pricing() {
   return (
     <Section id="pricing" className="bg-surface/50">
       <SectionHeading eyebrow={s("eyebrow")} title={s("title")} />
-      <p className="-mt-6 mb-10 max-w-2xl text-[16px] leading-relaxed text-sub">{t("subtitle")}</p>
+      <p className="-mt-6 max-w-2xl text-[16px] leading-relaxed text-sub">{t("subtitle")}</p>
+      <p className="mt-4 mb-12 inline-flex max-w-2xl items-start gap-2.5 rounded-[14px] border border-line bg-surface px-4 py-3 text-[15.5px] leading-snug font-semibold">
+        <Equal aria-hidden size={18} className="mt-0.5 shrink-0 text-landing-accent" />
+        {t("sameFeatures")}
+      </p>
 
       <ul className="grid items-stretch gap-5 lg:grid-cols-3">
         {plans.map((plan) => {
@@ -33,7 +37,7 @@ export async function Pricing() {
               {featured && (
                 <p className="mb-5 inline-flex w-fit items-center gap-1.5 rounded-full bg-(image:--brand-champagne) px-3 py-1 text-[12.5px] font-bold text-brand-graphite">
                   <Sparkles aria-hidden size={14} />
-                  {s("recommended")}
+                  {t("recommended")}
                 </p>
               )}
               <h3 className={`text-[26px] leading-[1.1] font-extrabold tracking-[-0.03em] ${featured ? "text-champagne" : ""}`}>
@@ -52,10 +56,8 @@ export async function Pricing() {
                   {plan.audience && <span className="block">{t(plan.audience)}</span>}
                 </span>
               </p>
-              {plan.id !== "free" && (
-                <p className={`mt-4 text-[14px] leading-snug font-semibold ${featured ? "text-spotlight-ink" : "text-ink"}`}>
-                  {s(plan.id === "family" ? "familyHow" : "plusHow")}
-                </p>
+              {plan.id === "plus" && (
+                <p className="mt-4 text-[14px] leading-snug font-semibold text-ink">{s("plusHow")}</p>
               )}
 
               <a
@@ -87,7 +89,6 @@ export async function Pricing() {
                 // Why Family: the sum, so nobody has to work it out.
                 <div className="mt-auto pt-8">
                   <div className="rounded-[18px] border border-spotlight-ink/15 bg-spotlight-ink/5 p-5">
-                    <p className="mb-3 text-[15px] font-bold">{s("saveTitle")}</p>
                     <dl aria-hidden className="grid grid-cols-[1fr_auto] gap-x-4 gap-y-1.5 text-[14.5px] tabular-nums">
                       <dt className="text-spotlight-sub">2 × {t("plans.plus.name")}</dt>
                       <dd className="text-right text-spotlight-sub line-through">{euro(plus * 2)}</dd>

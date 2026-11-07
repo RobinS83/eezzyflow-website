@@ -168,9 +168,8 @@
       "documents": "Conserver des documents : bulletins, attestations, assurances",
       "calendarSync": "Passages et rendez-vous dans l’agenda de ton téléphone",
       "photoImport": "Reprendre le calendrier scolaire en photo : l’app y lit les congés et les sorties, tu les vérifies",
-      "multiplePartners": "Famille recomposée : voir quels enfants sont à la maison",
+      "multiplePartners": "Notre maison : qui vit avec vous, et qui voit quoi (aussi pour une famille recomposée)",
       "childAccounts": "Comptes personnels pour les enfants",
-      "prioritySupport": "Priorité pour tes questions",
       "everythingFree": "Tout ce qu’offre Gratuit",
       "plusForBoth": "Tout ce qu’offre Plus, pour vous deux",
       "reminders": "Rappels la veille au soir d’un passage ou d’un rendez-vous",
@@ -181,7 +180,11 @@
       "receipts": "Photographier le ticket : l’app remplit la dépense et conserve le ticket avec",
       "ownChildPhoto": "Ta propre photo de ton enfant, que toi seul vois",
       "viewers": "Proches : beau-parent, mamie ou baby-sitter suivent aussi (1 € par personne)",
-      "lists": "Listes : courses, recettes et menu de la semaine, aussi pour les enfants"
+      "lists": "Listes : courses, recettes et menu de la semaine, aussi pour les enfants",
+      "history": "Historique : tout ce qui s’est passé en une liste, aussi en PDF",
+      "onePays": "L’un de vous paie, vous avez tous les deux tout",
+      "cheaperThanTwice": "Moins cher que deux fois Plus",
+      "splitCost": "Payer ensemble ? Ajoutez l’abonnement comme frais dans l’app et partagez-le comme vos autres frais"
     },
     "faq": {
       "title": "Questions fréquentes",
@@ -190,7 +193,7 @@
       "q2": "Et si l’autre parent ne veut pas participer ?",
       "a2": "Alors tu utilises l’app seul. Le calendrier et les frais fonctionnent pour toi, et tu pourras toujours l’inviter plus tard.",
       "q3": "Pouvons-nous prendre un seul abonnement à deux ?",
-      "a3": "Oui, avec Famille. Que vous viviez ensemble ou non : un seul abonnement, et vous avez tout tous les deux. Qui le paie, c’est à vous de le convenir.",
+      "a3": "Oui, avec Famille. Que vous viviez ensemble ou non : un seul abonnement, et vous avez tous les deux tout. L’un de vous paie ; ajoutez l’abonnement comme frais dans l’app et il entre dans votre solde, comme vos autres frais.",
       "q4": "Comment résilier ?",
       "a4": "Via Réglages → Compte. Tu gardes l’accès jusqu’à la fin de ta période de paiement.",
       "q5": "L’autre parent peut-il profiter de mon Plus ?",
@@ -204,11 +207,12 @@
     },
     "perParent": "par parent",
     "perFamily": "pour la famille",
-    "forYou": "Fait pour toi",
     "soon": "bientôt",
     "toApp": "Vers l’app",
     "testPhaseTitle": "Le paiement n’est pas encore possible",
-    "testPhaseBody": "Tant que l’app est en phase de test, tout le monde peut tout utiliser. Quand les abonnements démarreront, nous te préviendrons bien à l’avance."
+    "testPhaseBody": "Tant que l’app est en phase de test, tout le monde peut tout utiliser. Quand les abonnements démarreront, nous te préviendrons bien à l’avance.",
+    "sameFeatures": "Plus et Famille offrent exactement la même chose. La seule différence, c’est qui paie.",
+    "recommended": "Recommandé"
   },
   "meta": {
     "appName": "eezzyflow",
