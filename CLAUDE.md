@@ -83,6 +83,10 @@ HTML naar `out/`, er draait geen server. Instellingen en headers staan in
 de site live mag (bij de start van de reclame); de stappen staan in
 `docs/domeinen.md`. `.be` en `www` sturen door naar `https://eezzyflow.com`.
 
+Tot de lancering staat in `netlify.toml` de header `X-Robots-Tag: noindex`,
+zodat het voorbeeld op `*.netlify.app` niet in Google komt. **Bij de lancering
+weghalen**, anders blijft eezzyflow.com onvindbaar.
+
 ## De app-repo
 
 `robins83/eezzyflow` mag je **lezen** (om teksten, functies of stijl na te

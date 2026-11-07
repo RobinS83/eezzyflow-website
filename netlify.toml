@@ -43,6 +43,9 @@
 [[headers]]
   for = "/*"
   [headers.values]
+    # Until launch: keep the preview out of search engines. Remove this line
+    # when eezzyflow.com goes live (see CLAUDE.md, "Hosting").
+    X-Robots-Tag = "noindex, nofollow"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     X-Frame-Options = "DENY"
