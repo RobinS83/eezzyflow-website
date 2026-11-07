@@ -33,9 +33,9 @@ export async function PhoneMockup() {
     >
       {/* Shadow on the "desk", and the phone's body: stacked layers behind
           the frame give it real thickness when it turns. */}
-      <span aria-hidden className="phone-floor" style={{ transform: "translateZ(-40px)" }} />
+      <span aria-hidden className="phone-floor" style={{ transform: "translateZ(-60px)" }} />
       <span aria-hidden className="phone-body">
-        {Array.from({ length: 14 }, (_, i) => (
+        {Array.from({ length: 28 }, (_, i) => (
           <span key={i} style={{ transform: `translateZ(${-(i + 1)}px)` }} />
         ))}
       </span>
