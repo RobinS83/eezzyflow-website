@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Dark mode follows data-theme on <html> (set before paint, see app/[locale]/layout.tsx). */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
 /* Licht */
 :root {
   --radius-card: 18px;
@@ -65,54 +68,52 @@
 }
 
 /* Donker */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --desk: #0a0a0b;
-    --paper: #121214;
-    --surface: #18181b;
-    --line: #38383e;
-    --ink: #f1f1f3;
-    --sub: #a2a2aa;
+:root[data-theme="dark"] {
+  --desk: #0a0a0b;
+  --paper: #121214;
+  --surface: #18181b;
+  --line: #38383e;
+  --ink: #f1f1f3;
+  --sub: #a2a2aa;
 
-    --primary: #b9b9c4;
-    --primary-text: #c9c9d4;
-    --on-primary: #121214;
-    --primary-soft: #33333c;
-    --primary-chip: #33333c;
-    --primary-chip-text: #c9c9d4;
+  --primary: #b9b9c4;
+  --primary-text: #c9c9d4;
+  --on-primary: #121214;
+  --primary-soft: #33333c;
+  --primary-chip: #33333c;
+  --primary-chip-text: #c9c9d4;
 
-    --highlight: #ffb273;
-    --highlight-text: #ffb273;
-    --highlight-soft: #4a2e12;
-    --highlight-chip: #4a2e12;
-    --highlight-chip-text: #ffb273;
+  --highlight: #ffb273;
+  --highlight-text: #ffb273;
+  --highlight-soft: #4a2e12;
+  --highlight-chip: #4a2e12;
+  --highlight-chip-text: #ffb273;
 
-    --success: #5fd3a0;  --success-text: #5fd3a0;  --success-soft: #1c3f33;
-    --warning: #e0a44e;  --warning-text: #e0c285;  --warning-soft: #4a3a1e;
-    --error:   #e8827b;  --error-text:   #e8827b;  --error-soft:   #4a2320;
+  --success: #5fd3a0;  --success-text: #5fd3a0;  --success-soft: #1c3f33;
+  --warning: #e0a44e;  --warning-text: #e0c285;  --warning-soft: #4a3a1e;
+  --error:   #e8827b;  --error-text:   #e8827b;  --error-soft:   #4a2320;
 
-    --hero: linear-gradient(160deg, #26262e, #121214);
-    --hero-ink: #f1f1f3;
-    --hero-sub: #a2a2aa;
-    --hero-cost: linear-gradient(135deg, #33333c, #26262e);
-    --screen-header: #18181b;
+  --hero: linear-gradient(160deg, #26262e, #121214);
+  --hero-ink: #f1f1f3;
+  --hero-sub: #a2a2aa;
+  --hero-cost: linear-gradient(135deg, #33333c, #26262e);
+  --screen-header: #18181b;
 
-    --brand-wordmark: #fbf3e6;
-    --brand-wordmark-accent: #e9a65c;
-    --brand-flow: linear-gradient(90deg, #c98a46 0%, #e9a65c 100%);
+  --brand-wordmark: #fbf3e6;
+  --brand-wordmark-accent: #e9a65c;
+  --brand-flow: linear-gradient(90deg, #c98a46 0%, #e9a65c 100%);
 
-    --tile-line: rgb(255 255 255 / 0.09);
-    --tile-sheen: linear-gradient(180deg, rgb(255 255 255 / 0.055) 0%, rgb(255 255 255 / 0) 42%);
-    --shadow-tile:
-      0 1px 2px rgb(0 0 0 / 0.55), 0 10px 24px -10px rgb(0 0 0 / 0.75),
-      inset 0 1px 0 rgb(255 255 255 / 0.06);
-    --shadow-tile-lift:
-      0 2px 4px rgb(0 0 0 / 0.6), 0 18px 36px -12px rgb(0 0 0 / 0.85),
-      inset 0 1px 0 rgb(255 255 255 / 0.09);
-    --shadow-tile-press: inset 0 1px 4px rgb(0 0 0 / 0.6);
+  --tile-line: rgb(255 255 255 / 0.09);
+  --tile-sheen: linear-gradient(180deg, rgb(255 255 255 / 0.055) 0%, rgb(255 255 255 / 0) 42%);
+  --shadow-tile:
+    0 1px 2px rgb(0 0 0 / 0.55), 0 10px 24px -10px rgb(0 0 0 / 0.75),
+    inset 0 1px 0 rgb(255 255 255 / 0.06);
+  --shadow-tile-lift:
+    0 2px 4px rgb(0 0 0 / 0.6), 0 18px 36px -12px rgb(0 0 0 / 0.85),
+    inset 0 1px 0 rgb(255 255 255 / 0.09);
+  --shadow-tile-press: inset 0 1px 4px rgb(0 0 0 / 0.6);
 
-    color-scheme: dark;
-  }
+  color-scheme: dark;
 }
 
 /* Tailwind-namen, zodat je bg-paper, text-ink, text-sub… kunt schrijven. */
@@ -257,11 +258,9 @@ summary::-webkit-details-marker { display: none; }
   --glare: rgb(255 255 255 / 0.55);
   --floor-shadow: rgb(23 23 28 / 0.35);
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --glare: rgb(255 255 255 / 0.1);
-    --floor-shadow: rgb(0 0 0 / 0.7);
-  }
+:root[data-theme="dark"] {
+  --glare: rgb(255 255 255 / 0.1);
+  --floor-shadow: rgb(0 0 0 / 0.7);
 }
 
 .tilt-card {
@@ -339,12 +338,10 @@ summary::-webkit-details-marker { display: none; }
   --glass-line: rgb(255 255 255 / 0.85);
   --glass-shine: rgb(255 255 255 / 0.9);
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --glass-bg: rgb(36 36 42 / 0.42);
-    --glass-line: rgb(255 255 255 / 0.14);
-    --glass-shine: rgb(255 255 255 / 0.1);
-  }
+:root[data-theme="dark"] {
+  --glass-bg: rgb(36 36 42 / 0.42);
+  --glass-line: rgb(255 255 255 / 0.14);
+  --glass-shine: rgb(255 255 255 / 0.1);
 }
 .glass {
   background-color: var(--glass-bg);

@@ -460,6 +460,12 @@
     "legal": {
       "websiteTitle": "Este sitio web",
       "websiteBody": "eezzyflow.com no usa cookies, ni rastreadores, ni estadísticas. El sitio está alojado en Netlify; como cualquier alojamiento web, Netlify guarda brevemente datos técnicos como tu dirección IP para mostrar la página. Lo que sigue trata de la app."
+    },
+    "theme": {
+      "label": "Apariencia",
+      "light": "Claro",
+      "dark": "Oscuro",
+      "auto": "Automático"
     }
   }
 }

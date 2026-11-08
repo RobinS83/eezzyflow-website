@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import { defaultLocale } from "@/i18n/routing";
 import { NotFoundContent } from "@/components/not-found-content";
 import { Wordmark } from "@/components/wordmark";
+import { themeScript } from "@/lib/theme";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
@@ -9,7 +10,10 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "sw
 // Site-wide 404 (becomes out/404.html). Shown in Dutch, the default language.
 export default function GlobalNotFound() {
   return (
-    <html lang={defaultLocale} className={inter.variable}>
+    <html lang={defaultLocale} className={inter.variable} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
       <body className="font-sans antialiased">
         <header className="border-b border-line px-[18px]">
           <div className="mx-auto flex h-[68px] max-w-6xl items-center">

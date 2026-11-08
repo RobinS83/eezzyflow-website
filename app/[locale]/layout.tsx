@@ -6,6 +6,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { localePath, routing } from "@/i18n/routing";
 import { SITE_URL } from "@/lib/links";
 import { brand } from "@/lib/brand";
+import { themeScript } from "@/lib/theme";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { TiltCards } from "@/components/tilt-cards";
@@ -72,7 +73,10 @@ export default async function LocaleLayout({
   const t = await getTranslations("site.nav");
 
   return (
-    <html lang={locale} className={inter.variable}>
+    <html lang={locale} className={inter.variable} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
       <body className="font-sans antialiased">
         <a
           href="#main"

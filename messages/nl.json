@@ -460,6 +460,12 @@
     "legal": {
       "websiteTitle": "Deze website",
       "websiteBody": "eezzyflow.com gebruikt geen cookies, geen trackers en geen statistieken. De website wordt gehost bij Netlify; zoals elke webhost houdt Netlify technische gegevens zoals je IP-adres kort bij om de pagina te kunnen tonen. Wat hieronder staat, gaat over de app."
+    },
+    "theme": {
+      "label": "Weergave",
+      "light": "Licht",
+      "dark": "Donker",
+      "auto": "Automatisch"
     }
   }
 }

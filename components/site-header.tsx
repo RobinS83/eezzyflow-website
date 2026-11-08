@@ -1,6 +1,7 @@
 import { getLocale, getTranslations } from "next-intl/server";
 import { localePath } from "@/i18n/routing";
 import { LanguageMenu } from "./language-menu";
+import { ThemeToggle } from "./theme-toggle";
 import { links } from "@/lib/links";
 import { ButtonLink } from "./ui";
 import { Wordmark } from "./wordmark";
@@ -10,6 +11,7 @@ export async function SiteHeader() {
   const t = await getTranslations("landing.nav");
   const s = await getTranslations("site.nav");
   const f = await getTranslations("site.footer");
+  const th = await getTranslations("site.theme");
   const locale = await getLocale();
 
   const items = [
@@ -42,6 +44,7 @@ export async function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-1 lg:gap-2">
+          <ThemeToggle labels={{ label: th("label"), light: th("light"), dark: th("dark"), auto: th("auto") }} />
           <LanguageMenu locale={locale} label={f("language")} />
           <div className="hidden items-center gap-2 lg:flex">
           <ButtonLink href={links.login} variant="secondary" className="px-4">
