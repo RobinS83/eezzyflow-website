@@ -16,7 +16,7 @@ export function PageHeader({ eyebrow, title, lead, id }: { eyebrow: string; titl
         </p>
         <h1
           id={id}
-          className="max-w-4xl text-[clamp(38px,6vw,72px)] leading-[1.02] font-extrabold tracking-[-0.045em] text-balance text-hero-ink"
+          className="max-w-4xl text-[clamp(30px,6vw,72px)] hyphens-auto [&_.word-in]:max-w-full [&_.word-in]:[overflow-wrap:anywhere] leading-[1.02] font-extrabold tracking-[-0.045em] text-balance text-hero-ink"
         >
           {words.map((w, i) => (
             <span key={i}>

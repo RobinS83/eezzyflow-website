@@ -47,8 +47,6 @@ statisch. Geen database, geen login, geen API-sleutels op de site.
 
 - Aanmelden: `https://app.eezzyflow.com/aanmelden`
 - Registreren: `https://app.eezzyflow.com/registreren`
-- Privacy: `https://app.eezzyflow.com/privacy`
-- Voorwaarden: `https://app.eezzyflow.com/voorwaarden`
 - Wachtwoord vergeten: `https://app.eezzyflow.com/wachtwoord-vergeten`
 - Supportformulier (zonder aanmelden): `https://app.eezzyflow.com/support`
 
@@ -73,6 +71,12 @@ kort en het slotblok. Uitleg in detail staat op de tabbladen:
 - `/hoe-het-werkt`: stappen, de app op je computer, alle vragen
 - `/prijzen`: volledige abonnementen, wie betaalt wat, vragen
 - `/hulp`: herstellen, contact, privacy en voorwaarden
+- `/privacy` en `/voorwaarden`: dezelfde teksten als in de app
+  (`legal.privacy` en `legal.terms` in `docs/bron-teksten/`, plus één eigen
+  sectie over de website zelf), zodat bezoekers op de site blijven. Verandert
+  de tekst of datum in de app (app-repo: `messages/*.json` → `legal`,
+  `lib/legal.ts`), neem ze dan over: bron-teksten bijwerken, `lib/legal.ts`
+  gelijkzetten en `npm run sync-texts`.
 
 Mensen lezen weinig: liever een titel en een beeld dan een alinea.
 

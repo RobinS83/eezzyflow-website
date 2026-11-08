@@ -37,8 +37,8 @@ export async function SiteFooter() {
           <ul>
             <li><a className={linkClass} href={localePath(locale, "hulp")}>{s("help")}</a></li>
             <li><a className={linkClass} href={`mailto:${CONTACT_EMAIL}`}>{s("contact")}</a></li>
-            <li><a className={linkClass} href={links.privacy}>{t("privacy")}</a></li>
-            <li><a className={linkClass} href={links.terms}>{t("terms")}</a></li>
+            <li><a className={linkClass} href={localePath(locale, "privacy")}>{t("privacy")}</a></li>
+            <li><a className={linkClass} href={localePath(locale, "voorwaarden")}>{t("terms")}</a></li>
           </ul>
         </nav>
 

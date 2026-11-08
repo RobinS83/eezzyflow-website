@@ -107,8 +107,8 @@ export default async function HelpPage({ params }: { params: Promise<{ locale: s
           </div>
           <ul className="grid gap-3">
             {[
-              { href: links.privacy, label: t("privacy"), icon: ShieldCheck },
-              { href: links.terms, label: t("terms"), icon: Scale },
+              { href: localePath(locale, "privacy"), label: t("privacy"), icon: ShieldCheck },
+              { href: localePath(locale, "voorwaarden"), label: t("terms"), icon: Scale },
             ].map(({ href, label, icon: Icon }) => (
               <li key={href}>
                 <a

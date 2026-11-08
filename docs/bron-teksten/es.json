@@ -217,5 +217,131 @@
   "meta": {
     "appName": "eezzyflow",
     "tagline": "eezzyflow · Juntos, sin complicaciones."
+  },
+  "legal": {
+    "privacy": {
+      "title": "Política de privacidad",
+      "intro": "eezzyflow trata de tu hijo. Por eso guardamos los menos datos posibles, los almacenamos en Europa y nadie fuera de tu familia puede acceder a ellos.",
+      "lastUpdated": "Última actualización: {date}.",
+      "contact": "Haz tus preguntas sobre tus datos a través de <link>el formulario de contacto</link>. No necesitas una cuenta para ello.",
+      "sections": {
+        "data": {
+          "title": "Qué datos guardamos",
+          "items": {
+            "1": "Tu correo electrónico, tu nombre y, si quieres, una foto de perfil.",
+            "2": "Lo que introduces sobre tus hijos: nombre, fecha de nacimiento, foto, régimen de custodia, citas, gastos con tiques, documentos y mensajes.",
+            "3": "Datos de salud, solo si los introduces tú en Salud (por ejemplo alergias, vacunas o el médico de cabecera). Son datos sensibles: solo los ven los progenitores con patria potestad, y un observador solo ve las alergias.",
+            "4": "Tu ubicación, solo si la compartes tú en un intercambio. El otro progenitor la ve durante dos horas; siempre puedes dejar de compartirla antes, y después se borra.",
+            "5": "El enlace de tu propia agenda, si la conectas. Solo guardamos las citas con el nombre de tu hijo o las que tú apruebas; el resto lo leemos y lo olvidamos enseguida.",
+            "6": "Quiénes forman un hogar juntos, y los dispositivos en los que quieres recibir avisos.",
+            "7": "Un historial de quién cambió qué y cuándo, para que puedas consultarlo más tarde."
+          },
+          "paras2": {
+            "1": "No pedimos a propósito el número de registro nacional ni la dirección de tu hijo. Si una sentencia que haces leer contiene un número de registro nacional, la app no lo copia."
+          }
+        },
+        "why": {
+          "title": "Por qué los guardamos",
+          "paras": {
+            "1": "Para que la app funcione: iniciar tu sesión, mostrar tus datos a las personas con acceso y dejarte ver qué cambió y cuándo. La base jurídica es el contrato que celebras con nosotros al crear una cuenta.",
+            "2": "Solo introduces datos de salud o compartes tu ubicación si tú quieres. Siempre puedes quitarlos."
+          }
+        },
+        "see": {
+          "title": "Quién puede ver tus datos",
+          "paras": {
+            "1": "Solo tú y las personas que invitas. La protección está en la propia base de datos, no solo en la pantalla: un progenitor no puede técnicamente consultar datos de una familia en la que no tiene ningún papel."
+          },
+          "items": {
+            "1": "El otro progenitor de tu hijo ve lo que compartís: el calendario, las citas, los gastos que le afectan y vuestros mensajes.",
+            "2": "Un observador (por ejemplo la abuela o la canguro) solo ve el calendario, las fechas importantes, el colegio, el médico y las alergias. No puede cambiar nada.",
+            "3": "Tu hijo, con su propia cuenta, solo ve con quién está, sus citas y sus fotos.",
+            "4": "Tu pareja en una familia reconstituida solo ve el nombre de tus hijos y si están en casa."
+          },
+          "paras2": {
+            "1": "No vendemos nada, no usamos tus datos para publicidad y no ponemos rastreadores ni cookies publicitarias."
+          }
+        },
+        "where": {
+          "title": "Dónde están tus datos",
+          "paras": {
+            "1": "Todo lo que guardamos está en la Unión Europea. Trabajamos con:"
+          },
+          "paras2": {
+            "1": "Anthropic solo ve algo cuando tú pulsas el botón para que se lea o reformule una sentencia, un tique, una foto de un calendario escolar o un mensaje. Solo guardamos la respuesta cuando tú la guardas. Anthropic no usa esos datos para entrenar sus modelos."
+          }
+        },
+        "howLong": {
+          "title": "Cuánto tiempo",
+          "paras": {
+            "1": "Mientras tengas una cuenta. Si eliminas tu cuenta, se borran tus datos. Si compartes un hijo con el otro progenitor, ese hijo sigue existiendo para él: también son sus datos.",
+            "2": "En el historial queda que se eliminó una cuenta, sin tus datos.",
+            "3": "Borramos automáticamente los rastros técnicos, cada noche:"
+          },
+          "items": {
+            "1": "Intentos de inicio de sesión (contra el abuso): a las 24 horas.",
+            "2": "Invitaciones no aceptadas: 90 días después de caducar.",
+            "3": "Compras marcadas: 30 días después de marcarlas.",
+            "4": "Sugerencias de tu propio calendario que no usaste: 30 días después de la fecha.",
+            "5": "Cuentas nunca confirmadas: a los 30 días.",
+            "6": "Lo que nos envías por el formulario de contacto: a los dos años."
+          }
+        },
+        "rights": {
+          "title": "Tus derechos",
+          "paras": {
+            "1": "Puedes consultar, corregir, borrar y llevarte tus datos. Descargas tú mismo todos tus datos en Ajustes › Cuenta, donde también borras tu cuenta. Para lo demás basta un mensaje por el formulario de contacto.",
+            "2": "Si no estás de acuerdo con cómo tratamos tus datos, puedes presentar una reclamación ante la Autoridad belga de Protección de Datos (dataprotectionauthority.be)."
+          }
+        }
+      },
+      "responsible": "Quién es el responsable",
+      "processors": {
+        "Supabase": "Base de datos, inicio de sesión y almacenamiento — Fráncfort, UE",
+        "Vercel": "Alojamiento de la app — Fráncfort, UE",
+        "Brevo": "Envío de correos — UE (empresa francesa)",
+        "Anthropic": "Solo cuando haces leer o reformular algo (Claude) — Estados Unidos"
+      }
+    },
+    "terms": {
+      "title": "Condiciones de uso",
+      "intro": "Al utilizar eezzyflow, aceptas las presentes condiciones.",
+      "lastUpdated": "Última actualización: {date}.",
+      "sections": {
+        "what": {
+          "title": "Qué es eezzyflow",
+          "body": "Una app para que los progenitores organicen dónde están sus hijos, compartan gastos y se comuniquen, vivan separados o juntos. Usas la app bajo tu propia responsabilidad."
+        },
+        "who": {
+          "title": "Quién puede usar la app",
+          "body": "Cualquier persona de 18 años o más. Un hijo puede tener su propia cuenta limitada si todos los progenitores con patria potestad están de acuerdo."
+        },
+        "use": {
+          "title": "Qué puedes hacer con ella",
+          "body": "Usar la app para lo que está pensada: organizar vuestra vida familiar. No puedes usarla para acosar a otros, difundir información falsa ni alterar su funcionamiento."
+        },
+        "data": {
+          "title": "Tus datos",
+          "body": "Conservas todos los derechos sobre lo que introduces. Solo tratamos esos datos para que la app funcione. No vendemos nada ni usamos nada para publicidad. Consulta la <link>política de privacidad</link> para más detalles."
+        },
+        "ai": {
+          "title": "Lectura con Claude",
+          "body": "Si haces leer o reformular una sentencia, un tique, una foto o un mensaje, el resultado es una propuesta. Revísalo antes de guardarlo o enviarlo: la app puede equivocarse."
+        },
+        "payments": {
+          "title": "Pagos",
+          "body": "La versión básica es gratuita. Para funciones adicionales pedimos una suscripción. Los precios están en la app. Una suscripción sigue hasta que la canceles; puedes cancelar en cualquier momento."
+        },
+        "liability": {
+          "title": "Responsabilidad",
+          "body": "Hacemos lo posible para que la app sea fiable, pero no podemos garantizar que funcione siempre ni que nunca falle nada. No uses la app como única fuente para decisiones jurídicas o económicas."
+        },
+        "changes": {
+          "title": "Cambios",
+          "body": "Podemos modificar estas condiciones. Si hay cambios importantes, te avisaremos en la app o por correo. Si sigues usando la app, aceptas las nuevas condiciones."
+        }
+      },
+      "contact": "Contacto"
+    }
   }
 }

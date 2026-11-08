@@ -217,5 +217,131 @@
   "meta": {
     "appName": "eezzyflow",
     "tagline": "eezzyflow · Smooth, together."
+  },
+  "legal": {
+    "privacy": {
+      "title": "Privacy policy",
+      "intro": "eezzyflow is about your child. That is why we keep as little data as possible, store it in Europe, and make sure no one outside your family can access it.",
+      "lastUpdated": "Last updated on {date}.",
+      "contact": "Ask questions about your data through <link>the contact form</link>. You don't need an account for that.",
+      "sections": {
+        "data": {
+          "title": "What data we keep",
+          "items": {
+            "1": "Your email address, your name and, if you like, a profile photo.",
+            "2": "What you enter about your children: first name, date of birth, photo, parenting schedule, appointments, costs with receipts, documents and messages.",
+            "3": "Health data, only if you enter it yourself under Health (for example allergies, vaccinations or the GP). This is sensitive data: only parents with parental authority see it, and a viewer only sees the allergies.",
+            "4": "Your location, only if you share it yourself at a handover. The other parent sees it for two hours; you can always stop sharing earlier, and the location is then erased.",
+            "5": "The link to your own calendar, if you connect it. We only keep appointments with your child's name or that you approve; we read the rest and forget it straight away.",
+            "6": "Who forms a household together, and the devices on which you want to receive notifications.",
+            "7": "A history of who changed what and when, so you can look back later."
+          },
+          "paras2": {
+            "1": "We deliberately don't ask for a national register number or your child's address. If a judgment you have read contains a national register number, the app does not copy it."
+          }
+        },
+        "why": {
+          "title": "Why we keep it",
+          "paras": {
+            "1": "To make the app work: signing you in, showing your data to the people who have access to it, and letting you see what changed when. The legal basis is the agreement you enter into with us when you create an account.",
+            "2": "You only enter health data or share your location if you want to. You can always remove them again."
+          }
+        },
+        "see": {
+          "title": "Who can see your data",
+          "paras": {
+            "1": "Only you and the people you invite. The protection is in the database itself, not just on screen: a parent technically cannot request data from a family they have no role in."
+          },
+          "items": {
+            "1": "Your child's other parent sees what you share: the calendar, appointments, the costs that concern them and your messages.",
+            "2": "A viewer (for example grandma or the babysitter) only sees the calendar, important dates, school, GP and allergies. A viewer cannot change anything.",
+            "3": "Your child, with their own account, only sees where they are, their own appointments and photos.",
+            "4": "Your partner in a blended family only sees your children's first names and whether they are home."
+          },
+          "paras2": {
+            "1": "We don't sell anything, don't use your data for advertising and don't set trackers or advertising cookies."
+          }
+        },
+        "where": {
+          "title": "Where your data is",
+          "paras": {
+            "1": "Everything we keep is stored in the European Union. We work with:"
+          },
+          "paras2": {
+            "1": "Anthropic only sees something when you yourself press the button to have a judgment, receipt, photo of a school calendar or message read or rewritten. We only keep the answer once you save it. Anthropic does not use that data to train its models."
+          }
+        },
+        "howLong": {
+          "title": "How long",
+          "paras": {
+            "1": "As long as you have an account. If you delete your account, your data is erased. If you share a child with a co-parent, that child remains with that parent: it is their data too.",
+            "2": "The history keeps the fact that an account was deleted, without your data.",
+            "3": "We clean up technical traces automatically, every night:"
+          },
+          "items": {
+            "1": "Sign-in attempts (to prevent abuse): after 24 hours.",
+            "2": "Invitations that were not accepted: 90 days after they expired.",
+            "3": "Ticked-off shopping items: 30 days after ticking them off.",
+            "4": "Suggestions from your own calendar you did nothing with: 30 days after the date.",
+            "5": "Accounts that were never confirmed: after 30 days.",
+            "6": "What you send us through the contact form: after two years."
+          }
+        },
+        "rights": {
+          "title": "Your rights",
+          "paras": {
+            "1": "You may access, correct, erase and take your data with you. You download all your data yourself in Settings › Account, where you can also delete your account. For anything else, a message through the contact form is enough.",
+            "2": "If you disagree with how we handle your data, you can file a complaint with the Belgian Data Protection Authority (dataprotectionauthority.be)."
+          }
+        }
+      },
+      "responsible": "Who is responsible",
+      "processors": {
+        "Supabase": "Database, sign-in and storage — Frankfurt, EU",
+        "Vercel": "Hosting the app — Frankfurt, EU",
+        "Brevo": "Sending emails — EU (French company)",
+        "Anthropic": "Only when you have something read or rewritten (Claude) — United States"
+      }
+    },
+    "terms": {
+      "title": "Terms of use",
+      "intro": "By using eezzyflow, you agree to these terms.",
+      "lastUpdated": "Last updated on {date}.",
+      "sections": {
+        "what": {
+          "title": "What eezzyflow is",
+          "body": "An app for parents to arrange where their children stay, share costs and communicate, whether you live apart or together. You use the app at your own responsibility."
+        },
+        "who": {
+          "title": "Who may use the app",
+          "body": "Anyone aged 18 or over. A child can get their own, limited account if all parents with parental authority agree."
+        },
+        "use": {
+          "title": "What you may do with it",
+          "body": "Use the app for what it is meant for: organising your family life. You may not use it to harass others, spread false information or disrupt how it works."
+        },
+        "data": {
+          "title": "Your data",
+          "body": "You keep all rights to what you enter. We only process that data so the app can work. We don't sell anything and use nothing for advertising. See the <link>privacy policy</link> for details."
+        },
+        "ai": {
+          "title": "Reading with Claude",
+          "body": "If you have a judgment, receipt, photo or message read or rewritten, the result is a suggestion. Check it before you save or send it: the app can make mistakes."
+        },
+        "payments": {
+          "title": "Payments",
+          "body": "The basic version is free. For extra features we charge a subscription. Prices are shown in the app. A subscription runs until you cancel it; you can cancel at any time."
+        },
+        "liability": {
+          "title": "Liability",
+          "body": "We do our best to keep the app reliable, but we cannot guarantee that it always works or that nothing ever goes wrong. Don't use the app as your only source for legal or financial decisions."
+        },
+        "changes": {
+          "title": "Changes",
+          "body": "We may change these terms. For important changes we'll let you know in the app or by email. If you keep using the app, you agree to the new terms."
+        }
+      },
+      "contact": "Contact"
+    }
   }
 }

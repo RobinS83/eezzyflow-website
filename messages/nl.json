@@ -218,6 +218,132 @@
     "appName": "eezzyflow",
     "tagline": "eezzyflow · Samen vlot. Voor wat écht telt."
   },
+  "legal": {
+    "privacy": {
+      "title": "Privacyverklaring",
+      "intro": "eezzyflow gaat over je kind. Daarom houden we zo min mogelijk gegevens bij, bewaren we ze in Europa, en kan niemand buiten je gezin erbij.",
+      "lastUpdated": "Laatst bijgewerkt op {date}.",
+      "contact": "Vragen over je gegevens stel je via <link>het contactformulier</link>. Daar hoef je geen account voor te hebben.",
+      "sections": {
+        "data": {
+          "title": "Welke gegevens we bewaren",
+          "items": {
+            "1": "Je e-mailadres, je naam en, als je wilt, een profielfoto.",
+            "2": "Wat je zelf invoert over je kinderen: voornaam, geboortedatum, foto, verblijfsregeling, afspraken, kosten met bonnetjes, documenten en berichten.",
+            "3": "Gezondheidsgegevens, alleen als je ze zelf invult bij Zorg (bijvoorbeeld allergieën, vaccinaties of de huisarts). Dat zijn gevoelige gegevens: alleen ouders met gezag zien ze, en een meekijker ziet enkel de allergieën.",
+            "4": "Je plek, alleen als je die bij een wissel zelf deelt. De andere ouder ziet ze twee uur lang; je kunt het delen altijd eerder stoppen, en daarna wordt de plek gewist.",
+            "5": "De link van je eigen agenda, als je die koppelt. We bewaren alleen afspraken met de naam van je kind of die jij goedkeurt; de rest lezen we en vergeten we meteen.",
+            "6": "Wie samen een huishouden vormt, en de toestellen waarop je meldingen wilt krijgen.",
+            "7": "Een historiek van wie wat wijzigde en wanneer, zodat je later kunt terugkijken."
+          },
+          "paras2": {
+            "1": "We vragen bewust geen rijksregisternummer en geen adres van je kind. Staat er toch een rijksregisternummer in een vonnis dat je laat lezen, dan neemt de app het niet over."
+          }
+        },
+        "why": {
+          "title": "Waarom we ze bewaren",
+          "paras": {
+            "1": "Om de app te laten werken: je aanmelden, je gegevens tonen aan de mensen die er toegang toe hebben, en je kunnen laten zien wat er wanneer is gewijzigd. De grondslag is de overeenkomst die je met ons aangaat wanneer je een account maakt.",
+            "2": "Gezondheidsgegevens en je plek vul je alleen in of deel je alleen als je dat zelf wilt. Je kunt ze altijd weer weghalen."
+          }
+        },
+        "see": {
+          "title": "Wie je gegevens kan zien",
+          "paras": {
+            "1": "Alleen jij en de mensen die jij uitnodigt. De afscherming zit in de database zelf, niet alleen in het scherm: een ouder kan technisch geen gegevens opvragen van een gezin waar hij geen rol in heeft."
+          },
+          "items": {
+            "1": "De andere ouder van je kind ziet wat jullie delen: de kalender, de afspraken, de kosten die hem aangaan en jullie berichten.",
+            "2": "Een meekijker (bijvoorbeeld oma of de oppas) ziet alleen de kalender, belangrijke datums, school, huisarts en allergieën. Een meekijker kan niets wijzigen.",
+            "3": "Je kind ziet met een eigen account alleen bij wie het is, zijn eigen afspraken en foto's.",
+            "4": "Je partner in een samengesteld gezin ziet alleen de voornaam van je kinderen en of ze thuis zijn."
+          },
+          "paras2": {
+            "1": "Wij verkopen niets door, gebruiken je gegevens niet voor reclame en zetten geen trackers of advertentiecookies."
+          }
+        },
+        "where": {
+          "title": "Waar je gegevens staan",
+          "paras": {
+            "1": "Alles wat we bewaren, staat in de Europese Unie. We werken met:"
+          },
+          "paras2": {
+            "1": "Anthropic krijgt alleen iets te zien als jij zelf op de knop drukt om een vonnis, bonnetje, foto van een schoolkalender of bericht te laten lezen of herschrijven. Het antwoord bewaren we pas als jij het opslaat. Anthropic gebruikt die gegevens niet om zijn modellen te trainen."
+          }
+        },
+        "howLong": {
+          "title": "Hoe lang",
+          "paras": {
+            "1": "Zolang je een account hebt. Verwijder je je account, dan worden je gegevens gewist. Deel je een kind met een co-ouder, dan blijft dat kind bestaan bij die ouder: het zijn ook diens gegevens.",
+            "2": "In de historiek blijft staan dát er een account verwijderd is, zonder je gegevens erbij.",
+            "3": "Technische sporen ruimen we vanzelf op, elke nacht:"
+          },
+          "items": {
+            "1": "Inlogpogingen (om misbruik tegen te gaan): na 24 uur.",
+            "2": "Uitnodigingen die niet aanvaard werden: 90 dagen nadat ze verliepen.",
+            "3": "Afgevinkte boodschappen: 30 dagen na het afvinken.",
+            "4": "Voorstellen uit je eigen agenda waar je niets mee deed: 30 dagen na de datum.",
+            "5": "Accounts die nooit bevestigd werden: na 30 dagen.",
+            "6": "Wat je ons via het contactformulier stuurt: na twee jaar."
+          }
+        },
+        "rights": {
+          "title": "Je rechten",
+          "paras": {
+            "1": "Je mag je gegevens inzien, laten verbeteren, laten wissen en meenemen. Al je gegevens download je zelf in Instellingen › Account, en daar wis je ook je account. Voor de rest volstaat een bericht via het contactformulier.",
+            "2": "Ben je het oneens met hoe wij met je gegevens omgaan, dan kun je klacht indienen bij de Gegevensbeschermingsautoriteit (gegevensbeschermingsautoriteit.be)."
+          }
+        }
+      },
+      "responsible": "Wie is verantwoordelijk",
+      "processors": {
+        "Supabase": "Database, aanmelden en opslag — Frankfurt, EU",
+        "Vercel": "Hosting van de app — Frankfurt, EU",
+        "Brevo": "Mails versturen — EU (Frans bedrijf)",
+        "Anthropic": "Alleen als jij iets laat lezen of herschrijven (Claude) — Verenigde Staten"
+      }
+    },
+    "terms": {
+      "title": "Gebruiksvoorwaarden",
+      "intro": "Door eezzyflow te gebruiken, ga je akkoord met deze voorwaarden.",
+      "lastUpdated": "Laatst bijgewerkt op {date}.",
+      "sections": {
+        "what": {
+          "title": "Wat eezzyflow is",
+          "body": "Een app om als ouders het verblijf van je kinderen te regelen, kosten te delen en met elkaar te communiceren, of jullie nu apart of samen wonen. Je gebruikt de app op eigen verantwoordelijkheid."
+        },
+        "who": {
+          "title": "Wie de app mag gebruiken",
+          "body": "Iedereen van 18 jaar of ouder. Een kind kan een eigen, beperkte account krijgen als alle ouders met gezag daarmee instemmen."
+        },
+        "use": {
+          "title": "Wat je ermee mag",
+          "body": "De app gebruiken waarvoor hij bedoeld is: je gezinsleven organiseren. Je mag hem niet gebruiken om anderen lastig te vallen, om valse informatie te verspreiden of om de werking te verstoren."
+        },
+        "data": {
+          "title": "Je gegevens",
+          "body": "Je behoudt alle rechten op wat je invoert. Wij verwerken die gegevens alleen zodat de app kan werken. We verkopen niets door en gebruiken niets voor reclame. Zie de <link>privacyverklaring</link> voor de details."
+        },
+        "ai": {
+          "title": "Lezen met Claude",
+          "body": "Laat je een vonnis, bonnetje, foto of bericht lezen of herschrijven, dan is het resultaat een voorstel. Kijk het na voor je het opslaat of verstuurt: de app kan zich vergissen."
+        },
+        "payments": {
+          "title": "Betalingen",
+          "body": "De basisversie is gratis. Voor extra functies vragen we een abonnement. Prijzen staan in de app. Een abonnement loopt tot je het opzegt; opzeggen kan op elk moment."
+        },
+        "liability": {
+          "title": "Aansprakelijkheid",
+          "body": "We doen ons best om de app betrouwbaar te houden, maar we kunnen niet garanderen dat hij altijd werkt of dat er nooit iets misgaat. Gebruik de app niet als enige bron voor juridische of financiële beslissingen."
+        },
+        "changes": {
+          "title": "Wijzigingen",
+          "body": "We kunnen deze voorwaarden aanpassen. Bij belangrijke wijzigingen laten we het weten via de app of per e-mail. Blijf je de app gebruiken, dan ga je akkoord met de nieuwe voorwaarden."
+        }
+      },
+      "contact": "Contact"
+    }
+  },
   "site": {
     "nav": {
       "pricing": "Prijzen",
@@ -330,6 +456,10 @@
     "stores": {
       "appStore": "Download in de App Store",
       "googlePlay": "Ontdek het op Google Play"
+    },
+    "legal": {
+      "websiteTitle": "Deze website",
+      "websiteBody": "eezzyflow.com gebruikt geen cookies, geen trackers en geen statistieken. De website wordt gehost bij Netlify; zoals elke webhost houdt Netlify technische gegevens zoals je IP-adres kort bij om de pagina te kunnen tonen. Wat hieronder staat, gaat over de app."
     }
   }
 }

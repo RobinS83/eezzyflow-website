@@ -6,8 +6,6 @@ export const links = {
   app: APP_URL,
   login: `${APP_URL}/aanmelden`,
   register: `${APP_URL}/registreren`,
-  privacy: `${APP_URL}/privacy`,
-  terms: `${APP_URL}/voorwaarden`,
   support: `${APP_URL}/support`,
   forgotPassword: `${APP_URL}/wachtwoord-vergeten`,
   // The app is not in the stores yet. Fill these in once it is; until then

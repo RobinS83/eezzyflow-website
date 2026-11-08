@@ -218,6 +218,132 @@
     "appName": "eezzyflow",
     "tagline": "eezzyflow · Insieme, senza complicazioni."
   },
+  "legal": {
+    "privacy": {
+      "title": "Informativa sulla privacy",
+      "intro": "eezzyflow riguarda tuo figlio. Per questo conserviamo il minor numero di dati possibile, li teniamo in Europa e nessuno al di fuori della tua famiglia può accedervi.",
+      "lastUpdated": "Ultimo aggiornamento: {date}.",
+      "contact": "Fai le tue domande sui dati tramite <link>il modulo di contatto</link>. Non serve un account.",
+      "sections": {
+        "data": {
+          "title": "Quali dati conserviamo",
+          "items": {
+            "1": "Il tuo indirizzo e-mail, il tuo nome e, se vuoi, una foto profilo.",
+            "2": "Ciò che inserisci sui tuoi figli: nome, data di nascita, foto, regime di affidamento, appuntamenti, spese con scontrini, documenti e messaggi.",
+            "3": "Dati sanitari, solo se li inserisci tu in Salute (ad esempio allergie, vaccinazioni o il medico di base). Sono dati sensibili: li vedono solo i genitori con responsabilità genitoriale, e un osservatore vede solo le allergie.",
+            "4": "La tua posizione, solo se la condividi tu durante un passaggio. L'altro genitore la vede per due ore; puoi sempre smettere prima, e poi la posizione viene cancellata.",
+            "5": "Il link del tuo calendario, se lo colleghi. Conserviamo solo gli appuntamenti con il nome di tuo figlio o quelli che approvi; il resto lo leggiamo e lo dimentichiamo subito.",
+            "6": "Chi forma insieme una casa, e i dispositivi su cui vuoi ricevere notifiche.",
+            "7": "Una cronologia di chi ha cambiato cosa e quando, per poterla consultare in seguito."
+          },
+          "paras2": {
+            "1": "Di proposito non chiediamo il numero di registro nazionale né l'indirizzo di tuo figlio. Se una sentenza che fai leggere contiene comunque un numero di registro nazionale, l'app non lo riprende."
+          }
+        },
+        "why": {
+          "title": "Perché li conserviamo",
+          "paras": {
+            "1": "Per far funzionare l'app: farti accedere, mostrare i tuoi dati alle persone che vi hanno accesso e farti vedere cosa è cambiato e quando. La base giuridica è il contratto che stipuli con noi creando un account.",
+            "2": "Inserisci dati sanitari o condividi la tua posizione solo se lo vuoi. Puoi sempre toglierli."
+          }
+        },
+        "see": {
+          "title": "Chi può vedere i tuoi dati",
+          "paras": {
+            "1": "Solo tu e le persone che inviti. La protezione è nel database stesso, non solo sullo schermo: un genitore non può tecnicamente consultare i dati di una famiglia in cui non ha alcun ruolo."
+          },
+          "items": {
+            "1": "L'altro genitore di tuo figlio vede ciò che condividete: il calendario, gli appuntamenti, le spese che lo riguardano e i vostri messaggi.",
+            "2": "Un osservatore (ad esempio la nonna o la babysitter) vede solo il calendario, le date importanti, la scuola, il medico e le allergie. Non può modificare nulla.",
+            "3": "Tuo figlio, con un proprio account, vede solo da chi si trova, i suoi appuntamenti e le sue foto.",
+            "4": "Il tuo partner in una famiglia allargata vede solo il nome dei tuoi figli e se sono a casa."
+          },
+          "paras2": {
+            "1": "Non vendiamo nulla, non usiamo i tuoi dati per la pubblicità e non mettiamo tracker né cookie pubblicitari."
+          }
+        },
+        "where": {
+          "title": "Dove si trovano i tuoi dati",
+          "paras": {
+            "1": "Tutto ciò che conserviamo si trova nell'Unione europea. Lavoriamo con:"
+          },
+          "paras2": {
+            "1": "Anthropic vede qualcosa solo quando premi tu il pulsante per far leggere o riformulare una sentenza, uno scontrino, la foto di un calendario scolastico o un messaggio. Conserviamo la risposta solo quando la salvi. Anthropic non usa questi dati per addestrare i suoi modelli."
+          }
+        },
+        "howLong": {
+          "title": "Per quanto tempo",
+          "paras": {
+            "1": "Finché hai un account. Se elimini il tuo account, i tuoi dati vengono cancellati. Se condividi un figlio con l'altro genitore, quel figlio resta presso di lui: sono anche dati suoi.",
+            "2": "Nella cronologia resta che un account è stato eliminato, senza i tuoi dati.",
+            "3": "Eliminiamo automaticamente le tracce tecniche, ogni notte:"
+          },
+          "items": {
+            "1": "Tentativi di accesso (contro gli abusi): dopo 24 ore.",
+            "2": "Inviti non accettati: 90 giorni dopo la scadenza.",
+            "3": "Spesa spuntata: 30 giorni dopo averla spuntata.",
+            "4": "Proposte dal tuo calendario a cui non hai dato seguito: 30 giorni dopo la data.",
+            "5": "Account mai confermati: dopo 30 giorni.",
+            "6": "Ciò che ci invii tramite il modulo di contatto: dopo due anni."
+          }
+        },
+        "rights": {
+          "title": "I tuoi diritti",
+          "paras": {
+            "1": "Puoi consultare, correggere, cancellare e portare con te i tuoi dati. Scarichi tu stesso tutti i tuoi dati in Impostazioni › Account, dove puoi anche eliminare il tuo account. Per il resto basta un messaggio tramite il modulo di contatto.",
+            "2": "Se non sei d'accordo con il modo in cui trattiamo i tuoi dati, puoi presentare reclamo all'Autorità belga per la protezione dei dati (dataprotectionauthority.be)."
+          }
+        }
+      },
+      "responsible": "Chi è responsabile",
+      "processors": {
+        "Supabase": "Database, accesso e archiviazione — Francoforte, UE",
+        "Vercel": "Hosting dell'app — Francoforte, UE",
+        "Brevo": "Invio di e-mail — UE (società francese)",
+        "Anthropic": "Solo quando fai leggere o riformulare qualcosa (Claude) — Stati Uniti"
+      }
+    },
+    "terms": {
+      "title": "Condizioni d'uso",
+      "intro": "Utilizzando eezzyflow, accetti le presenti condizioni.",
+      "lastUpdated": "Ultimo aggiornamento: {date}.",
+      "sections": {
+        "what": {
+          "title": "Che cos'è eezzyflow",
+          "body": "Un'app con cui i genitori organizzano dove stanno i figli, dividono le spese e comunicano, che vivano separati o insieme. Usi l'app sotto la tua responsabilità."
+        },
+        "who": {
+          "title": "Chi può usare l'app",
+          "body": "Chiunque abbia almeno 18 anni. Un figlio può avere un proprio account limitato se tutti i genitori con responsabilità genitoriale sono d'accordo."
+        },
+        "use": {
+          "title": "Cosa puoi farne",
+          "body": "Usare l'app per lo scopo previsto: organizzare la vita familiare. Non puoi usarla per molestare altri, diffondere informazioni false o disturbarne il funzionamento."
+        },
+        "data": {
+          "title": "I tuoi dati",
+          "body": "Mantieni tutti i diritti su ciò che inserisci. Trattiamo questi dati solo per far funzionare l'app. Non vendiamo nulla e non usiamo nulla per la pubblicità. Vedi l’<link>informativa sulla privacy</link> per i dettagli."
+        },
+        "ai": {
+          "title": "Lettura con Claude",
+          "body": "Se fai leggere o riformulare una sentenza, uno scontrino, una foto o un messaggio, il risultato è una proposta. Controllalo prima di salvarlo o inviarlo: l'app può sbagliare."
+        },
+        "payments": {
+          "title": "Pagamenti",
+          "body": "La versione base è gratuita. Per le funzioni aggiuntive chiediamo un abbonamento. I prezzi sono nell'app. Un abbonamento dura finché non lo disdici; puoi disdire in qualsiasi momento."
+        },
+        "liability": {
+          "title": "Responsabilità",
+          "body": "Facciamo del nostro meglio per mantenere l'app affidabile, ma non possiamo garantire che funzioni sempre o che non vada mai storto nulla. Non usare l'app come unica fonte per decisioni legali o finanziarie."
+        },
+        "changes": {
+          "title": "Modifiche",
+          "body": "Possiamo modificare queste condizioni. In caso di modifiche importanti ti avviseremo nell'app o via e-mail. Se continui a usare l'app, accetti le nuove condizioni."
+        }
+      },
+      "contact": "Contatti"
+    }
+  },
   "site": {
     "nav": {
       "pricing": "Prezzi",
@@ -330,6 +456,10 @@
     "stores": {
       "appStore": "Scarica su App Store",
       "googlePlay": "Disponibile su Google Play"
+    },
+    "legal": {
+      "websiteTitle": "Questo sito web",
+      "websiteBody": "eezzyflow.com non usa cookie, tracker né statistiche. Il sito è ospitato da Netlify; come ogni hosting, Netlify conserva brevemente dati tecnici come il tuo indirizzo IP per mostrare la pagina. Quanto segue riguarda l’app."
     }
   }
 }
