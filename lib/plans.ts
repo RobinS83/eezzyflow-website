@@ -26,7 +26,7 @@ export const plans: Plan[] = [
       "everythingFree", "unlimitedChildren", "fullCosts", "documents", "calendarSync",
       "photoImport", "receipts", "lists", "reportPdf", "ownChildPhoto", "viewers",
       "reminders", "aiRewrite", "judgmentImport", "yearOverview", "history",
-      "multiplePartners", "childAccounts",
+      "multiplePartners", "childAccounts", "vault",
     ],
   },
   {

@@ -2,12 +2,13 @@ import { getLocale, getTranslations } from "next-intl/server";
 import { localePath } from "@/i18n/routing";
 import {
   BellRing, Camera, CalendarSync, Eye, FileText, FolderOpen, Gavel, History,
-  ListChecks, Receipt, Sparkles, UserRound, type LucideIcon,
+  ListChecks, LockKeyhole, Receipt, Sparkles, UserRound, type LucideIcon,
 } from "lucide-react";
 
 // Extra features (texts from the app: pricing.features). Most read
 // "Title: explanation"; we show the part before the colon as the title.
 const ITEMS: { key: string; icon: LucideIcon }[] = [
+  { key: "vault", icon: LockKeyhole },
   { key: "photoImport", icon: Camera },
   { key: "receipts", icon: Receipt },
   { key: "calendarSync", icon: CalendarSync },
