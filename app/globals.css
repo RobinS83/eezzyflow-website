@@ -428,3 +428,21 @@ summary::-webkit-details-marker { display: none; }
 
 /* The core line lights up word by word (--p goes 0 → 1 over the heading). */
 .js-motion .light-word { opacity: clamp(0.12, calc(var(--p, 0) * var(--n, 10) - var(--i, 0) + 0.3), 1); transition: opacity 0.25s linear; }
+
+/* ---------- App screenshots taking turns in the phone ---------- */
+.screen-slide { opacity: 0; }
+.screen-slide[style*="--i: 0"], .screen-slide[style*="--i:0"] { opacity: 1; }
+@media (prefers-reduced-motion: no-preference) {
+  /* Each screen shows 4 s, with a 0.8 s cross-fade; 5 screens = 20 s loop. */
+  @keyframes screen-cycle {
+    0% { opacity: 0; scale: 1.04; }
+    4% { opacity: 1; scale: 1; }
+    20% { opacity: 1; scale: 1; }
+    24% { opacity: 0; scale: 1; }
+    100% { opacity: 0; }
+  }
+  .screen-slide {
+    animation: screen-cycle calc(var(--n) * 4s) linear infinite;
+    animation-delay: calc(var(--i) * 4s - 0.8s);
+  }
+}
