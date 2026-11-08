@@ -104,6 +104,17 @@ HTML naar `out/`, er draait geen server. Instellingen en headers staan in
 de site live mag (bij de start van de reclame); de stappen staan in
 `docs/domeinen.md`. `.be` en `www` sturen door naar `https://eezzyflow.com`.
 
+**Zuinig met deploys.** Het gratis Netlify-team heeft 300 credits per maand
+(periode van de 15e tot de 14e), gedeeld met surocad3d.com; elke deploy kost
+er ongeveer 15. Zijn ze op, dan gaan de projecten van het team offline, ook
+surocad3d.com. Daarom:
+
+- Bundel wijzigingen: test lokaal, push één keer per afgeronde ronde, niet na
+  elk klein stapje.
+- Wijzigingen aan alleen `docs/`, `CLAUDE.md` of `README.md` bouwen niet
+  (`ignore` in `netlify.toml`). Zet anders `[skip netlify]` in de
+  commitboodschap als een push niet online hoeft.
+
 Tot de lancering staat in `netlify.toml` de header `X-Robots-Tag: noindex`,
 zodat het voorbeeld op `*.netlify.app` niet in Google komt. **Bij de lancering
 weghalen**, anders blijft eezzyflow.com onvindbaar.

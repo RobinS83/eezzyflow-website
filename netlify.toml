@@ -1,6 +1,9 @@
 [build]
   command = "npm run build"
   publish = "out"
+  # Netlify credits are limited (shared with surocad3d.com). Skip the build
+  # when only docs, notes or the project rules changed: they don't change the site.
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':(exclude)docs' ':(exclude)CLAUDE.md' ':(exclude)README.md'"
 
 [build.environment]
   NODE_VERSION = "22"
