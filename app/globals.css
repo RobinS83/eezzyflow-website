@@ -444,6 +444,12 @@ summary::-webkit-details-marker { display: none; }
   }
   .screen-slide {
     animation: screen-cycle calc(var(--n) * 7s) linear infinite;
-    animation-delay: calc(var(--i) * 7s - 1s);
+    animation-delay: calc(var(--i) * 7s - 1s + var(--shift, 0s));
   }
+}
+
+/* The orange phone: same body, copper edges. */
+.phone-orange {
+  --phone-edge-1: #e88a52;
+  --phone-edge-2: #a5532b;
 }
