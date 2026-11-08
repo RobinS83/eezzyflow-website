@@ -1,7 +1,7 @@
 import type React from "react";
 import { getLocale, getTranslations } from "next-intl/server";
 import { localePath } from "@/i18n/routing";
-import { ArrowRight, MessagesSquare, Wallet } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { links } from "@/lib/links";
 import { ButtonLink, Dot } from "../ui";
 import { PhoneMockup } from "./phone-mockup";
@@ -16,7 +16,6 @@ function splitLastWord(text: string) {
 
 export async function Hero() {
   const t = await getTranslations("landing.hero");
-  const phone = await getTranslations("landing.phone");
   const locale = await getLocale();
   const [head, last] = splitLastWord(t("title"));
 
@@ -91,25 +90,6 @@ export async function Hero() {
           <Tilt3D className="relative flex justify-center">
             <div className="tilt-idle relative">
               <PhoneMockup />
-              {/* Floating tiles stand in front of the phone, so they move with depth. */}
-              <div aria-hidden className="tilt-depth absolute top-[64%] -left-20 hidden sm:block lg:-left-28">
-                <div className="float glass rounded-[16px] px-4 py-3">
-                  <p className="flex items-center gap-1.5 text-[11px] font-bold tracking-[0.06em] text-sub uppercase">
-                    <Wallet size={13} /> {phone("balance")}
-                  </p>
-                  <p className="mt-0.5 text-[20px] font-extrabold text-success-text tabular-nums">{phone("balanceValue")}</p>
-                </div>
-              </div>
-              <div aria-hidden className="tilt-depth absolute top-[30%] -right-16 hidden sm:block lg:-right-24">
-                <div className="float-slow glass rounded-[16px] px-4 py-3">
-                  <p className="flex items-center gap-1.5 text-[11px] font-bold tracking-[0.06em] text-sub uppercase">
-                    <MessagesSquare size={13} /> {phone("unread")}
-                  </p>
-                  <p className="mt-0.5 text-[20px] font-extrabold text-ink">
-                    {phone("unreadValue")} <span className="text-[13px] font-medium text-sub">{phone("unreadSub")}</span>
-                  </p>
-                </div>
-              </div>
             </div>
           </Tilt3D>
           </div>

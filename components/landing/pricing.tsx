@@ -23,7 +23,7 @@ export async function Pricing({ compact = false, heading = true }: { compact?: b
   const family = planById("family").monthlyCents;
 
   return (
-    <Section id="pricing" className="orbs overflow-hidden bg-surface/50">
+    <Section id="pricing" className="orbs overflow-x-clip bg-surface/50">
       {heading && <SectionHeading eyebrow={s("eyebrow")} title={s("title")} />}
       {heading && <p className="-mt-6 max-w-2xl text-[16px] leading-relaxed text-sub">{t("subtitle")}</p>}
       <p className="mt-4 mb-12 inline-flex max-w-2xl items-start gap-2.5 rounded-[14px] border border-line bg-surface px-4 py-3 text-[15.5px] leading-snug font-semibold">
@@ -40,7 +40,7 @@ export async function Pricing({ compact = false, heading = true }: { compact?: b
               className={`reveal tilt-card relative flex flex-col rounded-[28px] p-7 sm:p-8 ${
                 featured
                   ? "on-spotlight order-first bg-(image:--brand-spotlight) text-spotlight-ink shadow-(--shadow-tile-lift) lg:order-none lg:-my-5 lg:py-12"
-                  : "tile"
+                  : "glass"
               }`}
             >
               {featured && (

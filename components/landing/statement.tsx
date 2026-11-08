@@ -30,6 +30,7 @@ export async function Statement() {
         <p className="mb-6 text-xs font-bold tracking-[0.08em] text-spotlight-sub uppercase">{s("eyebrow")}</p>
         <h2
           id="statement-title"
+          style={{ "--n": first.split(" ").filter(Boolean).length + rest.split(" ").length } as React.CSSProperties}
           className="light-words max-w-5xl text-[clamp(36px,6.4vw,80px)] leading-[1.02] font-extrabold tracking-[-0.045em] text-balance text-spotlight-ink"
         >
           {[...first.split(" ").filter(Boolean).map((w) => ({ w, accent: false })), ...rest.split(" ").map((w) => ({ w, accent: true }))].map(

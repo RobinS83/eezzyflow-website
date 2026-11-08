@@ -12,7 +12,7 @@ export async function Audience() {
   ];
 
   return (
-    <Section id="audience" className="orbs overflow-hidden">
+    <Section id="audience" className="orbs overflow-x-clip">
       <SectionHeading eyebrow={t("eyebrow")} title={t("title")} />
       <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {groups.map(({ key, icon: Icon }) => (

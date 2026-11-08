@@ -21,7 +21,7 @@ export async function Week() {
   const initial = { y: costs("you"), o: costs("other") };
 
   return (
-    <Section id="week">
+    <Section id="week" className="orbs overflow-x-clip">
       <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[1fr_1.15fr] [&>*]:min-w-0">
         <div className="reveal">
           <p className="mb-3 text-xs font-bold tracking-[0.08em] text-landing-accent uppercase">{t("eyebrow")}</p>
@@ -31,7 +31,7 @@ export async function Week() {
           <p className="max-w-lg text-[17px] leading-relaxed text-sub">{t("body")}</p>
         </div>
 
-        <figure role="img" aria-label={t("label")} className="reveal tile tile-lift tilt-card rounded-[24px] p-5 sm:p-7">
+        <figure role="img" aria-label={t("label")} className="reveal glass tilt-card rounded-[24px] p-5 sm:p-7">
           <div aria-hidden>
             {/* Two homes, one flow between them. */}
             <div className="relative mb-6 flex items-center justify-between">
