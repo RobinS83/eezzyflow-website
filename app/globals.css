@@ -433,16 +433,17 @@ summary::-webkit-details-marker { display: none; }
 .screen-slide { opacity: 0; }
 .screen-slide[style*="--i: 0"], .screen-slide[style*="--i:0"] { opacity: 1; }
 @media (prefers-reduced-motion: no-preference) {
-  /* Each screen shows 4 s, with a 0.8 s cross-fade; 5 screens = 20 s loop. */
+  /* Each screen shows 7 s, with a 1 s cross-fade; 5 screens = 35 s loop.
+     The keyframe percentages assume 5 screens (20% each). */
   @keyframes screen-cycle {
     0% { opacity: 0; scale: 1.04; }
-    4% { opacity: 1; scale: 1; }
+    2.9% { opacity: 1; scale: 1; }
     20% { opacity: 1; scale: 1; }
-    24% { opacity: 0; scale: 1; }
+    22.9% { opacity: 0; scale: 1; }
     100% { opacity: 0; }
   }
   .screen-slide {
-    animation: screen-cycle calc(var(--n) * 4s) linear infinite;
-    animation-delay: calc(var(--i) * 4s - 0.8s);
+    animation: screen-cycle calc(var(--n) * 7s) linear infinite;
+    animation-delay: calc(var(--i) * 7s - 1s);
   }
 }
