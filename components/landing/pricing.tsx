@@ -23,7 +23,7 @@ export async function Pricing({ compact = false, heading = true }: { compact?: b
   const family = planById("family").monthlyCents;
 
   return (
-    <Section id="pricing" className="orbs overflow-x-clip bg-surface/50">
+    <Section id="pricing">
       {heading && <SectionHeading eyebrow={s("eyebrow")} title={s("title")} />}
       {heading && <p className="-mt-6 max-w-2xl text-[16px] leading-relaxed text-sub">{t("subtitle")}</p>}
       <p className="mt-4 mb-12 inline-flex max-w-2xl items-start gap-2.5 rounded-[14px] border border-line bg-surface px-4 py-3 text-[15.5px] leading-snug font-semibold">
@@ -40,7 +40,7 @@ export async function Pricing({ compact = false, heading = true }: { compact?: b
               className={`reveal tilt-card relative flex flex-col rounded-[28px] p-7 sm:p-8 ${
                 featured
                   ? "on-spotlight order-first bg-(image:--brand-spotlight) text-spotlight-ink shadow-(--shadow-tile-lift) lg:order-none lg:-my-5 lg:py-12"
-                  : "glass"
+                  : "tile"
               }`}
             >
               {featured && (
@@ -142,7 +142,7 @@ export async function Pricing({ compact = false, heading = true }: { compact?: b
         <>
           <div className="mt-12 grid gap-4 md:grid-cols-2">
             {(["apart", "together"] as const).map((k) => (
-              <div key={k} className="tilt-card rounded-[18px] border border-line bg-surface/40 p-5">
+              <div key={k} className="tilt-card rounded-[18px] border border-line bg-surface p-5">
                 <h3 className="mb-1.5 text-[15.5px] font-bold">{t(`who.${k}Title`)}</h3>
                 <p className="text-[14.5px] leading-relaxed text-sub">{t(`who.${k}Body`)}</p>
               </div>

@@ -57,10 +57,10 @@ export default async function HelpPage({ params }: { params: Promise<{ locale: s
         </div>
       </section>
 
-      <section className="orbs overflow-x-clip px-[18px] py-16 sm:py-20">
+      <section className="px-[18px] py-16 sm:py-20">
         <ul className="mx-auto grid max-w-6xl gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {actions.map(({ key, icon: Icon, href, button }) => (
-            <li key={key} className="glass tilt-card flex flex-col rounded-[22px] p-6">
+            <li key={key} className="tile tilt-card flex flex-col rounded-[22px] p-6">
               <span className="pop-z mb-5 inline-flex size-11 items-center justify-center rounded-[12px] bg-highlight-soft text-highlight-chip-text">
                 <Icon aria-hidden size={22} />
               </span>

@@ -88,13 +88,13 @@ export async function Features({ heading = true, more }: { heading?: boolean; mo
   ];
 
   return (
-    <Section id="features" className="orbs overflow-x-clip">
+    <Section id="features">
       {heading && <SectionHeading eyebrow={t("eyebrow")} title={t("title")} />}
       <ul className="grid gap-4 lg:grid-cols-3">
         {cards.map(({ key, icon: Icon, art, wide }) => (
           <li
             key={key}
-            className={`reveal glass tilt-card group grid gap-6 rounded-[24px] p-6 sm:p-7 ${
+            className={`reveal tile tilt-card group grid gap-6 rounded-[24px] p-6 sm:p-7 ${
               wide ? "lg:col-span-2 lg:grid-cols-[1fr_1fr] lg:items-center" : ""
             }`}
           >
@@ -107,7 +107,7 @@ export async function Features({ heading = true, more }: { heading?: boolean; mo
             </div>
             <div
               aria-hidden
-              className="pop-z rounded-[18px] bg-paper/60 p-5"
+              className="pop-z rounded-[18px] bg-paper p-5"
             >
               {art}
             </div>

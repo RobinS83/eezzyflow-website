@@ -20,13 +20,16 @@ export async function Statement() {
     <section
       id="trust"
       aria-labelledby="statement-title"
-      className="on-spotlight follow-light grain relative overflow-hidden bg-(image:--brand-spotlight) px-[18px] py-24 sm:py-32"
+      className="px-[18px] py-12 sm:py-16"
     >
+      {/* A rounded dark block, like the closing block: every section on the page
+          sits on the same background, so the transitions are all the same. */}
+      <div className="on-spotlight follow-light grain relative mx-auto max-w-6xl overflow-hidden rounded-[36px] bg-(image:--brand-spotlight) px-6 py-16 sm:px-12 sm:py-24">
       <div
         aria-hidden
         className="pointer-events-none absolute top-[-30%] left-1/2 size-[900px] -translate-x-1/2 rounded-full bg-(image:--brand-champagne) opacity-[0.08] blur-3xl"
       />
-      <div className="relative mx-auto max-w-6xl">
+      <div className="relative">
         <p className="mb-6 text-xs font-bold tracking-[0.08em] text-spotlight-sub uppercase">{s("eyebrow")}</p>
         <h2
           id="statement-title"
@@ -53,6 +56,7 @@ export async function Statement() {
             </li>
           ))}
         </ul>
+      </div>
       </div>
     </section>
   );

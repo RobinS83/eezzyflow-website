@@ -14,7 +14,7 @@ export async function Costs() {
   }));
 
   return (
-    <Section id="costs" className="bg-surface/50">
+    <Section id="costs">
       <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 [&>*]:min-w-0">
         <div>
           <p className="mb-3 text-xs font-bold tracking-[0.08em] text-landing-accent uppercase">{t("eyebrow")}</p>
