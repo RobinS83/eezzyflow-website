@@ -1,12 +1,13 @@
 import { getTranslations } from "next-intl/server";
-import { Section, SectionHeading } from "../ui";
+import { ArrowRight } from "lucide-react";
+import { ButtonLink, Section, SectionHeading } from "../ui";
 
-export async function Steps() {
+export async function Steps({ heading = true, more }: { heading?: boolean; more?: { href: string; label: string } }) {
   const t = await getTranslations("landing.steps");
 
   return (
     <Section id="how">
-      <SectionHeading eyebrow={t("eyebrow")} title={t("title")} />
+      {heading && <SectionHeading eyebrow={t("eyebrow")} title={t("title")} />}
       <ol className="relative grid gap-10 md:grid-cols-3 md:gap-8">
         {/* The flow line connecting the steps. */}
         <span
@@ -24,6 +25,14 @@ export async function Steps() {
           </li>
         ))}
       </ol>
+      {more && (
+        <div className="mt-10">
+          <ButtonLink href={more.href} variant="secondary">
+            {more.label}
+            <ArrowRight aria-hidden size={17} />
+          </ButtonLink>
+        </div>
+      )}
     </Section>
   );
 }

@@ -25,7 +25,8 @@
       "included": "Wat erin zit",
       "saveBody": "Twee keer Plus kost {twice} per maand. Met Gezin hebben jullie allebei alles voor {family}: {saving} minder per maand, en maar één abonnement om te regelen.",
       "perMonth": "per maand",
-      "plusHow": "Liever volledig los van elkaar? Dan neemt ieder zijn eigen Plus."
+      "plusHow": "Liever volledig los van elkaar? Dan neemt ieder zijn eigen Plus.",
+      "moreCount": "en nog {n} meer"
     },
     "pricingFaq": {
       "q1": "Moet de andere ouder ook betalen?"
@@ -138,7 +139,8 @@
       "included": "Ce qui est inclus",
       "saveBody": "Deux fois Plus coûtent {twice} par mois. Avec Famille, vous avez tous les deux tout pour {family} : {saving} de moins par mois, et un seul abonnement à gérer.",
       "perMonth": "par mois",
-      "plusHow": "Vous préférez rester totalement indépendants ? Chacun prend alors son propre Plus."
+      "plusHow": "Vous préférez rester totalement indépendants ? Chacun prend alors son propre Plus.",
+      "moreCount": "et {n} de plus"
     },
     "pricingFaq": {
       "q1": "L’autre parent doit-il aussi payer ?"
@@ -251,7 +253,8 @@
       "included": "What’s included",
       "saveBody": "Plus twice costs {twice} a month. With Family you both get everything for {family}: {saving} less per month, and only one subscription to arrange.",
       "perMonth": "per month",
-      "plusHow": "Prefer to keep things completely separate? Then each of you takes your own Plus."
+      "plusHow": "Prefer to keep things completely separate? Then each of you takes your own Plus.",
+      "moreCount": "and {n} more"
     },
     "pricingFaq": {
       "q1": "Does the other parent have to pay too?"
@@ -364,7 +367,8 @@
       "included": "Was enthalten ist",
       "saveBody": "Zweimal Plus kostet {twice} im Monat. Mit Familie habt ihr beide alles für {family}: {saving} weniger im Monat und nur ein Abo zu regeln.",
       "perMonth": "pro Monat",
-      "plusHow": "Lieber ganz getrennt? Dann nimmt jeder ein eigenes Plus."
+      "plusHow": "Lieber ganz getrennt? Dann nimmt jeder ein eigenes Plus.",
+      "moreCount": "und {n} weitere"
     },
     "pricingFaq": {
       "q1": "Muss der andere Elternteil auch bezahlen?"
@@ -477,7 +481,8 @@
       "included": "Qué incluye",
       "saveBody": "Dos veces Plus cuestan {twice} al mes. Con Familia, los dos tenéis todo por {family}: {saving} menos al mes y una sola suscripción que gestionar.",
       "perMonth": "al mes",
-      "plusHow": "¿Preferís ir totalmente por separado? Entonces cada uno contrata su propio Plus."
+      "plusHow": "¿Preferís ir totalmente por separado? Entonces cada uno contrata su propio Plus.",
+      "moreCount": "y {n} más"
     },
     "pricingFaq": {
       "q1": "¿El otro progenitor también tiene que pagar?"
@@ -590,7 +595,8 @@
       "included": "Cosa include",
       "saveBody": "Due volte Plus costano {twice} al mese. Con Famiglia avete entrambi tutto per {family}: {saving} in meno al mese e un solo abbonamento da gestire.",
       "perMonth": "al mese",
-      "plusHow": "Preferite restare del tutto indipendenti? Allora ognuno prende il proprio Plus."
+      "plusHow": "Preferite restare del tutto indipendenti? Allora ognuno prende il proprio Plus.",
+      "moreCount": "e altre {n}"
     },
     "pricingFaq": {
       "q1": "Anche l’altro genitore deve pagare?"

@@ -13,14 +13,14 @@ export async function SiteHeader() {
   const locale = await getLocale();
 
   const items = [
-    { href: localePath(locale, "#features"), label: t("features") },
-    { href: localePath(locale, "#how"), label: t("how") },
-    { href: localePath(locale, "#pricing"), label: s("pricing") },
+    { href: localePath(locale, "functies"), label: t("features") },
+    { href: localePath(locale, "hoe-het-werkt"), label: t("how") },
+    { href: localePath(locale, "prijzen"), label: s("pricing") },
     { href: localePath(locale, "hulp"), label: s("help") },
   ];
 
   return (
-    <header className="sticky top-0 z-40 border-b border-line bg-paper/90 backdrop-blur supports-[backdrop-filter]:bg-paper/75">
+    <header className="sticky top-0 z-40 border-b border-line/60 bg-paper/60 backdrop-blur-xl backdrop-saturate-150">
       <div className="mx-auto flex h-[68px] max-w-6xl items-center justify-between gap-4 px-[18px]">
         <a href={localePath(locale)} aria-label={s("home")} className="rounded-[8px]">
           <Wordmark />

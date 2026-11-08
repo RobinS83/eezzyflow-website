@@ -22,6 +22,12 @@ export function TiltCards() {
     };
 
     const onMove = (e: PointerEvent) => {
+      const stage = (e.target as Element | null)?.closest<HTMLElement>(".follow-light");
+      if (stage) {
+        const r = stage.getBoundingClientRect();
+        stage.style.setProperty("--mx", `${(((e.clientX - r.left) / r.width) * 100).toFixed(1)}%`);
+        stage.style.setProperty("--my", `${(((e.clientY - r.top) / r.height) * 100).toFixed(1)}%`);
+      }
       const el = (e.target as Element | null)?.closest<HTMLElement>(".tilt-card") ?? null;
       if (active && active !== el) reset(active);
       active = el;

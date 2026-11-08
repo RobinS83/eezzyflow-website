@@ -244,7 +244,8 @@
       "included": "Wat erin zit",
       "saveBody": "Twee keer Plus kost {twice} per maand. Met Gezin hebben jullie allebei alles voor {family}: {saving} minder per maand, en maar één abonnement om te regelen.",
       "perMonth": "per maand",
-      "plusHow": "Liever volledig los van elkaar? Dan neemt ieder zijn eigen Plus."
+      "plusHow": "Liever volledig los van elkaar? Dan neemt ieder zijn eigen Plus.",
+      "moreCount": "en nog {n} meer"
     },
     "pricingFaq": {
       "q1": "Moet de andere ouder ook betalen?"

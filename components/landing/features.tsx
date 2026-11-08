@@ -1,7 +1,8 @@
 import { getTranslations } from "next-intl/server";
 import { CalendarDays, FileText, FolderHeart, Lock, MessagesSquare, Wallet, type LucideIcon } from "lucide-react";
 import type { ReactNode } from "react";
-import { Section, SectionHeading } from "../ui";
+import { ArrowRight } from "lucide-react";
+import { ButtonLink, Section, SectionHeading } from "../ui";
 
 /* Small abstract drawings of each screen. Decorative only. */
 
@@ -75,7 +76,7 @@ function CostsArt({ amount }: { amount: string }) {
   );
 }
 
-export async function Features() {
+export async function Features({ heading = true, more }: { heading?: boolean; more?: { href: string; label: string } }) {
   const t = await getTranslations("landing.features");
   const costs = await getTranslations("landing.costs");
 
@@ -88,7 +89,7 @@ export async function Features() {
 
   return (
     <Section id="features">
-      <SectionHeading eyebrow={t("eyebrow")} title={t("title")} />
+      {heading && <SectionHeading eyebrow={t("eyebrow")} title={t("title")} />}
       <ul className="grid gap-4 lg:grid-cols-3">
         {cards.map(({ key, icon: Icon, art, wide }) => (
           <li
@@ -102,14 +103,7 @@ export async function Features() {
                 <Icon aria-hidden size={22} />
               </span>
               <h3 className="mb-2 text-[22px] leading-[1.2] font-bold tracking-[-0.02em]">{t(`${key}Title`)}</h3>
-              <p className="mb-5 text-[15px] leading-relaxed text-sub">{t(`${key}Body`)}</p>
-              <ul className="flex flex-wrap gap-2">
-                {[1, 2].map((n) => (
-                  <li key={n} className="rounded-full bg-primary-chip px-3 py-1 text-[12.5px] font-semibold text-primary-chip-text">
-                    {t(`${key}Chip${n}`)}
-                  </li>
-                ))}
-              </ul>
+              <p className="text-[15px] leading-relaxed text-sub">{t(`${key}Body`)}</p>
             </div>
             <div
               aria-hidden
@@ -120,6 +114,14 @@ export async function Features() {
           </li>
         ))}
       </ul>
+      {more && (
+        <div className="mt-10">
+          <ButtonLink href={more.href} variant="secondary">
+            {more.label}
+            <ArrowRight aria-hidden size={17} />
+          </ButtonLink>
+        </div>
+      )}
     </Section>
   );
 }

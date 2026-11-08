@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
+import { localePath } from "@/i18n/routing";
 import { ArrowRight } from "lucide-react";
 import { links } from "@/lib/links";
 import appIcon from "@/brand/merkpakket-champagne/ios/AppIcon-1024.png";
@@ -8,10 +9,11 @@ import { StoreBadges } from "../store-badges";
 
 export async function Cta() {
   const t = await getTranslations("landing.cta");
+  const locale = await getLocale();
 
   return (
     <section className="px-[18px] pb-20 sm:pb-28" aria-labelledby="cta-title">
-      <div className="reveal tilt-card relative mx-auto max-w-6xl overflow-hidden rounded-[36px] bg-(image:--hero-cost) px-6 py-16 text-center text-on-primary sm:px-12 sm:py-24 dark:text-ink">
+      <div className="reveal tilt-card light-sweep grain relative mx-auto max-w-6xl overflow-hidden rounded-[36px] bg-(image:--hero-cost) px-6 py-16 text-center text-on-primary sm:px-12 sm:py-24 dark:text-ink">
         <div
           aria-hidden
           className="pointer-events-none absolute -bottom-60 left-1/2 size-[700px] -translate-x-1/2 rounded-full bg-(image:--brand-champagne) opacity-20 blur-3xl"
@@ -40,7 +42,7 @@ export async function Cta() {
               <ArrowRight aria-hidden size={18} />
             </a>
             <a
-              href="#features"
+              href={localePath(locale, "functies")}
               className={`${buttonStyles.primary} h-14 w-full border border-current px-7 text-[16px] bg-transparent! text-inherit! hover:brightness-100 sm:h-13 sm:w-auto`}
             >
               {t("features")}

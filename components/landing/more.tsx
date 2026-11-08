@@ -1,4 +1,5 @@
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
+import { localePath } from "@/i18n/routing";
 import {
   BellRing, Camera, CalendarSync, Eye, FileText, FolderOpen, Gavel, History,
   ListChecks, Receipt, Sparkles, UserRound, type LucideIcon,
@@ -26,10 +27,11 @@ function split(text: string) {
   return m ? { title: m[1], body: m[2] } : { title: text, body: "" };
 }
 
-export async function More() {
+export async function More({ detailed = false }: { detailed?: boolean }) {
   const s = await getTranslations("site.more");
   const f = await getTranslations("pricing.features");
   const faq = await getTranslations("landing.faq");
+  const locale = await getLocale();
 
   return (
     <section aria-labelledby="more-title" className="px-[18px] py-20 sm:py-28">
@@ -44,7 +46,7 @@ export async function More() {
           </h2>
         </div>
 
-        <ul className="grid gap-x-8 gap-y-9 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="grid gap-x-6 gap-y-5 sm:grid-cols-2 lg:grid-cols-3">
           {ITEMS.map(({ key, icon: Icon }) => {
             const { title, body } = split(f(key));
             return (
@@ -52,9 +54,11 @@ export async function More() {
                 <span className="rise-icon inline-flex size-11 shrink-0 items-center justify-center rounded-[12px] bg-highlight-soft text-highlight-chip-text">
                   <Icon aria-hidden size={21} />
                 </span>
-                <div className="pt-0.5">
+                <div className="self-center">
                   <h3 className="text-[16px] leading-snug font-bold first-letter:uppercase">{title}</h3>
-                  {body && <p className="mt-1 text-[14.5px] leading-relaxed text-sub first-letter:uppercase">{body}</p>}
+                  {detailed && body && (
+                    <p className="mt-1 text-[14.5px] leading-relaxed text-sub first-letter:uppercase">{body}</p>
+                  )}
                 </div>
               </li>
             );
@@ -63,7 +67,7 @@ export async function More() {
 
         <p className="mt-12 text-[14.5px] text-sub">
           {s("note")}{" "}
-          <a href="#pricing" className="font-semibold text-ink underline underline-offset-4">
+          <a href={localePath(locale, "prijzen")} className="font-semibold text-ink underline underline-offset-4">
             {faq("pricing")}
           </a>
         </p>

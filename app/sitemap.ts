@@ -3,7 +3,7 @@ import type { MetadataRoute } from "next";
 import { localePath, routing } from "@/i18n/routing";
 import { SITE_URL } from "@/lib/links";
 
-const PAGES = ["", "hulp"];
+const PAGES = ["", "functies", "hoe-het-werkt", "prijzen", "hulp"];
 const url = (l: string, page: string) => SITE_URL + (page ? localePath(l, page) : localePath(l));
 
 export default function sitemap(): MetadataRoute.Sitemap {

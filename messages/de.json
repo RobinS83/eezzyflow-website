@@ -244,7 +244,8 @@
       "included": "Was enthalten ist",
       "saveBody": "Zweimal Plus kostet {twice} im Monat. Mit Familie habt ihr beide alles für {family}: {saving} weniger im Monat und nur ein Abo zu regeln.",
       "perMonth": "pro Monat",
-      "plusHow": "Lieber ganz getrennt? Dann nimmt jeder ein eigenes Plus."
+      "plusHow": "Lieber ganz getrennt? Dann nimmt jeder ein eigenes Plus.",
+      "moreCount": "und {n} weitere"
     },
     "pricingFaq": {
       "q1": "Muss der andere Elternteil auch bezahlen?"

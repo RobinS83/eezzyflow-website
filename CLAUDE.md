@@ -63,6 +63,19 @@ in de stores. Ze staan in één bestand (`lib/links.ts`); tot ze er zijn, wijzen
 de badges naar `https://app.eezzyflow.com`. De officiële badges staan in
 `assets/badges/`, per taal, voor Apple en Google. Niet hertekenen of herkleuren.
 
+## Opbouw van de site
+
+De startpagina blijft **kort en overzichtelijk**: hero, voor wie (alleen
+titels), de vier hoofdfuncties, de kernzin, drie stappen, de prijzen in het
+kort en het slotblok. Uitleg in detail staat op de tabbladen:
+
+- `/functies`: alle functies met uitleg, weekkalender, kosten
+- `/hoe-het-werkt`: stappen, de app op je computer, alle vragen
+- `/prijzen`: volledige abonnementen, wie betaalt wat, vragen
+- `/hulp`: herstellen, contact, privacy en voorwaarden
+
+Mensen lezen weinig: liever een titel en een beeld dan een alinea.
+
 ## Verifiëren, niet aannemen
 
 Draai `npm run typecheck && npm run lint && npm run build` voordat je iets af

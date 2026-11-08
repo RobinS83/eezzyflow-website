@@ -244,7 +244,8 @@
       "included": "Ce qui est inclus",
       "saveBody": "Deux fois Plus coûtent {twice} par mois. Avec Famille, vous avez tous les deux tout pour {family} : {saving} de moins par mois, et un seul abonnement à gérer.",
       "perMonth": "par mois",
-      "plusHow": "Vous préférez rester totalement indépendants ? Chacun prend alors son propre Plus."
+      "plusHow": "Vous préférez rester totalement indépendants ? Chacun prend alors son propre Plus.",
+      "moreCount": "et {n} de plus"
     },
     "pricingFaq": {
       "q1": "L’autre parent doit-il aussi payer ?"

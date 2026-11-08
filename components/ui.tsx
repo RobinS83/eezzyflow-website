@@ -28,7 +28,7 @@ export function SectionHeading({ eyebrow, title, id }: { eyebrow: string; title:
   return (
     <div className="reveal mb-12 max-w-3xl">
       <p className="mb-3 text-xs font-bold tracking-[0.08em] text-landing-accent uppercase">{eyebrow}</p>
-      <h2 id={id} className="text-[clamp(30px,4.2vw,48px)] leading-[1.05] font-extrabold tracking-[-0.035em] text-balance">
+      <h2 id={id} className="curtain text-[clamp(30px,4.2vw,48px)] leading-[1.05] font-extrabold tracking-[-0.035em] text-balance">
         {title}
       </h2>
     </div>

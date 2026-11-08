@@ -79,6 +79,7 @@ export default async function LocaleLayout({
         >
           {t("skip")}
         </a>
+        <div aria-hidden className="progress-bar" />
         <NextIntlClientProvider>
           <SiteHeader />
           <main id="main">{children}</main>

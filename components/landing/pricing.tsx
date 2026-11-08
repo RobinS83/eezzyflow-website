@@ -1,12 +1,21 @@
 import { getLocale, getTranslations } from "next-intl/server";
-import { Check, Equal, Info, Sparkles } from "lucide-react";
+import { ArrowRight, Check, ChevronDown, Equal, Info, Sparkles } from "lucide-react";
+import { localePath } from "@/i18n/routing";
 import { links } from "@/lib/links";
 import { formatEuro, planById, plans } from "@/lib/plans";
-import { buttonStyles, Section, SectionHeading } from "../ui";
+import { ButtonLink, buttonStyles, Section, SectionHeading } from "../ui";
 
-export async function Pricing() {
+/**
+ * compact: the home page version (price and one line per plan, link to the
+ * prices page). Otherwise the full prices page: every feature, the sum for
+ * Family, who-pays-what and the test-phase note.
+ */
+export async function Pricing({ compact = false, heading = true }: { compact?: boolean; heading?: boolean }) {
+  // Full page: every feature open. Elsewhere long lists fold after six.
+  const VISIBLE = compact ? 0 : 99;
   const t = await getTranslations("pricing");
   const s = await getTranslations("site.pricing");
+  const faq = await getTranslations("landing.faq");
   const locale = await getLocale();
   const euro = (cents: number) => formatEuro(cents, locale);
 
@@ -14,9 +23,9 @@ export async function Pricing() {
   const family = planById("family").monthlyCents;
 
   return (
-    <Section id="pricing" className="bg-surface/50">
-      <SectionHeading eyebrow={s("eyebrow")} title={s("title")} />
-      <p className="-mt-6 max-w-2xl text-[16px] leading-relaxed text-sub">{t("subtitle")}</p>
+    <Section id="pricing" className="orbs overflow-hidden bg-surface/50">
+      {heading && <SectionHeading eyebrow={s("eyebrow")} title={s("title")} />}
+      {heading && <p className="-mt-6 max-w-2xl text-[16px] leading-relaxed text-sub">{t("subtitle")}</p>}
       <p className="mt-4 mb-12 inline-flex max-w-2xl items-start gap-2.5 rounded-[14px] border border-line bg-surface px-4 py-3 text-[15.5px] leading-snug font-semibold">
         <Equal aria-hidden size={18} className="mt-0.5 shrink-0 text-landing-accent" />
         {t("sameFeatures")}
@@ -69,8 +78,8 @@ export async function Pricing() {
                 {t("startFree")}
               </a>
 
-              <ul className="mt-7 space-y-3">
-                {plan.features.map((f) => (
+              {!compact && <ul className="mt-7 space-y-3">
+                {plan.features.slice(0, VISIBLE).map((f) => (
                   <li key={f} className="hover-rise flex gap-2.5 text-[14.5px] leading-snug">
                     <Check
                       aria-hidden
@@ -83,9 +92,25 @@ export async function Pricing() {
                     </span>
                   </li>
                 ))}
-              </ul>
+              </ul>}
+              {!compact && plan.features.length > VISIBLE && (
+                <details className="group/more mt-3">
+                  <summary className="inline-flex min-h-11 cursor-pointer items-center gap-1.5 text-[14.5px] font-semibold underline underline-offset-4">
+                    {s("moreCount", { n: plan.features.length - VISIBLE })}
+                    <ChevronDown aria-hidden size={16} className="transition-transform group-open/more:rotate-180" />
+                  </summary>
+                  <ul className="mt-2 space-y-3">
+                    {plan.features.slice(VISIBLE).map((f) => (
+                      <li key={f} className="flex gap-2.5 text-[14.5px] leading-snug">
+                        <Check aria-hidden size={17} strokeWidth={2.5} className="mt-0.5 shrink-0 text-success-text" />
+                        <span>{t(`features.${f}`)}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </details>
+              )}
 
-              {featured && (
+              {featured && !compact && (
                 // Why Family: the sum, so nobody has to work it out.
                 <div className="mt-auto pt-8">
                   <div className="rounded-[18px] border border-spotlight-ink/15 bg-spotlight-ink/5 p-5">
@@ -106,21 +131,31 @@ export async function Pricing() {
         })}
       </ul>
 
-      <div className="mt-12 grid gap-4 md:grid-cols-2">
-        {(["apart", "together"] as const).map((k) => (
-          <div key={k} className="tilt-card rounded-[18px] border border-line bg-surface/40 p-5">
-            <h3 className="mb-1.5 text-[15.5px] font-bold">{t(`who.${k}Title`)}</h3>
-            <p className="text-[14.5px] leading-relaxed text-sub">{t(`who.${k}Body`)}</p>
+      {compact ? (
+        <div className="mt-12">
+          <ButtonLink href={localePath(locale, "prijzen")} variant="secondary">
+            {faq("pricing")}
+            <ArrowRight aria-hidden size={17} />
+          </ButtonLink>
+        </div>
+      ) : (
+        <>
+          <div className="mt-12 grid gap-4 md:grid-cols-2">
+            {(["apart", "together"] as const).map((k) => (
+              <div key={k} className="tilt-card rounded-[18px] border border-line bg-surface/40 p-5">
+                <h3 className="mb-1.5 text-[15.5px] font-bold">{t(`who.${k}Title`)}</h3>
+                <p className="text-[14.5px] leading-relaxed text-sub">{t(`who.${k}Body`)}</p>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-
       <div className="mt-6 flex gap-3 rounded-[18px] bg-highlight-soft p-4 sm:items-center">
         <Info aria-hidden size={20} className="mt-0.5 shrink-0 text-highlight-chip-text sm:mt-0" />
         <p className="text-[14.5px] leading-relaxed text-ink">
           <strong className="font-bold">{t("testPhaseTitle")}.</strong> {t("testPhaseBody")}
         </p>
       </div>
+        </>
+      )}
     </Section>
   );
 }

@@ -1,34 +1,29 @@
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { localePath } from "@/i18n/routing";
 import { Hero } from "@/components/landing/hero";
 import { Audience } from "@/components/landing/audience";
-import { Week } from "@/components/landing/week";
 import { Features } from "@/components/landing/features";
-import { More } from "@/components/landing/more";
-import { Costs } from "@/components/landing/costs";
 import { Statement } from "@/components/landing/statement";
 import { Steps } from "@/components/landing/steps";
-import { Desktop } from "@/components/landing/desktop";
 import { Pricing } from "@/components/landing/pricing";
-import { Faq } from "@/components/landing/faq";
 import { Cta } from "@/components/landing/cta";
 
+// The home page stays short: what it is, for whom, the main features, why,
+// how to start and what it costs. The detail lives on the sub pages.
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const cta = await getTranslations("landing.cta");
+  const hero = await getTranslations("landing.hero");
 
   return (
     <>
       <Hero />
       <Audience />
-      <Week />
-      <Features />
-      <More />
-      <Costs />
+      <Features more={{ href: localePath(locale, "functies"), label: cta("features") }} />
       <Statement />
-      <Steps />
-      <Desktop />
-      <Pricing />
-      <Faq />
+      <Steps more={{ href: localePath(locale, "hoe-het-werkt"), label: hero("how") }} />
+      <Pricing compact />
       <Cta />
     </>
   );

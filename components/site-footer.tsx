@@ -28,7 +28,7 @@ export async function SiteFooter() {
           <ul>
             <li><a className={linkClass} href={links.login}>{s("openApp")}</a></li>
             <li><a className={linkClass} href={links.register}>{nav("start")}</a></li>
-            <li><a className={linkClass} href={localePath(locale, "#pricing")}>{t("pricing")}</a></li>
+            <li><a className={linkClass} href={localePath(locale, "prijzen")}>{t("pricing")}</a></li>
           </ul>
         </nav>
 

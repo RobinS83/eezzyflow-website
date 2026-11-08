@@ -244,7 +244,8 @@
       "included": "What’s included",
       "saveBody": "Plus twice costs {twice} a month. With Family you both get everything for {family}: {saving} less per month, and only one subscription to arrange.",
       "perMonth": "per month",
-      "plusHow": "Prefer to keep things completely separate? Then each of you takes your own Plus."
+      "plusHow": "Prefer to keep things completely separate? Then each of you takes your own Plus.",
+      "moreCount": "and {n} more"
     },
     "pricingFaq": {
       "q1": "Does the other parent have to pay too?"

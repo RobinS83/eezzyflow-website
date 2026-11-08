@@ -244,7 +244,8 @@
       "included": "Cosa include",
       "saveBody": "Due volte Plus costano {twice} al mese. Con Famiglia avete entrambi tutto per {family}: {saving} in meno al mese e un solo abbonamento da gestire.",
       "perMonth": "al mese",
-      "plusHow": "Preferite restare del tutto indipendenti? Allora ognuno prende il proprio Plus."
+      "plusHow": "Preferite restare del tutto indipendenti? Allora ognuno prende il proprio Plus.",
+      "moreCount": "e altre {n}"
     },
     "pricingFaq": {
       "q1": "Anche l’altro genitore deve pagare?"

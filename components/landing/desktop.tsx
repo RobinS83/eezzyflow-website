@@ -25,7 +25,6 @@ export async function Desktop() {
             {t("button")}
             <ArrowUpRight aria-hidden size={18} />
           </ButtonLink>
-          <p className="mt-5 max-w-lg text-[14px] leading-relaxed text-sub">{t("tip")}</p>
         </div>
 
         {/* A browser window with the app inside. */}
