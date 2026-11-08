@@ -89,16 +89,7 @@ export async function Hero() {
           <div className="phone-land">
           <Tilt3D className="relative flex justify-center">
             <div className="tilt-idle relative">
-              {/* Second phone, behind and to the side. Further back in depth, so it
-                  reads smaller in proportion; hidden on phones to keep it calm. */}
-              <div
-                aria-hidden
-                className="absolute top-[7%] right-[46%] hidden [transform-style:preserve-3d] lg:block"
-                style={{ transform: "translateZ(-90px) scale(0.92) rotateZ(-5deg)" }}
-              >
-                <PhoneMockup variant="orange" start={2} shift={3.5} decorative />
-              </div>
-              <PhoneMockup />
+              <PhoneMockup variant="orange" />
             </div>
           </Tilt3D>
           </div>

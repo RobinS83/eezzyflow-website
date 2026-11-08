@@ -23,7 +23,7 @@ const SCREEN = { left: "5.2%", top: "2.25%", width: "89.6%", height: "95.5%" };
  * shift: delay in seconds, so two phones don't change screens at the same moment.
  */
 export async function PhoneMockup({
-  variant = "blue",
+  variant = "orange",
   start = 0,
   shift = 0,
   decorative = false,
