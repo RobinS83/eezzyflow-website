@@ -64,7 +64,11 @@
       "childTitle": "Kinddossier",
       "childBody": "School, huisarts, allergieën, kledingmaat en documenten zoals de Kids-ID. Altijd bij de hand voor jullie allebei.",
       "childChip1": "Documenten",
-      "childChip2": "Gezondheid"
+      "childChip2": "Gezondheid",
+      "vaultTitle": "Gezinskluis",
+      "vaultBody": "De wachtwoorden van school, sport en verzekering op één plek, voor jullie allebei. Versleuteld op je eigen toestel: zelfs wij kunnen ze niet lezen.",
+      "vaultChip1": "Versleuteld",
+      "vaultChip2": "Kluis per kind"
     },
     "costs": {
       "eyebrow": "Kosten",
@@ -182,6 +186,7 @@
       "ownChildPhoto": "Je eigen foto van je kind, die alleen jij ziet",
       "viewers": "Meekijkers: plusouder, oma of oppas kijkt mee (€1 per persoon)",
       "lists": "Lijstjes: boodschappen, recepten en een weekmenu, ook voor de kinderen",
+      "recipeHelp": "Wat kan ik maken? Een foto van je koelkast, en de app stelt recepten voor; punten geven en een receptenboek per huis",
       "history": "Historiek: alles wat er gebeurde op een rij, ook als pdf",
       "onePays": "Eén van jullie betaalt, jullie hebben allebei alles",
       "cheaperThanTwice": "Goedkoper dan twee keer Plus",
@@ -269,7 +274,7 @@
             "1": "Alles wat we bewaren, staat in de Europese Unie. We werken met:"
           },
           "paras2": {
-            "1": "Anthropic krijgt alleen iets te zien als jij zelf op de knop drukt om een vonnis, bonnetje, foto van een schoolkalender of bericht te laten lezen of herschrijven. Het antwoord bewaren we pas als jij het opslaat. Anthropic gebruikt die gegevens niet om zijn modellen te trainen."
+            "1": "Anthropic krijgt alleen iets te zien als jij zelf op de knop drukt om een vonnis, bonnetje, foto van een schoolkalender, foto van je koelkast of bericht te laten lezen of herschrijven. Het antwoord bewaren we pas als jij het opslaat. Anthropic gebruikt die gegevens niet om zijn modellen te trainen."
           }
         },
         "howLong": {

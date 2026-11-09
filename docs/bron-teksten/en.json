@@ -64,7 +64,11 @@
       "childTitle": "Child file",
       "childBody": "School, GP, allergies, clothing size and documents such as the Kids-ID. Always to hand for both of you.",
       "childChip1": "Documents",
-      "childChip2": "Health"
+      "childChip2": "Health",
+      "vaultTitle": "Family vault",
+      "vaultBody": "The passwords for school, sports and insurance in one place, for both of you. Encrypted on your own device: not even we can read them.",
+      "vaultChip1": "Encrypted",
+      "vaultChip2": "Vault per child"
     },
     "costs": {
       "eyebrow": "Costs",
@@ -182,6 +186,7 @@
       "ownChildPhoto": "Your own photo of your child, which only you see",
       "viewers": "Viewers: a step-parent, gran or sitter can follow along (€1 per person)",
       "lists": "Lists: shopping, recipes and a weekly menu, for the children too",
+      "recipeHelp": "What can I make? A photo of your fridge and the app suggests recipes; rate them and keep a recipe book per home",
       "history": "History: everything that happened in one list, also as a PDF",
       "onePays": "One of you pays, you both get everything",
       "cheaperThanTwice": "Cheaper than Plus twice",
@@ -269,7 +274,7 @@
             "1": "Everything we keep is stored in the European Union. We work with:"
           },
           "paras2": {
-            "1": "Anthropic only sees something when you yourself press the button to have a judgment, receipt, photo of a school calendar or message read or rewritten. We only keep the answer once you save it. Anthropic does not use that data to train its models."
+            "1": "Anthropic only sees something when you yourself press the button to have a judgment, receipt, photo of a school calendar, photo of your fridge or message read or rewritten. We only keep the answer once you save it. Anthropic does not use that data to train its models."
           }
         },
         "howLong": {

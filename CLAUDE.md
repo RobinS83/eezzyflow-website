@@ -64,7 +64,7 @@ de badges naar `https://app.eezzyflow.com`. De officiële badges staan in
 ## Opbouw van de site
 
 De startpagina blijft **kort en overzichtelijk**: hero, voor wie (alleen
-titels), de vier hoofdfuncties, de kernzin, drie stappen, de prijzen in het
+titels), de vijf hoofdfuncties (zoals `landing.features` in de app), de kernzin, drie stappen, de prijzen in het
 kort en het slotblok. Uitleg in detail staat op de tabbladen:
 
 - `/functies`: alle functies met uitleg, weekkalender, kosten

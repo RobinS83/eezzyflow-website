@@ -64,7 +64,11 @@
       "childTitle": "Kinderakte",
       "childBody": "Schule, Hausarzt, Allergien, Kleidergröße und Dokumente wie die Kids-ID. Immer griffbereit für euch beide.",
       "childChip1": "Dokumente",
-      "childChip2": "Gesundheit"
+      "childChip2": "Gesundheit",
+      "vaultTitle": "Familientresor",
+      "vaultBody": "Die Passwörter für Schule, Sport und Versicherung an einem Ort, für euch beide. Verschlüsselt auf deinem eigenen Gerät: Nicht einmal wir können sie lesen.",
+      "vaultChip1": "Verschlüsselt",
+      "vaultChip2": "Tresor pro Kind"
     },
     "costs": {
       "eyebrow": "Kosten",
@@ -182,6 +186,7 @@
       "ownChildPhoto": "Dein eigenes Foto deines Kindes, das nur du siehst",
       "viewers": "Mitlesende: Stiefelternteil, Oma oder Babysitter lesen mit (1 € pro Person)",
       "lists": "Listen: Einkäufe, Rezepte und ein Wochenmenü, auch für die Kinder",
+      "recipeHelp": "Was kann ich kochen? Ein Foto vom Kühlschrank, und die App schlägt Rezepte vor; bewerten und ein Rezeptbuch pro Haushalt",
       "history": "Verlauf: alles, was passiert ist, in einer Liste, auch als PDF",
       "onePays": "Einer von euch zahlt, ihr habt beide alles",
       "cheaperThanTwice": "Günstiger als zweimal Plus",
@@ -269,7 +274,7 @@
             "1": "Alles, was wir speichern, liegt in der Europäischen Union. Wir arbeiten mit:"
           },
           "paras2": {
-            "1": "Anthropic sieht nur dann etwas, wenn du selbst auf den Knopf drückst, um ein Urteil, einen Beleg, ein Foto eines Schulkalenders oder eine Nachricht auslesen oder umformulieren zu lassen. Die Antwort speichern wir erst, wenn du sie sicherst. Anthropic nutzt diese Daten nicht, um seine Modelle zu trainieren."
+            "1": "Anthropic sieht nur dann etwas, wenn du selbst auf den Knopf drückst, um ein Urteil, einen Beleg, ein Foto eines Schulkalenders, ein Foto deines Kühlschranks oder eine Nachricht auslesen oder umformulieren zu lassen. Die Antwort speichern wir erst, wenn du sie sicherst. Anthropic nutzt diese Daten nicht, um seine Modelle zu trainieren."
           }
         },
         "howLong": {

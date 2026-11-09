@@ -64,7 +64,11 @@
       "childTitle": "Scheda del figlio",
       "childBody": "Scuola, medico, allergie, taglia dei vestiti e documenti come la Kids-ID. Sempre a portata di mano per entrambi.",
       "childChip1": "Documenti",
-      "childChip2": "Salute"
+      "childChip2": "Salute",
+      "vaultTitle": "Cassaforte di famiglia",
+      "vaultBody": "Le password di scuola, sport e assicurazione in un unico posto, per entrambi. Cifrate sul tuo dispositivo: nemmeno noi possiamo leggerle.",
+      "vaultChip1": "Cifrato",
+      "vaultChip2": "Cassaforte per figlio"
     },
     "costs": {
       "eyebrow": "Spese",
@@ -182,6 +186,7 @@
       "ownChildPhoto": "La tua foto di tuo figlio, che vedi solo tu",
       "viewers": "Osservatori: nuovo partner, nonna o babysitter possono seguire (€1 a persona)",
       "lists": "Liste: spesa, ricette e un menù settimanale, anche per i bambini",
+      "recipeHelp": "Cosa posso preparare? Una foto del frigo e l'app propone ricette; votale e tieni un ricettario per ogni casa",
       "history": "Cronologia: tutto ciò che è successo in un elenco, anche in PDF",
       "onePays": "Uno di voi paga, avete tutto entrambi",
       "cheaperThanTwice": "Più conveniente di due volte Plus",
@@ -269,7 +274,7 @@
             "1": "Tutto ciò che conserviamo si trova nell'Unione europea. Lavoriamo con:"
           },
           "paras2": {
-            "1": "Anthropic vede qualcosa solo quando premi tu il pulsante per far leggere o riformulare una sentenza, uno scontrino, la foto di un calendario scolastico o un messaggio. Conserviamo la risposta solo quando la salvi. Anthropic non usa questi dati per addestrare i suoi modelli."
+            "1": "Anthropic vede qualcosa solo quando premi tu il pulsante per far leggere o riformulare una sentenza, uno scontrino, la foto di un calendario scolastico, la foto del tuo frigo o un messaggio. Conserviamo la risposta solo quando la salvi. Anthropic non usa questi dati per addestrare i suoi modelli."
           }
         },
         "howLong": {

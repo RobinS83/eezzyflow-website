@@ -64,7 +64,11 @@
       "childTitle": "Dossier de l’enfant",
       "childBody": "École, médecin traitant, allergies, taille de vêtements et documents comme la Kids-ID. Toujours sous la main pour vous deux.",
       "childChip1": "Documents",
-      "childChip2": "Santé"
+      "childChip2": "Santé",
+      "vaultTitle": "Coffre familial",
+      "vaultBody": "Les mots de passe de l'école, du sport et de l'assurance au même endroit, pour vous deux. Chiffrés sur votre propre appareil : même nous ne pouvons pas les lire.",
+      "vaultChip1": "Chiffré",
+      "vaultChip2": "Coffre par enfant"
     },
     "costs": {
       "eyebrow": "Frais",
@@ -182,6 +186,7 @@
       "ownChildPhoto": "Ta propre photo de ton enfant, que toi seul vois",
       "viewers": "Proches : beau-parent, mamie ou baby-sitter suivent aussi (1 € par personne)",
       "lists": "Listes : courses, recettes et menu de la semaine, aussi pour les enfants",
+      "recipeHelp": "Qu'est-ce que je peux faire ? Une photo du frigo et l'app propose des recettes ; notez-les et gardez un livre de recettes par foyer",
       "history": "Historique : tout ce qui s’est passé en une liste, aussi en PDF",
       "onePays": "L’un de vous paie, vous avez tous les deux tout",
       "cheaperThanTwice": "Moins cher que deux fois Plus",
@@ -269,7 +274,7 @@
             "1": "Tout ce que nous conservons est stocké dans l'Union européenne. Nous travaillons avec :"
           },
           "paras2": {
-            "1": "Anthropic ne voit quelque chose que si vous appuyez vous-même sur le bouton pour faire lire ou reformuler un jugement, un ticket, une photo de calendrier scolaire ou un message. Nous ne conservons la réponse que lorsque vous l'enregistrez. Anthropic n'utilise pas ces données pour entraîner ses modèles."
+            "1": "Anthropic ne voit quelque chose que si vous appuyez vous-même sur le bouton pour faire lire ou reformuler un jugement, un ticket, une photo de calendrier scolaire, une photo de votre frigo ou un message. Nous ne conservons la réponse que lorsque vous l'enregistrez. Anthropic n'utilise pas ces données pour entraîner ses modèles."
           }
         },
         "howLong": {

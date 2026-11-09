@@ -64,7 +64,11 @@
       "childTitle": "Ficha del niño",
       "childBody": "Colegio, médico, alergias, talla de ropa y documentos como el Kids-ID. Siempre a mano para los dos.",
       "childChip1": "Documentos",
-      "childChip2": "Salud"
+      "childChip2": "Salud",
+      "vaultTitle": "Caja fuerte familiar",
+      "vaultBody": "Las contraseñas del colegio, el deporte y el seguro en un solo lugar, para los dos. Cifradas en tu propio dispositivo: ni siquiera nosotros podemos leerlas.",
+      "vaultChip1": "Cifrado",
+      "vaultChip2": "Caja por hijo"
     },
     "costs": {
       "eyebrow": "Gastos",
@@ -182,6 +186,7 @@
       "ownChildPhoto": "Tu propia foto de tu hijo, que solo ves tú",
       "viewers": "Observadores: la nueva pareja, la abuela o la canguro pueden ver lo esencial (1 € por persona)",
       "lists": "Listas: la compra, recetas y un menú semanal, también para los niños",
+      "recipeHelp": "¿Qué puedo cocinar? Una foto de la nevera y la app sugiere recetas; puntúalas y guarda un recetario por hogar",
       "history": "Historial: todo lo que pasó en una lista, también en PDF",
       "onePays": "Uno de vosotros paga y los dos tenéis todo",
       "cheaperThanTwice": "Más barato que dos veces Plus",
@@ -269,7 +274,7 @@
             "1": "Todo lo que guardamos está en la Unión Europea. Trabajamos con:"
           },
           "paras2": {
-            "1": "Anthropic solo ve algo cuando tú pulsas el botón para que se lea o reformule una sentencia, un tique, una foto de un calendario escolar o un mensaje. Solo guardamos la respuesta cuando tú la guardas. Anthropic no usa esos datos para entrenar sus modelos."
+            "1": "Anthropic solo ve algo cuando tú pulsas el botón para que se lea o reformule una sentencia, un tique, una foto de un calendario escolar, una foto de tu nevera o un mensaje. Solo guardamos la respuesta cuando tú la guardas. Anthropic no usa esos datos para entrenar sus modelos."
           }
         },
         "howLong": {

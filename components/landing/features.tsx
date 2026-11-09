@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import { CalendarDays, FileText, FolderHeart, Lock, MessagesSquare, Wallet, type LucideIcon } from "lucide-react";
+import { CalendarDays, FileText, FolderHeart, KeyRound, Lock, LockKeyhole, MessagesSquare, Wallet, type LucideIcon } from "lucide-react";
 import type { ReactNode } from "react";
 import { ArrowRight } from "lucide-react";
 import { ButtonLink, Section, SectionHeading } from "../ui";
@@ -76,26 +76,48 @@ function CostsArt({ amount }: { amount: string }) {
   );
 }
 
+function VaultArt() {
+  return (
+    <div className="space-y-2.5">
+      {["school", "sport", "verzekering"].map((k, i) => (
+        <div key={k} className="tile flex items-center gap-3 rounded-[12px] px-3 py-2.5">
+          <span className="inline-flex size-7 shrink-0 items-center justify-center rounded-[8px] bg-highlight-soft text-highlight-chip-text">
+            <KeyRound size={14} />
+          </span>
+          <span className="h-2 w-16 rounded-full bg-primary-chip" />
+          <span className="ml-auto font-mono text-[13px] tracking-[0.2em] text-sub">{"•".repeat(8 + i)}</span>
+          <Lock size={13} className="shrink-0 text-sub" />
+        </div>
+      ))}
+    </div>
+  );
+}
+
 export async function Features({ heading = true, more }: { heading?: boolean; more?: { href: string; label: string } }) {
   const t = await getTranslations("landing.features");
   const costs = await getTranslations("landing.costs");
 
-  const cards: { key: string; icon: LucideIcon; art: ReactNode; wide?: boolean }[] = [
+  const cards: { key: string; icon: LucideIcon; art: ReactNode; wide?: boolean; full?: boolean }[] = [
     { key: "calendar", icon: CalendarDays, art: <CalendarArt />, wide: true },
     { key: "messages", icon: MessagesSquare, art: <MessagesArt /> },
     { key: "child", icon: FolderHeart, art: <ChildArt /> },
     { key: "costs", icon: Wallet, art: <CostsArt amount={costs("amount")} />, wide: true },
+    { key: "vault", icon: LockKeyhole, art: <VaultArt />, full: true },
   ];
 
   return (
     <Section id="features">
       {heading && <SectionHeading eyebrow={t("eyebrow")} title={t("title")} />}
       <ul className="grid gap-4 lg:grid-cols-3">
-        {cards.map(({ key, icon: Icon, art, wide }) => (
+        {cards.map(({ key, icon: Icon, art, wide, full }) => (
           <li
             key={key}
             className={`reveal tile tilt-card group grid gap-6 rounded-[24px] p-6 sm:p-7 ${
-              wide ? "lg:col-span-2 lg:grid-cols-[1fr_1fr] lg:items-center" : ""
+              full
+                ? "lg:col-span-3 lg:grid-cols-[1fr_1fr] lg:items-center"
+                : wide
+                  ? "lg:col-span-2 lg:grid-cols-[1fr_1fr] lg:items-center"
+                  : ""
             }`}
           >
             <div>
