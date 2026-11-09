@@ -1,7 +1,7 @@
 import { getLocale, getTranslations } from "next-intl/server";
 import { localePath } from "@/i18n/routing";
 import {
-  BellRing, Camera, CalendarSync, Eye, FileText, FolderOpen, Gavel, History,
+  BellRing, Camera, ChefHat, CalendarSync, Eye, FileText, FolderOpen, Gavel, History,
   ListChecks, LockKeyhole, Receipt, Sparkles, UserRound, type LucideIcon,
 } from "lucide-react";
 
@@ -18,6 +18,7 @@ const ITEMS: { key: string; icon: LucideIcon }[] = [
   { key: "aiRewrite", icon: Sparkles },
   { key: "judgmentImport", icon: Gavel },
   { key: "lists", icon: ListChecks },
+  { key: "recipeHelp", icon: ChefHat },
   { key: "viewers", icon: Eye },
   { key: "childAccounts", icon: UserRound },
   { key: "history", icon: History },
@@ -25,7 +26,8 @@ const ITEMS: { key: string; icon: LucideIcon }[] = [
 
 /** "Title: explanation" from the app's text; otherwise a short site title and the whole text as explanation. */
 function split(text: string, ownTitle?: string, ownBody?: string) {
-  const m = text.match(/^(.+?)\s?:\s(.+)$/);
+  // "Title: explanation", or a question as title: "What can I make? A photo…"
+  const m = text.match(/^(.+?)\s?:\s(.+)$/) ?? text.match(/^(.+?\s?\?)\s(.+)$/);
   if (m) return { title: m[1], body: m[2] };
   return { title: ownTitle ?? text, body: ownBody ?? (ownTitle ? text : "") };
 }

@@ -24,7 +24,7 @@ export const plans: Plan[] = [
     audience: "perParent",
     features: [
       "everythingFree", "unlimitedChildren", "fullCosts", "documents", "calendarSync",
-      "photoImport", "receipts", "lists", "reportPdf", "ownChildPhoto", "viewers",
+      "photoImport", "receipts", "lists", "recipeHelp", "reportPdf", "ownChildPhoto", "viewers",
       "reminders", "aiRewrite", "judgmentImport", "yearOverview", "history",
       "multiplePartners", "childAccounts", "vault",
     ],
