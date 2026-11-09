@@ -88,15 +88,15 @@ export async function Hero() {
 
         {/* The MacBook with the iPhone in front: eezzyflow on both. */}
         {/* The MacBook stands still; only the iPhone in front of it moves. */}
-        <div className="relative mx-auto w-full max-w-[820px] pb-10 lg:pb-0 2xl:-mr-16">
-          <div className="intro relative pr-[10%]" style={{ "--d": "0.3s" } as React.CSSProperties}>
+        <div className="relative -mx-2 pb-[26%] sm:mx-auto sm:w-full sm:max-w-[820px] sm:pb-10 lg:pb-0 2xl:-mr-16">
+          <div className="intro relative pr-[4%] sm:pr-[10%]" style={{ "--d": "0.3s" } as React.CSSProperties}>
             <LaptopMockup />
           </div>
-          <div className="tilt-stage hero-out-phone absolute right-0 bottom-[2%] w-[25%] lg:bottom-[-8%]">
+          <div className="tilt-stage hero-out-phone absolute right-1 bottom-0 w-[36%] sm:right-0 sm:bottom-[2%] sm:w-[25%] lg:bottom-[-8%]">
             <div className="phone-land">
               <Tilt3D>
                 <div className="tilt-idle relative">
-                  <PhoneMockup variant="burgundy" className="w-full" offset={3500} />
+                  <PhoneMockup variant="burgundy" className="w-full" />
                 </div>
               </Tilt3D>
             </div>

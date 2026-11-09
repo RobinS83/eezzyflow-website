@@ -1,23 +1,33 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 const SHOW_MS = 7000;
-/** How long before the switch the pointer starts moving, and when it clicks. */
-const MOVE_BEFORE_MS = 1600;
-const CLICK_BEFORE_MS = 380;
+/** How long before the switch the pointer appears, and when it clicks. */
+const AIM_BEFORE_MS = 1600;
+const PRESS_BEFORE_MS = 380;
 
-// Where the pointer clicks to open the next screen: the item in the app's
-// sidebar (desktop screenshots, 1440 × 900 points, shown from the top left).
-// Matched on the screen name in the file name (…_02-kalender_…).
-const TARGETS: { match: string; x: number; y: number }[] = [
+type Target = { match: string; x: number; y: number };
+// The MacBook clicks the item in the app's sidebar (desktop screenshots, shown from the top left).
+const MOUSE_TARGETS: Target[] = [
   { match: "01-home", x: 6, y: 10.7 },
   { match: "02-kalender", x: 6, y: 15.6 },
   { match: "03-kosten", x: 6, y: 20.4 },
   { match: "04-lijstjes", x: 6, y: 25.3 },
   { match: "05-berichten", x: 6, y: 30.2 },
 ];
+// The iPhone taps the tab bar at the bottom of the app.
+const TOUCH_TARGETS: Target[] = [
+  { match: "01-home", x: 7, y: 95.5 },
+  { match: "02-kalender", x: 24, y: 95.5 },
+  { match: "03-kosten", x: 41, y: 95.5 },
+  { match: "04-lijstjes", x: 58, y: 95.5 },
+  { match: "05-berichten", x: 75, y: 95.5 },
+];
 const IDLE = { x: 55, y: 62 };
+
+/** "01-home_wijn_licht" from ".../eezzyflow_nl_gsm_01-home_wijn_licht.webp": the same view on any device. */
+const viewOf = (src: string) => src.match(/_(?:gsm|desktop|phone)_(.+)\.[a-z]+$/)?.[1] ?? src;
 
 function shuffle<T>(list: T[]): T[] {
   const a = [...list];
@@ -28,70 +38,82 @@ function shuffle<T>(list: T[]): T[] {
   return a;
 }
 
+/* ---------- One shared clock, so the MacBook and iPhone always show the same view ---------- */
+
+type Phase = { step: number; order: string[]; aim: string | null; press: boolean; actor: "mouse" | "touch" };
+const listeners = new Set<(p: Phase) => void>();
+let phase: Phase | null = null;
+let running = false;
+
+function emit(next: Partial<Phase>) {
+  phase = { ...(phase as Phase), ...next };
+  listeners.forEach((l) => l(phase as Phase));
+}
+
+function start(views: string[]) {
+  if (running) return;
+  running = true;
+  phase = { step: 0, order: shuffle(views), aim: null, press: false, actor: "mouse" };
+  listeners.forEach((l) => l(phase as Phase));
+  const loop = () => {
+    const p = phase as Phase;
+    const upcoming = p.order[(p.step + 1) % p.order.length];
+    // Turns: the MacBook clicks, then the iPhone taps, and so on.
+    const actor = p.step % 2 === 0 ? "mouse" : "touch";
+    setTimeout(() => emit({ aim: upcoming, actor }), SHOW_MS - AIM_BEFORE_MS);
+    setTimeout(() => emit({ press: true }), SHOW_MS - PRESS_BEFORE_MS);
+    setTimeout(() => emit({ press: false }), SHOW_MS - PRESS_BEFORE_MS + 220);
+    setTimeout(() => {
+      emit({ step: (phase as Phase).step + 1 });
+      setTimeout(() => emit({ aim: null }), 500);
+      loop();
+    }, SHOW_MS);
+  };
+  loop();
+}
+
 /**
- * Shows app screenshots one at a time, in a random order, each for 7 seconds
- * with a soft cross-fade. Only the current and the next image are in the page.
- * With `pointer`, a mouse pointer moves to a spot and clicks just before each
- * switch, as if someone clicks through the app. Reduced motion: the first
+ * Shows app screenshots one at a time, in a random order shared by every
+ * device on the page: the MacBook and iPhone always show the same screen in
+ * the same colours. Before each switch either the mouse pointer clicks on the
+ * MacBook or a glowing tap appears on the iPhone. Reduced motion: the first
  * screenshot simply stays.
  */
 export function ScreenCycle({
   srcs,
-  offset = 0,
-  pointer = false,
+  kind,
   position = "object-top",
 }: {
   srcs: string[];
-  offset?: number;
-  pointer?: boolean;
-  /** How the screenshot is anchored when it is cropped to fit. */
+  /** Which device this is: decides the pointer (mouse) or the tap (touch). */
+  kind: "mouse" | "touch";
   position?: string;
 }) {
-  const [order, setOrder] = useState(srcs);
-  const [index, setIndex] = useState(0);
-  const [pos, setPos] = useState(IDLE);
-  const orderRef = useRef(srcs);
-  const [clicking, setClicking] = useState(false);
-  const [active, setActive] = useState(false);
+  const [p, setP] = useState<Phase | null>(null);
 
   useEffect(() => {
     if (srcs.length < 2) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    // A fresh random order per visit; done after mount so the first paint matches the server.
-    const shuffled = shuffle(srcs);
-    orderRef.current = shuffled;
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setOrder(shuffled);
-    setActive(true);
-
-    const timers: ReturnType<typeof setTimeout>[] = [];
-    const later = (ms: number, fn: () => void) => timers.push(setTimeout(fn, ms));
-    let shown = 0;
-
-    const cycle = (startIn: number) => {
-      if (pointer) {
-        later(startIn - MOVE_BEFORE_MS, () => {
-          const list = orderRef.current;
-          const upcoming = list[(shown + 1) % list.length] ?? "";
-          const t = TARGETS.find((x) => upcoming.includes(x.match));
-          setPos(t ? { x: t.x, y: t.y } : IDLE);
-        });
-        later(startIn - CLICK_BEFORE_MS, () => setClicking(true));
-        later(startIn - CLICK_BEFORE_MS + 220, () => setClicking(false));
-      }
-      later(startIn, () => {
-        shown += 1;
-        setIndex((i) => i + 1);
-        cycle(SHOW_MS);
-      });
+    const l = (next: Phase) => setP(next);
+    listeners.add(l);
+    if (phase) l(phase);
+    start(srcs.map(viewOf));
+    return () => {
+      listeners.delete(l);
     };
-    cycle(SHOW_MS + offset);
-    return () => timers.forEach(clearTimeout);
-  }, [srcs, offset, pointer]);
+  }, [srcs]);
 
+  const byView = new Map(srcs.map((s) => [viewOf(s), s]));
+  const order = p ? p.order.map((v) => byView.get(v)).filter((s): s is string => !!s) : srcs;
   if (order.length === 0) return null;
-  const current = index % order.length;
-  const next = (index + 1) % order.length;
+  const current = p ? p.step % order.length : 0;
+  const next = (current + 1) % order.length;
+
+  const mine = p && p.aim && p.actor === kind;
+  const targets = kind === "touch" ? TOUCH_TARGETS : MOUSE_TARGETS;
+  const t = mine ? targets.find((x) => p!.aim!.includes(x.match)) : undefined;
+  const pos = t ? { x: t.x, y: t.y } : IDLE;
+  const pressing = !!(mine && p!.press);
 
   return (
     <>
@@ -103,29 +125,44 @@ export function ScreenCycle({
             src={src}
             alt=""
             decoding="async"
-            fetchPriority={i === current && index === 0 ? "high" : "low"}
+            fetchPriority={i === current && !p ? "high" : "low"}
             className={`absolute inset-0 size-full object-cover ${position} transition-opacity duration-700 ease-(--ease-natural) ${
               i === current ? "opacity-100" : "opacity-0"
             }`}
           />
         ) : null,
       )}
-      {pointer && active && (
+
+      {kind === "touch" && p && (
+        // A finger tap: a soft glowing dot on the next tab, pulsing as it taps.
+        <span className="pointer-events-none absolute z-10 -translate-1/2" style={{ left: `${pos.x}%`, top: `${pos.y}%` }}>
+          <span
+            className={`block size-[clamp(18px,3.4vw,30px)] rounded-full bg-white/70 shadow-[0_0_18px_6px_rgb(255_255_255/0.55)] ring-2 ring-highlight/70 transition-[opacity,scale] duration-300 ${
+              pressing ? "scale-90 opacity-100" : mine ? "scale-100 opacity-85" : "scale-50 opacity-0"
+            }`}
+          />
+          <span
+            className={`absolute inset-0 rounded-full border-2 border-highlight transition-[opacity,scale] duration-500 ${
+              pressing ? "scale-[2.2] opacity-0" : "scale-100 opacity-0"
+            }`}
+          />
+        </span>
+      )}
+
+      {kind === "mouse" && p && (
         <span
           className="pointer-events-none absolute z-10 transition-[left,top] duration-[1100ms] ease-(--ease-natural)"
           style={{ left: `${pos.x}%`, top: `${pos.y}%` }}
         >
-          {/* Click ripple */}
           <span
             className={`absolute -top-3 -left-3 size-6 rounded-full border-2 border-highlight transition-[opacity,scale] duration-500 ${
-              clicking ? "scale-100 opacity-100" : "scale-50 opacity-0"
+              pressing ? "scale-100 opacity-100" : "scale-50 opacity-0"
             }`}
           />
-          {/* The pointer itself: a classic arrow, black with a white edge on any screen. */}
           <svg
             viewBox="0 0 24 24"
             className={`relative block w-[clamp(12px,1.6vw,22px)] drop-shadow-[0_2px_3px_rgb(0_0_0/0.35)] transition-transform duration-150 ${
-              clicking ? "scale-[0.82]" : "scale-100"
+              pressing ? "scale-[0.82]" : "scale-100"
             }`}
             style={{ transformOrigin: "2px 2px" }}
           >

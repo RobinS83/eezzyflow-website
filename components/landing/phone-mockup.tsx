@@ -13,12 +13,9 @@ const SCREEN = { left: "5.2%", top: "2.25%", width: "89.6%", height: "95.5%" };
 export async function PhoneMockup({
   variant = "burgundy",
   className = "w-[290px] sm:w-[320px]",
-  offset = 0,
 }: {
   variant?: "blue" | "orange" | "burgundy";
   className?: string;
-  /** Extra delay (ms) before the first change, so two devices don't switch together. */
-  offset?: number;
 }) {
   const s = await getTranslations("site.phone");
   const locale = await getLocale();
@@ -41,7 +38,7 @@ export async function PhoneMockup({
         ))}
       </span>
       <div aria-hidden className="absolute overflow-hidden rounded-[13%/6.4%] bg-paper" style={SCREEN}>
-        <ScreenCycle srcs={screensFor(locale, "phone")} offset={offset} />
+        <ScreenCycle srcs={screensFor(locale, "phone")} kind="touch" />
       </div>
       <Image src={frame} alt="" fill sizes="320px" priority className="pointer-events-none select-none" />
     </figure>
