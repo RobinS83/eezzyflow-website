@@ -482,6 +482,9 @@
       "light": "Hell",
       "dark": "Dunkel",
       "auto": "Automatisch"
+    },
+    "cta": {
+      "title": "Weniger Chaos, mehr Aufmerksamkeit."
     }
   }
 }

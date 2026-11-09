@@ -131,6 +131,9 @@
       "light": "Licht",
       "dark": "Donker",
       "auto": "Automatisch"
+    },
+    "cta": {
+      "title": "Minder chaos, meer aandacht."
     }
   },
   "fr": {
@@ -265,6 +268,9 @@
       "light": "Clair",
       "dark": "Sombre",
       "auto": "Automatique"
+    },
+    "cta": {
+      "title": "Moins de chaos, plus d’attention."
     }
   },
   "en": {
@@ -399,6 +405,9 @@
       "light": "Light",
       "dark": "Dark",
       "auto": "Automatic"
+    },
+    "cta": {
+      "title": "Less chaos, more attention."
     }
   },
   "de": {
@@ -533,6 +542,9 @@
       "light": "Hell",
       "dark": "Dunkel",
       "auto": "Automatisch"
+    },
+    "cta": {
+      "title": "Weniger Chaos, mehr Aufmerksamkeit."
     }
   },
   "es": {
@@ -667,6 +679,9 @@
       "light": "Claro",
       "dark": "Oscuro",
       "auto": "Automático"
+    },
+    "cta": {
+      "title": "Menos caos, más atención."
     }
   },
   "it": {
@@ -801,6 +816,9 @@
       "light": "Chiaro",
       "dark": "Scuro",
       "auto": "Automatico"
+    },
+    "cta": {
+      "title": "Meno caos, più attenzione."
     }
   }
 }

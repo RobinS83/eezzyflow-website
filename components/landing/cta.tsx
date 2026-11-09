@@ -9,6 +9,8 @@ import { StoreBadges } from "../store-badges";
 
 export async function Cta() {
   const t = await getTranslations("landing.cta");
+  // The site uses its own headline here; the rest comes from the app's texts.
+  const site = await getTranslations("site.cta");
   const locale = await getLocale();
 
   return (
@@ -30,7 +32,7 @@ export async function Cta() {
             id="cta-title"
             className="mb-4 text-[clamp(34px,5.4vw,64px)] leading-[1.02] font-extrabold tracking-[-0.045em] text-balance"
           >
-            {t("title")}
+            {site("title")}
           </h2>
           <p className="mx-auto mb-10 max-w-xl text-[clamp(16px,1.5vw,19px)] leading-relaxed opacity-90">{t("body")}</p>
           <div className="mx-auto flex max-w-sm flex-col gap-3 sm:max-w-none sm:flex-row sm:flex-wrap sm:justify-center">

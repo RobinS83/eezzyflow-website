@@ -482,6 +482,9 @@
       "light": "Light",
       "dark": "Dark",
       "auto": "Automatic"
+    },
+    "cta": {
+      "title": "Less chaos, more attention."
     }
   }
 }
