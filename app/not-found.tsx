@@ -10,8 +10,9 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "sw
 // Site-wide 404 (becomes out/404.html). Shown in Dutch, the default language.
 export default function GlobalNotFound() {
   return (
-    <html lang={defaultLocale} className={inter.variable} suppressHydrationWarning>
+    <html lang={defaultLocale} className={inter.variable} suppressHydrationWarning translate="no">
       <head>
+        <meta name="google" content="notranslate" />
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body className="font-sans antialiased">
