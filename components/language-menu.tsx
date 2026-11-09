@@ -13,7 +13,7 @@ export function LanguageMenu({ locale, label }: { locale: string; label: string 
         <Globe aria-hidden size={17} />
         {locale}
       </summary>
-      <ul className="glass absolute right-0 z-50 mt-2 w-48 rounded-[16px] p-1.5">
+      <ul className="tile tile-lift absolute right-0 z-50 mt-2 w-48 rounded-[16px] p-1.5">
         {routing.locales.map((l) => (
           <li key={l}>
             <a

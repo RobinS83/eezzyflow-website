@@ -45,7 +45,7 @@ export function MobileMenu({ items, labels, loginHref, startHref }: Props) {
       <div
         id={panelId}
         hidden={!open}
-        className="glass absolute inset-x-0 top-[68px] rounded-b-[22px] px-[18px] pt-2 pb-6"
+        className="absolute inset-x-0 top-[68px] z-50 h-[calc(100dvh-68px)] overflow-y-auto border-t border-line bg-paper px-[18px] pt-2 pb-6 shadow-(--shadow-tile-lift)"
       >
         <nav aria-label={labels.main}>
           <ul className="flex flex-col">

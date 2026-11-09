@@ -39,7 +39,7 @@ export async function Pricing({ compact = false, heading = true }: { compact?: b
               key={plan.id}
               className={`reveal tilt-card relative flex flex-col rounded-[28px] p-7 sm:p-8 ${
                 featured
-                  ? "on-spotlight order-first bg-(image:--brand-spotlight) text-spotlight-ink shadow-(--shadow-tile-lift) lg:order-none lg:-my-5 lg:py-12"
+                  ? "on-spotlight bg-(image:--brand-spotlight) text-spotlight-ink shadow-(--shadow-tile-lift) lg:order-none lg:-my-5 lg:py-12"
                   : "tile"
               }`}
             >
