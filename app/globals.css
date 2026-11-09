@@ -454,3 +454,7 @@ summary::-webkit-details-marker { display: none; }
   }
   .device-idle { animation: device-sway 10s ease-in-out infinite; }
 }
+.phone-burgundy {
+  --phone-edge-1: #6b3a44;
+  --phone-edge-2: #3a1f25;
+}

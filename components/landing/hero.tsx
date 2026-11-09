@@ -93,7 +93,7 @@ export async function Hero() {
               <div className="device-idle relative pr-[10%]">
                 <LaptopMockup />
                 <div className="absolute right-0 bottom-[-8%] w-[25%] [transform-style:preserve-3d]" style={{ transform: "translateZ(70px)" }}>
-                  <PhoneMockup variant="orange" className="w-full" offset={3500} />
+                  <PhoneMockup variant="burgundy" className="w-full" offset={3500} />
                 </div>
               </div>
             </Tilt3D>

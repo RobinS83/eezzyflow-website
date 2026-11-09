@@ -2,6 +2,7 @@ import Image from "next/image";
 import { getLocale, getTranslations } from "next-intl/server";
 import frameBlue from "@/assets/iphone-frame.webp";
 import frameOrange from "@/assets/iphone-frame-orange.webp";
+import frameBurgundy from "@/assets/iphone-frame-burgundy.webp";
 import { screensFor } from "@/lib/screens";
 import { ScreenCycle } from "../screen-cycle";
 
@@ -10,25 +11,25 @@ const SCREEN = { left: "5.2%", top: "2.25%", width: "89.6%", height: "95.5%" };
 
 /** The iPhone with the app's screenshots for this language taking turns. */
 export async function PhoneMockup({
-  variant = "orange",
+  variant = "burgundy",
   className = "w-[290px] sm:w-[320px]",
   offset = 0,
 }: {
-  variant?: "blue" | "orange";
+  variant?: "blue" | "orange" | "burgundy";
   className?: string;
   /** Extra delay (ms) before the first change, so two devices don't switch together. */
   offset?: number;
 }) {
   const s = await getTranslations("site.phone");
   const locale = await getLocale();
-  const frame = variant === "orange" ? frameOrange : frameBlue;
+  const frame = { blue: frameBlue, orange: frameOrange, burgundy: frameBurgundy }[variant];
 
   return (
     <figure
       role="img"
       aria-label={s("label")}
       className={`relative aspect-[980/2000] shrink-0 [transform-style:preserve-3d] ${className} ${
-        variant === "orange" ? "phone-orange" : ""
+        variant === "blue" ? "" : `phone-${variant}`
       }`}
     >
       {/* Shadow on the "desk", and the phone's body: stacked layers behind the
