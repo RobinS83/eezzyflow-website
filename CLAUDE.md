@@ -119,6 +119,9 @@ de site live mag (bij de start van de reclame); de stappen staan in
 er ongeveer 15. Zijn ze op, dan gaan de projecten van het team offline, ook
 surocad3d.com. Daarom:
 
+- **Stand 9 november 2026: meer dan 75% van de credits verbruikt.** Tot de
+  nieuwe periode (15 november) niets meer online zetten, tenzij Robin
+  uitdrukkelijk "zet online" zegt. Push alles met `[skip netlify]`.
 - Bundel wijzigingen: test lokaal, push één keer per afgeronde ronde, niet na
   elk klein stapje.
 - Wijzigingen aan alleen `docs/`, `CLAUDE.md` of `README.md` bouwen niet
