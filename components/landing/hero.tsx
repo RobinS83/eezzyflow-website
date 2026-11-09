@@ -29,7 +29,7 @@ export async function Hero() {
       />
       {/* Fade into the page colour, so the hero flows into the next section without an edge. */}
       <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-48 bg-linear-to-b from-transparent to-paper" />
-      <div className="relative mx-auto grid grid-cols-1 max-w-7xl items-center gap-10 pt-14 sm:pt-20 lg:min-h-[calc(100svh-68px)] lg:grid-cols-[1fr_1.15fr] lg:pt-0">
+      <div className="relative mx-auto grid grid-cols-1 max-w-7xl items-center gap-10 pt-14 sm:pt-20 lg:min-h-[calc(100svh-68px)] lg:grid-cols-[0.95fr_1.3fr] lg:pt-0">
         <div className="hero-out-text lg:pb-10">
           <p className="glass intro mb-7 inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 text-[13px] font-semibold text-hero-ink" style={{ "--d": "0s" } as React.CSSProperties}>
             <Dot />
@@ -37,7 +37,7 @@ export async function Hero() {
           </p>
           <h1
             id="hero-title"
-            className="text-[clamp(44px,5.6vw,80px)] leading-[0.98] font-extrabold tracking-[-0.045em] text-balance text-hero-ink"
+            className="text-[clamp(44px,5.2vw,78px)] leading-[0.98] font-extrabold tracking-[-0.045em] text-balance text-hero-ink"
           >
             {head
               .trim()
@@ -88,7 +88,7 @@ export async function Hero() {
 
         {/* The MacBook with the iPhone in front: eezzyflow on both. */}
         {/* The MacBook stands still; only the iPhone in front of it moves. */}
-        <div className="relative mx-auto w-full max-w-[680px] pb-10 lg:pb-0">
+        <div className="relative mx-auto w-full max-w-[820px] pb-10 lg:pb-0 2xl:-mr-16">
           <div className="intro relative pr-[10%]" style={{ "--d": "0.3s" } as React.CSSProperties}>
             <LaptopMockup />
           </div>
