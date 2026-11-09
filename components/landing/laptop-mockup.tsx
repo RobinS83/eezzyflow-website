@@ -17,7 +17,7 @@ export async function LaptopMockup({ className = "" }: { className?: string }) {
     <figure role="img" aria-label={s("label")} className={`relative aspect-[2000/1299] ${className}`}>
       <span aria-hidden className="laptop-floor" />
       <div aria-hidden className="absolute overflow-hidden rounded-[0.6%/0.9%] bg-paper" style={SCREEN}>
-        <ScreenCycle srcs={srcs} kind="mouse" position="object-left-top" />
+        <ScreenCycle srcs={srcs} kind="mouse" position="object-left-top" zoom={1.18} />
       </div>
       <Image src={frame} alt="" fill sizes="(min-width: 1024px) 720px, 100vw" priority className="pointer-events-none select-none" />
     </figure>

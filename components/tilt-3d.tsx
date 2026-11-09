@@ -23,8 +23,8 @@ export function Tilt3D({ children, className = "" }: { children: ReactNode; clas
         const r = el.getBoundingClientRect();
         const x = (e.clientX - (r.left + r.width / 2)) / window.innerWidth;
         const y = (e.clientY - (r.top + r.height / 2)) / window.innerHeight;
-        el.style.setProperty("--tilt-y", `${(x * 22).toFixed(2)}deg`);
-        el.style.setProperty("--tilt-x", `${(-y * 14).toFixed(2)}deg`);
+        el.style.setProperty("--tilt-y", `${(x * 8).toFixed(2)}deg`);
+        el.style.setProperty("--tilt-x", `${(-y * 5).toFixed(2)}deg`);
       });
     };
     window.addEventListener("pointermove", onMove, { passive: true });

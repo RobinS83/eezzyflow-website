@@ -83,11 +83,14 @@ export function ScreenCycle({
   srcs,
   kind,
   position = "object-top",
+  zoom = 1,
 }: {
   srcs: string[];
   /** Which device this is: decides the pointer (mouse) or the tap (touch). */
   kind: "mouse" | "touch";
   position?: string;
+  /** Show the screenshot larger than the screen (cropped right and bottom), so its text is readable. */
+  zoom?: number;
 }) {
   const [p, setP] = useState<Phase | null>(null);
 
@@ -112,7 +115,7 @@ export function ScreenCycle({
   const mine = p && p.aim && p.actor === kind;
   const targets = kind === "touch" ? TOUCH_TARGETS : MOUSE_TARGETS;
   const t = mine ? targets.find((x) => p!.aim!.includes(x.match)) : undefined;
-  const pos = t ? { x: t.x, y: t.y } : IDLE;
+  const pos = t ? { x: t.x * zoom, y: t.y * zoom } : IDLE;
   const pressing = !!(mine && p!.press);
 
   return (
@@ -126,7 +129,8 @@ export function ScreenCycle({
             alt=""
             decoding="async"
             fetchPriority={i === current && !p ? "high" : "low"}
-            className={`absolute inset-0 size-full object-cover ${position} transition-opacity duration-700 ease-(--ease-natural) ${
+            style={zoom !== 1 ? { width: `${zoom * 100}%`, height: `${zoom * 100}%` } : undefined}
+            className={`absolute top-0 left-0 size-full object-cover ${position} transition-opacity duration-700 ease-(--ease-natural) ${
               i === current ? "opacity-100" : "opacity-0"
             }`}
           />

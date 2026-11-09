@@ -92,7 +92,7 @@ export async function Hero() {
           <div className="intro relative pr-[4%] sm:pr-[10%]" style={{ "--d": "0.3s" } as React.CSSProperties}>
             <LaptopMockup />
           </div>
-          <div className="tilt-stage hero-out-phone absolute right-1 bottom-0 w-[36%] sm:right-0 sm:bottom-[2%] sm:w-[25%] lg:bottom-[-8%]">
+          <div className="tilt-stage hero-out-phone absolute right-1 bottom-0 w-[36%] sm:right-0 sm:bottom-[2%] sm:w-[29%] lg:bottom-[-8%]">
             <div className="phone-land">
               <Tilt3D>
                 <div className="tilt-idle relative">

@@ -45,7 +45,7 @@ export async function Desktop() {
             </div>
             {/* The real app in the browser: desktop screenshots of this language taking turns. */}
             <div className="relative aspect-[16/10] bg-paper">
-              <ScreenCycle srcs={screensFor(locale, "desktop")} kind="mouse" position="object-left-top" />
+              <ScreenCycle srcs={screensFor(locale, "desktop")} kind="mouse" position="object-left-top" zoom={1.18} />
             </div>
           </div>
         </figure>
