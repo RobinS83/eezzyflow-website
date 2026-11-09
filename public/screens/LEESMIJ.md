@@ -11,4 +11,12 @@ elk 7 seconden.
 toont de site die van het Nederlands. Bestandsnamen maken niet uit; gebruik
 .webp, .png of .jpg. Bij voorkeur .webp, zo klein mogelijk.
 
+Bestandsnaam: `eezzyflow_<taal>_<gsm|desktop>_<NN-scherm>_<kleurthema>_<modus>`,
+bv. `eezzyflow_nl_desktop_02-kalender_wijn_licht.webp`. Het schermdeel
+(`01-home`, `02-kalender`, `03-kosten`, `04-lijstjes`, `05-berichten`) bepaalt
+waar de muispijl op de MacBook klikt (`components/screen-cycle.tsx`).
+
+Bron: de zip `eezzyflow-screenshots` (PNG, 1082 × 2202 en 2880 × 1800),
+omgezet naar .webp (gsm 900 px breed, desktop 1800 px).
+
 Geen echte namen of gegevens: alleen een testgezin.

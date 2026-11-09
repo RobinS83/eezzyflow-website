@@ -88,7 +88,7 @@ export async function Hero() {
 
         {/* The MacBook with the iPhone in front: eezzyflow on both. */}
         {/* The MacBook stands still; only the iPhone in front of it moves. */}
-        <div className="relative mx-auto w-full max-w-[680px] pb-16 lg:pb-0">
+        <div className="relative mx-auto w-full max-w-[680px] pb-10 lg:pb-0">
           <div className="intro relative pr-[10%]" style={{ "--d": "0.3s" } as React.CSSProperties}>
             <LaptopMockup />
           </div>

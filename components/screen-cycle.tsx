@@ -1,23 +1,23 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const SHOW_MS = 7000;
 /** How long before the switch the pointer starts moving, and when it clicks. */
 const MOVE_BEFORE_MS = 1600;
 const CLICK_BEFORE_MS = 380;
 
-// Where the pointer goes to "click" the next screen, in percent of the screen.
-// Roughly the app's navigation; adjust once the desktop screenshots are in.
-const TARGETS = [
-  { x: 9, y: 24 },
-  { x: 9, y: 33 },
-  { x: 9, y: 42 },
-  { x: 9, y: 51 },
-  { x: 9, y: 60 },
-  { x: 62, y: 18 },
-  { x: 78, y: 18 },
+// Where the pointer clicks to open the next screen: the item in the app's
+// sidebar (desktop screenshots, 1440 × 900 points, shown from the top left).
+// Matched on the screen name in the file name (…_02-kalender_…).
+const TARGETS: { match: string; x: number; y: number }[] = [
+  { match: "01-home", x: 6, y: 10.7 },
+  { match: "02-kalender", x: 6, y: 15.6 },
+  { match: "03-kosten", x: 6, y: 20.4 },
+  { match: "04-lijstjes", x: 6, y: 25.3 },
+  { match: "05-berichten", x: 6, y: 30.2 },
 ];
+const IDLE = { x: 55, y: 62 };
 
 function shuffle<T>(list: T[]): T[] {
   const a = [...list];
@@ -35,10 +35,22 @@ function shuffle<T>(list: T[]): T[] {
  * switch, as if someone clicks through the app. Reduced motion: the first
  * screenshot simply stays.
  */
-export function ScreenCycle({ srcs, offset = 0, pointer = false }: { srcs: string[]; offset?: number; pointer?: boolean }) {
+export function ScreenCycle({
+  srcs,
+  offset = 0,
+  pointer = false,
+  position = "object-top",
+}: {
+  srcs: string[];
+  offset?: number;
+  pointer?: boolean;
+  /** How the screenshot is anchored when it is cropped to fit. */
+  position?: string;
+}) {
   const [order, setOrder] = useState(srcs);
   const [index, setIndex] = useState(0);
-  const [pos, setPos] = useState({ x: 55, y: 62 });
+  const [pos, setPos] = useState(IDLE);
+  const orderRef = useRef(srcs);
   const [clicking, setClicking] = useState(false);
   const [active, setActive] = useState(false);
 
@@ -46,26 +58,29 @@ export function ScreenCycle({ srcs, offset = 0, pointer = false }: { srcs: strin
     if (srcs.length < 2) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     // A fresh random order per visit; done after mount so the first paint matches the server.
+    const shuffled = shuffle(srcs);
+    orderRef.current = shuffled;
     // eslint-disable-next-line react-hooks/set-state-in-effect
-    setOrder(shuffle(srcs));
+    setOrder(shuffled);
     setActive(true);
 
     const timers: ReturnType<typeof setTimeout>[] = [];
     const later = (ms: number, fn: () => void) => timers.push(setTimeout(fn, ms));
-    let last = -1;
+    let shown = 0;
 
     const cycle = (startIn: number) => {
       if (pointer) {
         later(startIn - MOVE_BEFORE_MS, () => {
-          let t = Math.floor(Math.random() * TARGETS.length);
-          if (t === last) t = (t + 1) % TARGETS.length;
-          last = t;
-          setPos(TARGETS[t]);
+          const list = orderRef.current;
+          const upcoming = list[(shown + 1) % list.length] ?? "";
+          const t = TARGETS.find((x) => upcoming.includes(x.match));
+          setPos(t ? { x: t.x, y: t.y } : IDLE);
         });
         later(startIn - CLICK_BEFORE_MS, () => setClicking(true));
         later(startIn - CLICK_BEFORE_MS + 220, () => setClicking(false));
       }
       later(startIn, () => {
+        shown += 1;
         setIndex((i) => i + 1);
         cycle(SHOW_MS);
       });
@@ -89,7 +104,7 @@ export function ScreenCycle({ srcs, offset = 0, pointer = false }: { srcs: strin
             alt=""
             decoding="async"
             fetchPriority={i === current && index === 0 ? "high" : "low"}
-            className={`absolute inset-0 size-full object-cover object-top transition-opacity duration-700 ease-(--ease-natural) ${
+            className={`absolute inset-0 size-full object-cover ${position} transition-opacity duration-700 ease-(--ease-natural) ${
               i === current ? "opacity-100" : "opacity-0"
             }`}
           />
