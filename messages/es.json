@@ -408,7 +408,17 @@
     "more": {
       "eyebrow": "Y más",
       "title": "También las pequeñas cosas, en el mismo sitio.",
-      "note": "Algunas funciones forman parte de Plus o Familia."
+      "note": "Algunas funciones forman parte de Plus o Familia.",
+      "titles": {
+        "calendarSync": "Sincronizar la agenda",
+        "reminders": "Recordatorios",
+        "reportPdf": "Justificantes y resumen",
+        "aiRewrite": "Redactar con calma",
+        "childAccounts": "Cuentas para niños"
+      },
+      "bodies": {
+        "childAccounts": "Tu hijo tiene su propio espacio: ver con quién está, preguntaros algo a los dos y compartir fotos."
+      }
     },
     "desktop": {
       "eyebrow": "En tu ordenador",

@@ -408,7 +408,17 @@
     "more": {
       "eyebrow": "And more",
       "title": "The little things too, in the same place.",
-      "note": "Some features are part of Plus or Family."
+      "note": "Some features are part of Plus or Family.",
+      "titles": {
+        "calendarSync": "Calendar sync",
+        "reminders": "Reminders",
+        "reportPdf": "Proof and overview",
+        "aiRewrite": "Calmer wording",
+        "childAccounts": "Accounts for children"
+      },
+      "bodies": {
+        "childAccounts": "Your child gets their own place: see whose home they’re at, ask you both something and share photos."
+      }
     },
     "desktop": {
       "eyebrow": "On your computer",

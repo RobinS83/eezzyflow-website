@@ -408,7 +408,17 @@
     "more": {
       "eyebrow": "En verder",
       "title": "Ook de kleine dingen, op dezelfde plek.",
-      "note": "Sommige functies horen bij Plus of Gezin."
+      "note": "Sommige functies horen bij Plus of Gezin.",
+      "titles": {
+        "calendarSync": "Agenda koppelen",
+        "reminders": "Herinneringen",
+        "reportPdf": "Bewijs en overzicht",
+        "aiRewrite": "Rustiger verwoorden",
+        "childAccounts": "Accounts voor kinderen"
+      },
+      "bodies": {
+        "childAccounts": "Je kind heeft een eigen plek: zien bij wie het is, iets vragen aan jullie allebei en foto’s delen."
+      }
     },
     "desktop": {
       "eyebrow": "Op je computer",

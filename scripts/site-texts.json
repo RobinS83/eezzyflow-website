@@ -62,7 +62,17 @@
     "more": {
       "eyebrow": "En verder",
       "title": "Ook de kleine dingen, op dezelfde plek.",
-      "note": "Sommige functies horen bij Plus of Gezin."
+      "note": "Sommige functies horen bij Plus of Gezin.",
+      "titles": {
+        "calendarSync": "Agenda koppelen",
+        "reminders": "Herinneringen",
+        "reportPdf": "Bewijs en overzicht",
+        "aiRewrite": "Rustiger verwoorden",
+        "childAccounts": "Accounts voor kinderen"
+      },
+      "bodies": {
+        "childAccounts": "Je kind heeft een eigen plek: zien bij wie het is, iets vragen aan jullie allebei en foto’s delen."
+      }
     },
     "desktop": {
       "eyebrow": "Op je computer",
@@ -186,7 +196,17 @@
     "more": {
       "eyebrow": "Et aussi",
       "title": "Les petites choses aussi, au même endroit.",
-      "note": "Certaines fonctions font partie de Plus ou Famille."
+      "note": "Certaines fonctions font partie de Plus ou Famille.",
+      "titles": {
+        "calendarSync": "Synchroniser l’agenda",
+        "reminders": "Rappels",
+        "reportPdf": "Justificatifs et relevé",
+        "aiRewrite": "Reformuler calmement",
+        "childAccounts": "Comptes pour les enfants"
+      },
+      "bodies": {
+        "childAccounts": "Votre enfant a son propre espace : voir chez qui il est, poser une question à vous deux et partager des photos."
+      }
     },
     "desktop": {
       "eyebrow": "Sur votre ordinateur",
@@ -310,7 +330,17 @@
     "more": {
       "eyebrow": "And more",
       "title": "The little things too, in the same place.",
-      "note": "Some features are part of Plus or Family."
+      "note": "Some features are part of Plus or Family.",
+      "titles": {
+        "calendarSync": "Calendar sync",
+        "reminders": "Reminders",
+        "reportPdf": "Proof and overview",
+        "aiRewrite": "Calmer wording",
+        "childAccounts": "Accounts for children"
+      },
+      "bodies": {
+        "childAccounts": "Your child gets their own place: see whose home they’re at, ask you both something and share photos."
+      }
     },
     "desktop": {
       "eyebrow": "On your computer",
@@ -434,7 +464,17 @@
     "more": {
       "eyebrow": "Und mehr",
       "title": "Auch die kleinen Dinge, am selben Ort.",
-      "note": "Manche Funktionen gehören zu Plus oder Familie."
+      "note": "Manche Funktionen gehören zu Plus oder Familie.",
+      "titles": {
+        "calendarSync": "Kalender verbinden",
+        "reminders": "Erinnerungen",
+        "reportPdf": "Nachweise und Übersicht",
+        "aiRewrite": "Ruhiger formulieren",
+        "childAccounts": "Konten für Kinder"
+      },
+      "bodies": {
+        "childAccounts": "Dein Kind hat einen eigenen Bereich: sehen, bei wem es ist, euch beide etwas fragen und Fotos teilen."
+      }
     },
     "desktop": {
       "eyebrow": "Am Computer",
@@ -558,7 +598,17 @@
     "more": {
       "eyebrow": "Y más",
       "title": "También las pequeñas cosas, en el mismo sitio.",
-      "note": "Algunas funciones forman parte de Plus o Familia."
+      "note": "Algunas funciones forman parte de Plus o Familia.",
+      "titles": {
+        "calendarSync": "Sincronizar la agenda",
+        "reminders": "Recordatorios",
+        "reportPdf": "Justificantes y resumen",
+        "aiRewrite": "Redactar con calma",
+        "childAccounts": "Cuentas para niños"
+      },
+      "bodies": {
+        "childAccounts": "Tu hijo tiene su propio espacio: ver con quién está, preguntaros algo a los dos y compartir fotos."
+      }
     },
     "desktop": {
       "eyebrow": "En tu ordenador",
@@ -682,7 +732,17 @@
     "more": {
       "eyebrow": "E inoltre",
       "title": "Anche le piccole cose, nello stesso posto.",
-      "note": "Alcune funzioni fanno parte di Plus o Famiglia."
+      "note": "Alcune funzioni fanno parte di Plus o Famiglia.",
+      "titles": {
+        "calendarSync": "Sincronizzare l’agenda",
+        "reminders": "Promemoria",
+        "reportPdf": "Prove e riepilogo",
+        "aiRewrite": "Riformulare con calma",
+        "childAccounts": "Account per i figli"
+      },
+      "bodies": {
+        "childAccounts": "Tuo figlio ha il suo spazio: vedere con chi è, chiedere qualcosa a entrambi e condividere foto."
+      }
     },
     "desktop": {
       "eyebrow": "Sul computer",

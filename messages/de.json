@@ -408,7 +408,17 @@
     "more": {
       "eyebrow": "Und mehr",
       "title": "Auch die kleinen Dinge, am selben Ort.",
-      "note": "Manche Funktionen gehören zu Plus oder Familie."
+      "note": "Manche Funktionen gehören zu Plus oder Familie.",
+      "titles": {
+        "calendarSync": "Kalender verbinden",
+        "reminders": "Erinnerungen",
+        "reportPdf": "Nachweise und Übersicht",
+        "aiRewrite": "Ruhiger formulieren",
+        "childAccounts": "Konten für Kinder"
+      },
+      "bodies": {
+        "childAccounts": "Dein Kind hat einen eigenen Bereich: sehen, bei wem es ist, euch beide etwas fragen und Fotos teilen."
+      }
     },
     "desktop": {
       "eyebrow": "Am Computer",

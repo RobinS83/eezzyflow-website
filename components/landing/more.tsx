@@ -23,9 +23,11 @@ const ITEMS: { key: string; icon: LucideIcon }[] = [
   { key: "history", icon: History },
 ];
 
-function split(text: string) {
+/** "Title: explanation" from the app's text; otherwise a short site title and the whole text as explanation. */
+function split(text: string, ownTitle?: string, ownBody?: string) {
   const m = text.match(/^(.+?)\s?:\s(.+)$/);
-  return m ? { title: m[1], body: m[2] } : { title: text, body: "" };
+  if (m) return { title: m[1], body: m[2] };
+  return { title: ownTitle ?? text, body: ownBody ?? (ownTitle ? text : "") };
 }
 
 export async function More({ detailed = false }: { detailed?: boolean }) {
@@ -49,7 +51,9 @@ export async function More({ detailed = false }: { detailed?: boolean }) {
 
         <ul className="grid gap-x-6 gap-y-5 sm:grid-cols-2 lg:grid-cols-3">
           {ITEMS.map(({ key, icon: Icon }) => {
-            const { title, body } = split(f(key));
+            const ownTitle = s.has(`titles.${key}`) ? s(`titles.${key}`) : undefined;
+            const ownBody = s.has(`bodies.${key}`) ? s(`bodies.${key}`) : undefined;
+            const { title, body } = split(f(key), ownTitle, ownBody);
             return (
               <li key={key} className="reveal hover-rise flex gap-4">
                 <span className="rise-icon inline-flex size-11 shrink-0 items-center justify-center rounded-[12px] bg-highlight-soft text-highlight-chip-text">
