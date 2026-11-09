@@ -80,6 +80,12 @@ kort en het slotblok. Uitleg in detail staat op de tabbladen:
 
 Mensen lezen weinig: liever een titel en een beeld dan een alinea.
 
+**Schermafbeeldingen van de app** staan in `public/screens/<taal>/phone/` en
+`public/screens/<taal>/desktop/` (zie `public/screens/LEESMIJ.md`). De hero
+toont een MacBook met een oranje iPhone ervoor; elk toestel wisselt de
+schermen van de eigen taal willekeurig af, 7 seconden elk. Ontbreekt een taal,
+dan nemen we die van het Nederlands. Alleen een testgezin, nooit echte gegevens.
+
 ## Verifiëren, niet aannemen
 
 Draai `npm run typecheck && npm run lint && npm run build` voordat je iets af

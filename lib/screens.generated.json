@@ -1,0 +1,32 @@
+{
+  "nl": {
+    "phone": [
+      "/screens/nl/phone/home.webp",
+      "/screens/nl/phone/kalender.webp",
+      "/screens/nl/phone/kosten.webp",
+      "/screens/nl/phone/lijstjes.webp",
+      "/screens/nl/phone/weekmenu.webp"
+    ],
+    "desktop": []
+  },
+  "fr": {
+    "phone": [],
+    "desktop": []
+  },
+  "en": {
+    "phone": [],
+    "desktop": []
+  },
+  "de": {
+    "phone": [],
+    "desktop": []
+  },
+  "es": {
+    "phone": [],
+    "desktop": []
+  },
+  "it": {
+    "phone": [],
+    "desktop": []
+  }
+}

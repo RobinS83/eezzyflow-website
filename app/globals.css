@@ -429,27 +429,28 @@ summary::-webkit-details-marker { display: none; }
 /* The core line lights up word by word (--p goes 0 → 1 over the heading). */
 .js-motion .light-word { opacity: clamp(0.12, calc(var(--p, 0) * var(--n, 10) - var(--i, 0) + 0.3), 1); transition: opacity 0.25s linear; }
 
-/* ---------- App screenshots taking turns in the phone ---------- */
-.screen-slide { opacity: 0; }
-.screen-slide[style*="--i: 0"], .screen-slide[style*="--i:0"] { opacity: 1; }
-@media (prefers-reduced-motion: no-preference) {
-  /* Each screen shows 7 s, with a 1 s cross-fade; 5 screens = 35 s loop.
-     The keyframe percentages assume 5 screens (20% each). */
-  @keyframes screen-cycle {
-    0% { opacity: 0; scale: 1.04; }
-    2.9% { opacity: 1; scale: 1; }
-    20% { opacity: 1; scale: 1; }
-    22.9% { opacity: 0; scale: 1; }
-    100% { opacity: 0; }
-  }
-  .screen-slide {
-    animation: screen-cycle calc(var(--n) * 7s) linear infinite;
-    animation-delay: calc(var(--i) * 7s - 1s + var(--shift, 0s));
-  }
-}
 
 /* The orange phone: same body, copper edges. */
 .phone-orange {
   --phone-edge-1: #e88a52;
   --phone-edge-2: #a5532b;
+}
+
+.laptop-floor {
+  position: absolute; left: 4%; right: 4%; bottom: -3%; height: 7%;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, var(--floor-shadow), transparent);
+  filter: blur(16px);
+  pointer-events: none;
+}
+
+/* The device pair at rest: a gentle turn, swaying slowly. Smaller angles than a
+   single phone, because the laptop is wide. */
+.device-idle { transform-style: preserve-3d; transform: rotateY(-10deg) rotateX(4deg); }
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes device-sway {
+    0%, 100% { transform: rotateY(-13deg) rotateX(5deg) translateY(0); }
+    50% { transform: rotateY(-4deg) rotateX(2deg) translateY(-10px); }
+  }
+  .device-idle { animation: device-sway 10s ease-in-out infinite; }
 }

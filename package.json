@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && node scripts/postbuild.mjs",
+    "build": "node scripts/screens-manifest.mjs && next build && node scripts/postbuild.mjs",
     "start": "next start",
     "lint": "eslint .",
-    "typecheck": "next typegen && tsc --noEmit",
+    "typecheck": "node scripts/screens-manifest.mjs && next typegen && tsc --noEmit",
     "sync-texts": "node scripts/sync-messages.mjs"
   },
   "dependencies": {
