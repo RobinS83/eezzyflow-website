@@ -87,16 +87,19 @@ export async function Hero() {
         </div>
 
         {/* The MacBook with the iPhone in front: eezzyflow on both. */}
-        <div className="tilt-stage hero-out-phone relative mx-auto w-full max-w-[680px] pb-16 lg:pb-0">
-          <div className="phone-land">
-            <Tilt3D className="relative">
-              <div className="device-idle relative pr-[10%]">
-                <LaptopMockup />
-                <div className="absolute right-0 bottom-[-8%] w-[25%] [transform-style:preserve-3d]" style={{ transform: "translateZ(70px)" }}>
+        {/* The MacBook stands still; only the iPhone in front of it moves. */}
+        <div className="relative mx-auto w-full max-w-[680px] pb-16 lg:pb-0">
+          <div className="intro relative pr-[10%]" style={{ "--d": "0.3s" } as React.CSSProperties}>
+            <LaptopMockup />
+          </div>
+          <div className="tilt-stage hero-out-phone absolute right-0 bottom-[2%] w-[25%] lg:bottom-[-8%]">
+            <div className="phone-land">
+              <Tilt3D>
+                <div className="tilt-idle relative">
                   <PhoneMockup variant="burgundy" className="w-full" offset={3500} />
                 </div>
-              </div>
-            </Tilt3D>
+              </Tilt3D>
+            </div>
           </div>
         </div>
       </div>

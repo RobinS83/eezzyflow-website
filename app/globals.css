@@ -444,16 +444,6 @@ summary::-webkit-details-marker { display: none; }
   pointer-events: none;
 }
 
-/* The device pair at rest: a gentle turn, swaying slowly. Smaller angles than a
-   single phone, because the laptop is wide. */
-.device-idle { transform-style: preserve-3d; transform: rotateY(-10deg) rotateX(4deg); }
-@media (prefers-reduced-motion: no-preference) {
-  @keyframes device-sway {
-    0%, 100% { transform: rotateY(-13deg) rotateX(5deg) translateY(0); }
-    50% { transform: rotateY(-4deg) rotateX(2deg) translateY(-10px); }
-  }
-  .device-idle { animation: device-sway 10s ease-in-out infinite; }
-}
 .phone-burgundy {
   --phone-edge-1: #6b3a44;
   --phone-edge-2: #3a1f25;
